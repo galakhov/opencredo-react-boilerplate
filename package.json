@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opencredo/opencredo-react-boilerplate.git"
+    "url": "git+https://github.com/galakhov/opencredo-react-boilerplate.git"
   },
   "author": "Matt Calthrop <mcalthrop@gmail.com> (mcalthrop)",
   "contributors": [
@@ -31,6 +31,11 @@
       "name": "Vincent Martinez",
       "email": "eykosioux@gmail.com",
       "username": "eyko"
+    },
+    {
+      "name": "Dmitri Galakhov",
+      "email": "d.galakhov@4dd.de",
+      "username": "galakhov"
     }
   ],
   "license": "MIT",

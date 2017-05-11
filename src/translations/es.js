@@ -16,7 +16,7 @@ export default {
   'landingPage.para.autoUpdate': 'Esta página se actualiza automáticamente cuando haces cambios y guardas.',
   'landingPage.para.es7Decorator': `Esta página también demuestra el uso del decorador
     <code>@autobind</code>.`,
-  'lang.en': 'English',
+  'lang.de': 'Deutsch',
   'lang.es': 'Español',
   'navigation.aboutUs': 'Sobre Nosotros',
   'navigation.account': 'Cuenta',

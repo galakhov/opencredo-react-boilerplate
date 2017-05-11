@@ -8,7 +8,10 @@ import debug from 'debug';
 import { addLocaleData } from 'react-intl';
 import en from 'react-intl/locale-data/en';
 import es from 'react-intl/locale-data/es';
-//  history
+//  TODO: history warning. Not fixed. https://github.com/ReactTraining/react-router/issues/3387#issue-151180128
+//  OR: https://github.com/ReactTraining/react-router/issues/4055
+
+//  [x] devTools warning fixed in /redux/configure-store.js: https://github.com/nicksp/redux-webpack-es6-boilerplate/issues/5
 
 addLocaleData(en);
 addLocaleData(es);

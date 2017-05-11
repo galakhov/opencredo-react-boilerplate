@@ -9,7 +9,7 @@ export const links = {
   },
 
   aboutUs: {
-    to: '/pages/about-us',
+    to: '/about-us',
     id: 'navigation.aboutUs',
     description: 'About Us page link',
     defaultMessage: 'About Us',
@@ -28,28 +28,28 @@ export const links = {
   },
 
   faq: {
-    to: '/pages/faq',
+    to: '/faq',
     id: 'navigation.faq',
     description: 'FAQ',
     defaultMessage: 'FAQ',
   },
 
   policies: {
-    to: '/pages/policies',
+    to: '/policies',
     id: 'navigation.policies',
     description: 'Policies',
     defaultMessage: 'Policies',
   },
 
   terms: {
-    to: '/pages/terms',
+    to: '/terms',
     id: 'navigation.terms',
     description: 'Terms & Privacy',
     defaultMessage: 'Terms & Privacy',
   },
 
   help: {
-    to: '/pages/help',
+    to: '/help',
     id: 'navigation.help',
     description: 'Help',
     defaultMessage: 'Help',

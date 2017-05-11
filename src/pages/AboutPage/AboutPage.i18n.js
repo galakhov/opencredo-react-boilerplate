@@ -1,7 +1,7 @@
 export const messages = {
   title: {
     id: 'aboutPage.title',
-    defaultMessage: 'About Us',
+    defaultMessage: 'Über uns',
   },
   overview: {
     id: 'aboutPage.overview',

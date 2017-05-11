@@ -1,12 +1,16 @@
 export const messages = {
   title: {
     id: 'landingPage.title',
-    defaultMessage: 'Landing Page',
+    defaultMessage: 'Neuste Technik, kompetente Behandlung, individuelle Therapie',
+  },
+  landingText: {
+    id: 'landingPage.text',
+    defaultMessage: ' ',
   },
   button: {
     clickMe: {
       id: 'landingPage.button.clickMe',
-      defaultMessage: 'Landing Page',
+      defaultMessage: 'Landing Page!',
     },
   },
   para: {

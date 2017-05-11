@@ -4,9 +4,7 @@ import { applyMiddleware, compose, createStore } from 'redux';
 import { syncHistory } from 'react-router-redux';
 
 function withDevTools(middleware) {
-  const devTools = window.devToolsExtension
-    ? window.devToolsExtension()
-    : require('../containers/DevTools').instrument();
+  const devTools = require('../containers/DevTools').instrument();
   return compose(middleware, devTools);
 }
 

@@ -24,3 +24,27 @@ body {
 a {
   cursor: pointer;
 }
+
+.navbar-collapse {
+  background-color: rgba(#e7e7e7, 0);
+}
+
+.navbar-default {
+  background-color: rgba(#f8f8f8, 0.3);
+  border-color: rgba(#e7e7e7, 0.0);
+
+  .navbar-brand {
+    color: rgba(#777, 0.0);
+
+    span {
+      display: none;
+    }
+  }
+  .navbar-brand:hover {
+    color: rgba(#777, 0.0);
+  }
+
+  span {
+    font-family: $eurostile_font;
+  }
+}

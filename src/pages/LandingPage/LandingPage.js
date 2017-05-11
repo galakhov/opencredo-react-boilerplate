@@ -40,25 +40,28 @@ export class LandingPage extends React.Component {
     log('button click handler context:', this);
   }
 
+/*
+  <p>
+    <FormattedHTMLMessage {...messages.para.autoUpdate} />
+  </p>
+  <p>
+    <FormattedHTMLMessage {...messages.para.es7Decorator} />
+  </p>
+*/
+
   render() {
     return (
       <div id="landing-page">
-        <LandingPageHero backgroundImage="/images/workspace-cc.jpg" />
+        <LandingPageHero backgroundImage="/images/bg.jpg" />
         <Grid>
           <Row>
             <Col xs={12}>
               <h1 className={styles.title}>
                 <FormattedMessage {...messages.title} />
               </h1>
-              <p>
-                <FormattedHTMLMessage {...messages.para.pressCtrlH} />
-              </p>
-              <p>
-                <FormattedHTMLMessage {...messages.para.autoUpdate} />
-              </p>
-              <p>
-                <FormattedHTMLMessage {...messages.para.es7Decorator} />
-              </p>
+              <article>
+                <FormattedHTMLMessage {...messages.landingText} />
+              </article>
             </Col>
           </Row>
           <Row>

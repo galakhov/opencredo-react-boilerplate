@@ -44,6 +44,7 @@ class MainHeader extends React.Component {
           <Navbar.Brand>
             <Link to="/">
               <FormattedMessage {...links.home} />
+              <img src="/images/radiologie.png" />
               { /* The above is equivalent to
                 <FormattedMessage id={links.home.id}
                                   description={links.home.description}
@@ -53,10 +54,9 @@ class MainHeader extends React.Component {
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav pullRight>
-            <LanguageSelectionDropdown />
+          <Nav pullLeft>
             <li role="presentation">
-              <Link activeClassName="active" to="/pages/about-us">
+              <Link activeClassName="active" to="/about-us">
                 <FormattedMessage {...links.aboutUs} />
               </Link>
             </li>
@@ -69,6 +69,8 @@ class MainHeader extends React.Component {
                 </a>
               </li>
             }
+
+            <LanguageSelectionDropdown />
           </Nav>
         </Navbar.Collapse>
       </Navbar>

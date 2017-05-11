@@ -6,12 +6,15 @@ import messages from 'translations';
 import 'styles/app.scss';
 
 const mapStateToProps = ({ language, documentTitle }) => ({ language, documentTitle });
+
 class AppContainer extends Component {
   static propTypes = {
     language: PropTypes.string.isRequired,
     documentTitle: PropTypes.object.isRequired,
     children: PropTypes.element.isRequired,
   };
+
+  //  key={locale}
 
   render() {
     const { language, children } = this.props;
@@ -27,3 +30,4 @@ class AppContainer extends Component {
 }
 
 export default connect(mapStateToProps)(AppContainer);
+//  export default injectIntl(connect(mapStateToProps, mapDispatchToProps)(MyComponent));

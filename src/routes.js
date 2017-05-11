@@ -17,11 +17,11 @@ export default(
       // here
       <Route path="/" component={LandingPage} />
       // Routes without a component will render their children:
-      <Route path="/pages" >
-        <IndexRedirect to="about-us" />
-        <Route path="about-us" component={AboutPage} />
-        <Route path="faq" component={AboutPage} />
-      </Route>
+      //<Route path="/pages" >
+        <IndexRedirect to="/about-us" />
+        <Route path="/about-us" component={AboutPage} />
+        <Route path="/faq" component={AboutPage} />
+      //</Route>
     </Route>
 
     <Route path="/account" component={AdminPageLayout}>

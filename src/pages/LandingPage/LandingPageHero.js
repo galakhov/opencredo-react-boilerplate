@@ -17,7 +17,15 @@ const LandingPageHero = (props) =>
               </h1>
 
               <p className={styles['hero-description']}>
-                {config.description}
+                {config.description1}
+              </p>
+
+              <p className={styles['hero-description']}>
+                {config.description2}
+              </p>
+
+              <p className={styles['hero-description']}>
+                {config.description3}
               </p>
             </div>
           </VAMiddle>
