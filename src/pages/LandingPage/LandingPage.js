@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
-import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
+// import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import { connect } from 'react-redux';
-import styles from './LandingPage.scss';
-import { Grid, Row, Col, Button } from 'react-bootstrap';
+// import styles from './LandingPage.scss';
+// import { Grid, Row, Col, Button } from 'react-bootstrap';
 import debug from 'debug';
 import { autobind } from 'core-decorators';
 import { messages } from './LandingPage.i18n';
@@ -53,7 +53,7 @@ export class LandingPage extends React.Component {
     return (
       <div id="landing-page">
         <LandingPageHero backgroundImage="/images/bg.jpg" />
-        <Grid>
+        { /* <Grid>
           <Row>
             <Col xs={12}>
               <h1 className={styles.title}>
@@ -71,7 +71,7 @@ export class LandingPage extends React.Component {
               </Button>
             </Col>
           </Row>
-        </Grid>
+        </Grid> */ }
       </div>
     );
   }

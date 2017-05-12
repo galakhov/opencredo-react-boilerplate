@@ -27,6 +27,7 @@ $border-color: #b3d3b3;
   padding-left: 36px;
   padding-right: 25px;
   width: 40%;
+  min-width: 545px;
   left: 23%;
   background-color: rgba(#f8f8f8, 0.7);
 
@@ -45,9 +46,10 @@ $border-color: #b3d3b3;
     padding-bottom: 13px;
     display: table;
     margin-top: 0px;
+    line-height: 1.8em;
   }
 
-  //h1:before-after-background("18px", "18px", '/images/cross.png');
+  // h1:before-after-background("18px", "18px", '/images/cross.png');
 
   &:before {
     height: 18px;
@@ -62,16 +64,32 @@ $border-color: #b3d3b3;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .content {
+    width: 70%;
+    min-width: 250px;
+    left: 10%;
+    transition: 3s;
+  }
+}
+
 .background {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-size: cover;
+  background-size: contain;
   overflow: hidden;
+  background-repeat: no-repeat;
+  
   img {
     width: 100%;
     height: auto;
   }
+}
+
+// set huge bg picture to cover the whole bg area
+.hero > div.background:first-of-type {
+  background-size: cover;
 }
 
 .hero-small {

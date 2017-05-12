@@ -3,15 +3,15 @@ import React, { PropTypes, Component } from 'react';
 // import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 // import { Grid, Row, Col } from 'react-bootstrap';
-// import { HeroBackground, Hero } from 'components/Hero';
-import { messages } from './AboutPage.i18n';
+// import { Hero } from 'components/Hero'; // HeroBackground
+import { messages } from './PatientenPage.i18n';
+import PatientenPageHero from './PatientenPageHero';
 import {
   updateDocumentTitle,
   resetDocumentTitle,
 } from 'redux/modules/document-title/document-title';
-import AboutPageHero from './AboutPageHero';
 
-class AboutPage extends Component {
+class PatientenPage extends Component {
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
   };
@@ -26,10 +26,13 @@ class AboutPage extends Component {
 
   render() {
     return (
-      <section id="about-page">
-        <AboutPageHero backgroundImage="/images/bg00.jpg" />
+      <section id="patienten-page">
+        <PatientenPageHero backgroundImage="/images/bg0.jpg" />
         {
           /*
+          <Hero displayUnderNavbar>
+            <HeroBackground image="/images/bg.jpg" />
+          </Hero>
           <Grid>
             <Row>
               <Col xs={12} className="text-center">
@@ -49,4 +52,4 @@ class AboutPage extends Component {
   }
 }
 
-export default connect(() => ({}))(AboutPage);
+export default connect(() => ({}))(PatientenPage);

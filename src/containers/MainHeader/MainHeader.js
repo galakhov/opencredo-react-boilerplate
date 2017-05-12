@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router';
-import { Navbar, Nav } from 'react-bootstrap';
-import UserDropdownMenu from 'components/UserDropdownMenu/UserDropdownMenu';
+import { Navbar, Nav, NavDropdown, MenuItem } from 'react-bootstrap';
+// import UserDropdownMenu from 'components/UserDropdownMenu/UserDropdownMenu';
 import { connect } from 'react-redux';
 import { autobind } from 'core-decorators';
 import { loginRequest, logoutRequest } from 'redux/modules/auth/auth-actions';
@@ -60,7 +60,32 @@ class MainHeader extends React.Component {
                 <FormattedMessage {...links.aboutUs} />
               </Link>
             </li>
-            {this.props.isAuthenticated && this.props.user ?
+              { /* <Link activeClassName="active" to="/spectrum">
+                <FormattedMessage {...links.spectrum} />
+              </Link> */ }
+            <NavDropdown activeClassName="active" eventKey="/spectrum" title="Behandlungsspektrum" id="nav-dropdown">
+              <MenuItem eventKey="/spectrum" href="/spectrum"><FormattedMessage {...links.spectrum} /></MenuItem>
+              <MenuItem eventKey="/spectrum/radiologie" href="/spectrum/radiologie"><FormattedMessage {...links.spectrum_radiologie} /></MenuItem>
+              <MenuItem eventKey="/spectrum/mrt" href="/spectrum/mrt"><FormattedMessage {...links.spectrum_mrt} /></MenuItem>
+              <MenuItem eventKey="/spectrum/herz-mrt" href="/spectrum/herz-mrt"><FormattedMessage {...links.spectrum_herz} /></MenuItem>
+              <MenuItem eventKey="/spectrum/angiographie" href="/spectrum/angiographie"><FormattedMessage {...links.spectrum_angiographie} /></MenuItem>
+              <MenuItem eventKey="/spectrum/ct" href="/spectrum/ct"><FormattedMessage {...links.spectrum_ct} /></MenuItem>
+              <MenuItem eventKey="/spectrum/herz-ct" href="/spectrum/herz-ct"><FormattedMessage {...links.spectrum_herz_ct} /></MenuItem>
+              <MenuItem eventKey="/spectrum/kardio-diagnostik" href="/spectrum/kardio-diagnostik"><FormattedMessage {...links.spectrum_kardio} /></MenuItem>
+              <MenuItem eventKey="/spectrum/roentgen" href="/spectrum/roentgen"><FormattedMessage {...links.spectrum_roentgen} /></MenuItem>
+              <MenuItem eventKey="/spectrum/ultraschall" href="/spectrum/ultraschall"><FormattedMessage {...links.spectrum_ultraschall} /></MenuItem>
+              <MenuItem eventKey="/spectrum/mammographie" href="/spectrum/mammographie"><FormattedMessage {...links.spectrum_mammographie} /></MenuItem>
+              <MenuItem eventKey="/spectrum/nuklearmedizin" href="/spectrum/nuklearmedizin"><FormattedMessage {...links.spectrum_nuklearmedizin} /></MenuItem>
+              <MenuItem eventKey="/spectrum/schmerztherapie" href="/spectrum/schmerztherapie"><FormattedMessage {...links.spectrum_schmerztherapie} /></MenuItem>
+              { /* <MenuItem divider /> */ }
+            </NavDropdown>
+            <li role="presentation">
+              <Link activeClassName="active" to="/patientenservice">
+                <FormattedMessage {...links.service} />
+              </Link>
+            </li>
+
+            { /* this.props.isAuthenticated && this.props.user ?
               <UserDropdownMenu user={this.props.user} logout={this.onLogout} />
               :
               <li role="presentation">
@@ -68,7 +93,7 @@ class MainHeader extends React.Component {
                   <FormattedMessage {...links.logIn} />
                 </a>
               </li>
-            }
+            */ }
 
             <LanguageSelectionDropdown />
           </Nav>

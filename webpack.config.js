@@ -42,6 +42,14 @@ const webpackconfig = {
 
   plugins: [
     new webpack.DefinePlugin({ DEVELOPMENT, PRODUCTION, __DEBUG__ }),
+    /* new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }), */
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+    }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(config.paths.app, 'index.html'),

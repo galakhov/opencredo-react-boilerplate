@@ -30,7 +30,8 @@ a {
 }
 
 .navbar-default {
-  background-color: rgba(#f8f8f8, 0.3);
+  // background-color: rgba(#f8f8f8, 0.3);
+  background-color: rgba(#f4f9f4, 0.4);
   border-color: rgba(#e7e7e7, 0.0);
 
   .navbar-brand {
@@ -47,4 +48,34 @@ a {
   span {
     font-family: $eurostile_font;
   }
+}
+
+@media screen and (max-width: 912px) {
+  .navbar-brand>img {
+    position: absolute;
+    width: 180px;
+  }
+
+  .navbar-nav {
+    margin-left: 100px;
+  }
+
+  .navbar-default {
+    span {
+      letter-spacing: -0.4px;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+
+  .navbar-brand>img {
+    width: 120px;
+    transition: 3s;
+  }
+
+  .navbar-nav {
+    margin-left: 88px;
+  }
+
 }
