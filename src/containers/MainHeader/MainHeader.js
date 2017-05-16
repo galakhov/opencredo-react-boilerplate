@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 import { autobind } from 'core-decorators';
 import { loginRequest, logoutRequest } from 'redux/modules/auth/auth-actions';
 import debug from 'debug';
-import LanguageSelectionDropdown from '../LanguageSelectionDropdown/LanguageSelectionDropdown';
+// import LanguageSelectionDropdown from '../LanguageSelectionDropdown/LanguageSelectionDropdown';
 import { links } from 'shared/links';
 
 if (__DEBUG__) {
@@ -56,6 +56,12 @@ class MainHeader extends React.Component {
         <Navbar.Collapse>
           <Nav pullLeft>
             <li role="presentation">
+              <Link activeClassName="active" to="/">
+                <FormattedMessage {...links.home} />
+              </Link>
+            </li>
+
+            <li role="presentation">
               <Link activeClassName="active" to="/about-us">
                 <FormattedMessage {...links.aboutUs} />
               </Link>
@@ -95,7 +101,7 @@ class MainHeader extends React.Component {
               </li>
             */ }
 
-            <LanguageSelectionDropdown />
+            { /* <LanguageSelectionDropdown /> */ }
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -11,7 +11,7 @@ const LandingPageHero = (props) =>
       <HeroContent>
         <VAContainer horizontal vertical>
           <VAMiddle>
-            <div className="text-center">
+            <div className="text-left">
               <h1 className={styles['hero-title']}>
                 {config.name}
               </h1>

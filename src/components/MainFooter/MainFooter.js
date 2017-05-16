@@ -5,11 +5,11 @@ import { FormattedMessage } from 'react-intl';
 import { links } from 'shared/links';
 
 const footerLinks = [
-  links.aboutUs,
-  links.faq,
+  // links.aboutUs,
+  links.kontakt,
+  // links.terms,
+  // links.help,
   links.policies,
-  links.terms,
-  links.help,
 ];
 export default class MainFooter extends React.Component {
   static propTypes = {

@@ -23,7 +23,7 @@ export default {
   'navigation.account': 'Account',
   'navigation.faq': 'FAQ',
   'navigation.help': 'Help',
-  'navigation.home': 'Radiologie Duisburg',
+  'navigation.home': 'Praxis',
   'navigation.logIn': 'Einloggen',
   'navigation.logOut': 'Ausloggen',
   'navigation.policies': 'Policies',

@@ -21,6 +21,7 @@ import MammographiePage from 'pages/SpectrumPage/MammographiePage';
 import NuklearmedizinPage from 'pages/SpectrumPage/NuklearmedizinPage';
 import SchmerztherapiePage from 'pages/SpectrumPage/SchmerztherapiePage';
 import PatientenPage from 'pages/PatientenPage/PatientenPage';
+import ImpressumPage from 'pages/ImpressumPage/ImpressumPage';
 
 import ProfileEditPage from 'pages/ProfileEditPage/ProfileEditPage';
 
@@ -35,22 +36,23 @@ export default(
       //<Route path="/pages" >
         <IndexRedirect to="/about-us" />
         <Route path="/about-us" component={AboutPage} />
-        <Route path="/spectrum" component={SpectrumPage}>
-          <Route path="/spectrum/radiologie" component={RadiologiePage} />
-          <Route path="/spectrum/mrt" component={MRTPage} />
-          <Route path="/spectrum/herz-mrt" component={HerzMRTPage} />
-          <Route path="/spectrum/angiographie" component={AngiographiePage} />
-          <Route path="/spectrum/ct" component={CTPage} />
-          <Route path="/spectrum/herz-ct" component={HerzCTPage} />
-          <Route path="/spectrum/kardio-diagnostik" component={KardioDiagnostikPage} />
-          <Route path="/spectrum/roentgen" component={RoentgenPage} />
-          <Route path="/spectrum/ultraschall" component={UltraschallPage} />
-          <Route path="/spectrum/mammographie" component={MammographiePage} />
-          <Route path="/spectrum/nuklearmedizin" component={NuklearmedizinPage} />
-          <Route path="/spectrum/schmerztherapie" component={SchmerztherapiePage} />
-        </Route>
+        <Route path="/spectrum" component={SpectrumPage} />
+        <Route path="/spectrum/radiologie" component={RadiologiePage} />
+        <Route path="/spectrum/mrt" component={MRTPage} />
+        <Route path="/spectrum/herz-mrt" component={HerzMRTPage} />
+        <Route path="/spectrum/angiographie" component={AngiographiePage} />
+        <Route path="/spectrum/ct" component={CTPage} />
+        <Route path="/spectrum/herz-ct" component={HerzCTPage} />
+        <Route path="/spectrum/kardio-diagnostik" component={KardioDiagnostikPage} />
+        <Route path="/spectrum/roentgen" component={RoentgenPage} />
+        <Route path="/spectrum/ultraschall" component={UltraschallPage} />
+        <Route path="/spectrum/mammographie" component={MammographiePage} />
+        <Route path="/spectrum/nuklearmedizin" component={NuklearmedizinPage} />
+        <Route path="/spectrum/schmerztherapie" component={SchmerztherapiePage} />
+
         <Route path="/patientenservice" component={PatientenPage} />
       //</Route>
+        <Route path="/impressum" component={ImpressumPage} />
     </Route>
 
     <Route path="/account" component={AdminPageLayout}>

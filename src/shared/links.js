@@ -4,15 +4,15 @@ export const links = {
   home: {
     to: '/',
     id: 'navigation.home',
-    description: 'Go to Home / Landing Page',
+    description: 'Praxis',
     defaultMessage: config.name,
   },
 
   aboutUs: {
     to: '/about-us',
     id: 'navigation.aboutUs',
-    description: 'About Us page link',
-    defaultMessage: 'About Us',
+    description: 'Team',
+    defaultMessage: 'Team',
   },
 
   spectrum: {
@@ -125,18 +125,18 @@ export const links = {
     defaultMessage: 'Log out',
   },
 
-  faq: {
-    to: '/faq',
-    id: 'navigation.faq',
-    description: 'FAQ',
-    defaultMessage: 'FAQ',
+  kontakt: {
+    to: '/kontakt',
+    id: 'navigation.kontakt',
+    description: 'Kontakt',
+    defaultMessage: 'Kontakt',
   },
 
   policies: {
-    to: '/policies',
-    id: 'navigation.policies',
-    description: 'Policies',
-    defaultMessage: 'Policies',
+    to: '/impressum',
+    id: 'navigation.impressum',
+    description: 'Impressum',
+    defaultMessage: 'Impressum',
   },
 
   terms: {

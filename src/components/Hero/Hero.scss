@@ -3,8 +3,8 @@ $border-color: #b3d3b3;
 
 .hero {
   height: 850px;
-  position: relative;
-  background: black;
+  min-height: 300px;
+  // position: relative; // fix for safari browser: false height of a block
   color: black;
   transition: height .3s;
 }
@@ -25,11 +25,21 @@ $border-color: #b3d3b3;
   position: relative;
   padding-bottom: 20px;
   padding-left: 36px;
-  padding-right: 25px;
-  width: 40%;
-  min-width: 545px;
+  padding-right: 40px;
+  width: 45%;
+  min-width: 40%;
+  min-height: 30%;
   left: 23%;
   background-color: rgba(#f8f8f8, 0.7);
+  // height: 65%;
+  max-height: 65%;
+  overflow-y: scroll;
+  border-top: 15px solid rgba(#f8f8f8, 0.0);
+  border-bottom: 15px solid rgba(#f8f8f8, 0.0);
+
+  p:first-of-type {
+    margin-top: 18px;
+  }
 
   p {
     text-align: left;
@@ -43,10 +53,11 @@ $border-color: #b3d3b3;
     text-transform: none;
     font-weight: bold;
     border-bottom: 5px solid $border-color;
-    padding-bottom: 13px;
-    display: table;
+    padding-bottom: 3px;
+    display: inline;
     margin-top: 0px;
-    line-height: 1.8em;
+    line-height: 2.1em;
+    margin-bottom: 12px;
   }
 
   // h1:before-after-background("18px", "18px", '/images/cross.png');
@@ -60,7 +71,13 @@ $border-color: #b3d3b3;
     left: -26px;
     content: '';
     display: block;
-    top: 18px;
+    top: 26px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .content {
+    width: 53%;
   }
 }
 
@@ -80,7 +97,7 @@ $border-color: #b3d3b3;
   background-size: contain;
   overflow: hidden;
   background-repeat: no-repeat;
-  
+
   img {
     width: 100%;
     height: auto;

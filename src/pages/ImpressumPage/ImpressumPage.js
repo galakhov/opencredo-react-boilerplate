@@ -1,13 +1,13 @@
 /* @flow */
 import React, { PropTypes, Component } from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { Grid, Row, Col } from 'react-bootstrap';
 import { HeroBackground, Hero, HeroContent } from 'components/Hero';
-import config from './SpectrumPage.i18n';
-import { messages } from './SpectrumPage.i18n';
+import config from './ImpressumPage.i18n';
+import { messages } from './ImpressumPage.i18n';
 import { VAContainer, VAMiddle } from 'components/VAlign/VAlign';
-import styles from './SpectrumPage.scss';
+import styles from './ImpressumPage.scss';
 import {
   updateDocumentTitle,
   resetDocumentTitle,
@@ -20,14 +20,9 @@ const styles_custom = {
     paddingLeft: 0,
     paddingRight: 0,
   },
-  ul: {
-    paddingTop: 10,
-    listStyleType: 'circle',
-    paddingLeft: 18,
-  },
 };
 
-const SpectrumPageHero = (props) =>
+const ImpressumPageHero = (props) =>
 (
     <Hero displayUnderNavbar>
       <HeroBackground image={props.backgroundImage} />
@@ -64,20 +59,16 @@ const SpectrumPageHero = (props) =>
                       </h1>
                       */
                     }
-                    <ul style={styles_custom.ul}>
-                      <li><FormattedMessage {...messages.overview0} /></li>
-                      <li><FormattedMessage {...messages.overview1} /></li>
-                      <li><FormattedMessage {...messages.overview2} /></li>
-                      <li><FormattedMessage {...messages.overview3} /></li>
-                      <li><FormattedMessage {...messages.overview4} /></li>
-                      <li><FormattedMessage {...messages.overview5} /></li>
-                      <li><FormattedMessage {...messages.overview6} /></li>
-                      <li><FormattedMessage {...messages.overview7} /></li>
-                      <li><FormattedMessage {...messages.overview8} /></li>
-                      <li><FormattedMessage {...messages.overview9} /></li>
-                      <li><FormattedMessage {...messages.overview10} /></li>
-                      <li><FormattedMessage {...messages.overview11} /></li>
-                    </ul>
+                    <p><FormattedMessage {...messages.overview0} /></p>
+                    <p><FormattedHTMLMessage {...messages.overview1} /></p>
+                    <p><FormattedHTMLMessage {...messages.overview2} /></p>
+                    <p><FormattedHTMLMessage {...messages.overview3} /></p>
+                    <p><FormattedHTMLMessage {...messages.overview4} /></p>
+                    <p><FormattedHTMLMessage {...messages.overview5} /></p>
+                    <p><FormattedHTMLMessage {...messages.overview6} /></p>
+                    <p><FormattedHTMLMessage {...messages.overview7} /></p>
+                    <p><FormattedHTMLMessage {...messages.overview8} /></p>
+                    <p><FormattedHTMLMessage {...messages.overview9} /></p>
                   </Col>
                 </Row>
               </Grid>
@@ -89,11 +80,11 @@ const SpectrumPageHero = (props) =>
   </Hero>
 );
 
-SpectrumPageHero.propTypes = {
+ImpressumPageHero.propTypes = {
   backgroundImage: PropTypes.string.isRequired,
 };
 
-class SpectrumPage extends Component {
+class ImpressumPage extends Component {
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
   };
@@ -108,11 +99,11 @@ class SpectrumPage extends Component {
 
   render() {
     return (
-      <section id="spectrum-page">
-        <SpectrumPageHero backgroundImage="/images/bg00.jpg" />
+      <section id="impressum-page">
+        <ImpressumPageHero backgroundImage="/images/bg00.jpg" />
       </section>
     );
   }
 }
 
-export default connect(() => ({}))(SpectrumPage);
+export default connect(() => ({}))(ImpressumPage);

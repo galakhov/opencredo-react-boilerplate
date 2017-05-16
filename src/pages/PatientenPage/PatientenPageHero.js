@@ -1,5 +1,7 @@
 import React, { PropTypes } from 'react';
 import config from './PatientenPage.i18n';
+import { messages } from './PatientenPage.i18n';
+import { FormattedHTMLMessage } from 'react-intl';
 import { Hero, HeroContent, HeroBackground } from 'components/Hero/index';
 import { VAContainer, VAMiddle } from 'components/VAlign/VAlign';
 import styles from './PatientenPage.scss';
@@ -41,13 +43,13 @@ const PatientenPageHero = (props) =>
         <VAContainer horizontal vertical>
           <VAMiddle>
 
-            <div className="text-center">
+            <div className="text-left">
               <h1 className={styles['hero-title']}>
                 {config.name}
               </h1>
 
               <p className={styles['hero-description']}>
-                {config.description0}
+                <FormattedHTMLMessage {...messages.description0} />
               </p>
 
               <p className={styles['hero-description']}>
@@ -64,8 +66,8 @@ const PatientenPageHero = (props) =>
 
               <Grid style={styles_patients.container}>
                 <Row>
-                  <Col xs={12} className="text-center">
-                    <h1>123</h1>
+                  <Col xs={12} className="text-left">
+                    <h1></h1>
                   </Col>
                 </Row>
               </Grid>
