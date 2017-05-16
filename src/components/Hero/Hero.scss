@@ -3,10 +3,34 @@ $border-color: #b3d3b3;
 
 .hero {
   height: 850px;
-  min-height: 300px;
+  min-height: 350px;
   // position: relative; // fix for safari browser: false height of a block
   color: black;
-  transition: height .3s;
+  transition: height .75s;
+}
+
+@media screen and (min-height: 720px) {
+  .hero {
+    height: 850px;
+  }
+}
+
+@media screen and (max-height: 720px) {
+  .hero {
+    height: 650px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .hero {
+    height: 500px;
+  }
+}
+
+@media screen and (max-height: 480px) {
+  .hero {
+    height: 350px;
+  }
 }
 
 .move-up {
