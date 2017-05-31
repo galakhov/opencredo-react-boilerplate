@@ -5,8 +5,8 @@ import { connect } from 'react-redux';
 // import { Grid, Row, Col, Button } from 'react-bootstrap';
 import debug from 'debug';
 import { autobind } from 'core-decorators';
-import { messages } from './LandingPage.i18n';
-import LandingPageHero from './LandingPageHero';
+import { messages } from './PraxisPage.i18n';
+import PraxisPageHero from './PraxisPageHero';
 import {
   updateDocumentTitle,
   resetDocumentTitle,
@@ -18,7 +18,7 @@ if (__DEBUG__) {
 
 const log = debug('landing-page:info');
 
-export class LandingPage extends React.Component {
+export class PraxisPage extends React.Component {
 
   static propTypes = {
     isAuthenticated: PropTypes.bool,
@@ -51,8 +51,8 @@ export class LandingPage extends React.Component {
 
   render() {
     return (
-      <div id="landing-page">
-        <LandingPageHero backgroundImage="/images/bg_start.jpg" />
+      <div id="praxis-page">
+        <PraxisPageHero backgroundImage="/images/bg.jpg" />
         { /* <Grid>
           <Row>
             <Col xs={12}>
@@ -80,4 +80,4 @@ export class LandingPage extends React.Component {
 const mapStateToProps = (state) =>
   ({ isAuthenticated: state.isAuthenticated });
 
-export default connect(mapStateToProps)(LandingPage);
+export default connect(mapStateToProps)(PraxisPage);

@@ -1,5 +1,7 @@
 @import 'base';
 
+$links_color: #68a868;
+
 // Some best-practice CSS that's useful for most apps
 // Just remove them if they're not what you want
 html {
@@ -26,6 +28,11 @@ body {
 
 a {
   cursor: pointer;
+  color: $links_color;
+
+  &:hover {
+    color: $links_color;
+  }
 }
 
 .navbar-collapse {
@@ -51,27 +58,116 @@ a {
   span {
     font-family: $eurostile_font;
   }
+
+  ul {
+    padding-top: 3px;
+  }
 }
 
 ul {
   list-style-type: none;
   padding-left: 0px;
   text-align: left;
-  padding-top: 18px;
+  padding-top: 0px;
 
   li {
     padding-bottom: 5px;
   }
 }
 
-@media screen and (max-width: 912px) {
+ul.team-list {
+  padding-top: 0px;
+}
+
+div.team-photos {
+  margin-left: 1px;
+  img {
+    float:left;
+    margin-top:8px;
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .navbar-nav {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    margin-left: 16%;
+  }
+  .navbar {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+  }
+  .nav>li>a {
+    padding: 15px 10px;
+  }
+}
+
+@media screen and (max-width: 960px) {
   .navbar-brand>img {
     position: absolute;
     width: 180px;
   }
+  .navbar-nav {
+    margin-left: 14%;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .navbar-nav {
+    position: relative;
+  }
+
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+      overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .navbar-brand>img {
+    position: absolute;
+    width: 130px;
+    transition: 0.55s;
+  }
+}
+
+@media screen and (max-width: 912px) {
 
   .navbar-nav {
-    margin-left: 19%;
+    margin-left: 10%;
   }
 
   .navbar-default {
@@ -85,7 +181,7 @@ ul {
 
   .navbar-brand>img {
     width: 120px;
-    transition: 0.75s;
+    transition: 0.55s;
   }
 
   .navbar-nav {

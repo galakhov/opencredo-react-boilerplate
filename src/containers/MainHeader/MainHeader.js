@@ -43,7 +43,7 @@ class MainHeader extends React.Component {
         <Navbar.Header>
           <Navbar.Brand>
             <Link to="/">
-              <FormattedMessage {...links.home} />
+              <FormattedMessage {...links.startPage} />
               <img src="/images/radiologie.png" />
               { /* The above is equivalent to
                 <FormattedMessage id={links.home.id}
@@ -56,7 +56,7 @@ class MainHeader extends React.Component {
         <Navbar.Collapse>
           <Nav pullLeft>
             <li role="presentation">
-              <Link activeClassName="active" to="/">
+              <Link activeClassName="active" to="/praxis">
                 <FormattedMessage {...links.home} />
               </Link>
             </li>
@@ -88,6 +88,16 @@ class MainHeader extends React.Component {
             <li role="presentation">
               <Link activeClassName="active" to="/patientenservice">
                 <FormattedMessage {...links.service} />
+              </Link>
+            </li>
+            <li role="presentation">
+              <Link activeClassName="active" to="/karriere">
+                <FormattedMessage {...links.jobs} />
+              </Link>
+            </li>
+            <li role="presentation">
+              <Link activeClassName="active" to="/galerie">
+                <FormattedMessage {...links.gallery} />
               </Link>
             </li>
 

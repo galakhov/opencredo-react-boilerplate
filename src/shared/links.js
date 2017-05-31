@@ -1,8 +1,15 @@
 import config from 'app-config';
 
 export const links = {
-  home: {
+  startPage: {
     to: '/',
+    id: 'navigation.start',
+    description: 'Startseite',
+    defaultMessage: 'Landing Page',
+  },
+
+  home: {
+    to: '/praxis',
     id: 'navigation.home',
     description: 'Praxis',
     defaultMessage: config.name,
@@ -111,6 +118,20 @@ export const links = {
     id: 'navigation.service',
     description: 'Patientenservice Link',
     defaultMessage: 'Patientenservice',
+  },
+
+  jobs: {
+    to: '/karriere',
+    id: 'navigation.jobs',
+    description: 'Karriere Link',
+    defaultMessage: 'Karriere',
+  },
+
+  gallery: {
+    to: '/galerie',
+    id: 'navigation.gallery',
+    description: 'Galerie Link',
+    defaultMessage: 'Galerie',
   },
 
   logIn: {

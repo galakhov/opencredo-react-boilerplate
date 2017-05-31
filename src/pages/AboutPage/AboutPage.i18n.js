@@ -13,69 +13,49 @@ export const messages = {
     content: {
       id: 'aboutPage.content',
       defaultMessage: 'content',
+      title0: {
+        id: 'aboutPage.title0',
+        defaultMessage: 'Unsere Fachärzte für Diagnostische Radiologie:',
+      },
+      title1: {
+        id: 'aboutPage.title1',
+        defaultMessage: 'Unsere Fachärzte für Nuklearmedizin:',
+      },
+      title2: {
+        id: 'aboutPage.title1',
+        defaultMessage: 'Unsere Fachärzte für Radiologie:',
+      },
       doc0: {
         id: 'aboutPage.content.doc0',
         defaultMessage: 'Dr. med. K. Dabir',
-      },
-      doc0_title: {
-        id: 'aboutPage.content.doc0_title',
-        defaultMessage: 'Facharzt für Diagnostische Radiologie',
       },
       doc1: {
         id: 'aboutPage.content.doc1',
         defaultMessage: 'Dr. med. M. Hirning',
       },
-      doc1_title: {
-        id: 'aboutPage.content.doc1_title',
-        defaultMessage: 'Facharzt für Diagnostische Radiologie',
-      },
       doc2: {
         id: 'aboutPage.content.doc1',
         defaultMessage: 'Prof. Dr. med. L. W. Poll',
-      },
-      doc2_title: {
-        id: 'aboutPage.content.doc1_title',
-        defaultMessage: 'Facharzt für Diagnostische Radiologie',
       },
       doc3: {
         id: 'aboutPage.content.doc1',
         defaultMessage: 'Dr. med. D. Meyer',
       },
-      doc3_title: {
-        id: 'aboutPage.content.doc1_title',
-        defaultMessage: 'Facharzt für Diagnostische Radiologie',
-      },
       doc4: {
         id: 'aboutPage.content.doc1',
         defaultMessage: 'Peter Flake',
-      },
-      doc4_title: {
-        id: 'aboutPage.content.doc1_title',
-        defaultMessage: 'Facharzt für Diagnostische Radiologie',
       },
       doc5: {
         id: 'aboutPage.content.doc1',
         defaultMessage: 'Dr. med. D. Fröhling',
       },
-      doc5_title: {
-        id: 'aboutPage.content.doc1_title',
-        defaultMessage: 'Facharzt für Nuklearmedizin',
-      },
       doc6: {
         id: 'aboutPage.content.doc1',
         defaultMessage: 'Dr. med. R. Larraß',
       },
-      doc6_title: {
-        id: 'aboutPage.content.doc1_title',
-        defaultMessage: 'Facharzt für Nuklearmedizin',
-      },
       doc7: {
         id: 'aboutPage.content.doc1',
         defaultMessage: 'Dr. med. S. Cubukcu',
-      },
-      doc7_title: {
-        id: 'aboutPage.content.doc1_title',
-        defaultMessage: 'Facharzt für Diagnostische Radiologie',
       },
       doc8: {
         id: 'aboutPage.content.doc1',
@@ -89,18 +69,36 @@ export const messages = {
         id: 'aboutPage.content.doc1',
         defaultMessage: 'Karin Scheidung',
       },
-      doc9_title: {
-        id: 'aboutPage.content.doc1_title',
-        defaultMessage: 'Facharzt für Diagnostische Radiologie',
-      },
       doc10: {
         id: 'aboutPage.content.doc1',
         defaultMessage: 'Dr. med. I. Reddig',
       },
-      doc10_title: {
-        id: 'aboutPage.content.doc1_title',
-        defaultMessage: 'Fachärztin für Radiologie',
-      },
+    },
+  },
+  photos: {
+    doc1: {
+      id: '01',
+      defaultMessage: '<img src="./images/photo_01.jpg" alt="" border="0" />',
+    },
+    doc2: {
+      id: '02',
+      defaultMessage: '<img src="./images/photo_02.jpg" alt="" border="0" />',
+    },
+    doc3: {
+      id: '03',
+      defaultMessage: '<img src="./images/photo_03.jpg" alt="" border="0" />',
+    },
+    doc4: {
+      id: '04',
+      defaultMessage: '<img src="./images/photo_04.jpg" alt="" border="0" />',
+    },
+    doc5: {
+      id: '05',
+      defaultMessage: '<img src="./images/photo_05.jpg" alt="" border="0" />',
+    },
+    doc6: {
+      id: '06',
+      defaultMessage: '<img src="./images/photo_06.jpg" alt="" border="0" />',
     },
   },
 };

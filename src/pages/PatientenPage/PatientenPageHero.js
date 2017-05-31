@@ -26,7 +26,7 @@ const styles_patients = {
     paddingRight: 0,
   },
   bg: {
-    width: '1920px',
+    /* //width: '1920px', */
     height: '325px',
     backgroundSize: 'contain',
   },

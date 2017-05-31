@@ -22,8 +22,14 @@ import NuklearmedizinPage from 'pages/SpectrumPage/NuklearmedizinPage';
 import SchmerztherapiePage from 'pages/SpectrumPage/SchmerztherapiePage';
 import PatientenPage from 'pages/PatientenPage/PatientenPage';
 import ImpressumPage from 'pages/ImpressumPage/ImpressumPage';
+import JobsPage from 'pages/JobsPage/JobsPage';
+import GalleryPage from 'pages/GalleryPage/GalleryPage';
+import PraxisPage from 'pages/PraxisPage/PraxisPage';
 
 import ProfileEditPage from 'pages/ProfileEditPage/ProfileEditPage';
+
+// TODO: [] /spectrum/ routes do not work in production.
+// TODO: [] implementation of drag and drop (the moving content window) of the 'hero' container in viewports' constrains
 
 export default(
   // Route components without path will render their children...
@@ -34,23 +40,27 @@ export default(
       <Route path="/" component={LandingPage} />
       // Routes without a component will render their children:
       //<Route path="/pages" >
-        <IndexRedirect to="/about-us" />
+        <IndexRedirect to="/praxis" />
+        <Route path="/praxis" component={PraxisPage} />
         <Route path="/about-us" component={AboutPage} />
-        <Route path="/spectrum" component={SpectrumPage} />
-        <Route path="/spectrum/radiologie" component={RadiologiePage} />
-        <Route path="/spectrum/mrt" component={MRTPage} />
-        <Route path="/spectrum/herz-mrt" component={HerzMRTPage} />
-        <Route path="/spectrum/angiographie" component={AngiographiePage} />
-        <Route path="/spectrum/ct" component={CTPage} />
-        <Route path="/spectrum/herz-ct" component={HerzCTPage} />
-        <Route path="/spectrum/kardio-diagnostik" component={KardioDiagnostikPage} />
-        <Route path="/spectrum/roentgen" component={RoentgenPage} />
-        <Route path="/spectrum/ultraschall" component={UltraschallPage} />
-        <Route path="/spectrum/mammographie" component={MammographiePage} />
-        <Route path="/spectrum/nuklearmedizin" component={NuklearmedizinPage} />
-        <Route path="/spectrum/schmerztherapie" component={SchmerztherapiePage} />
+        <Route path="/spectrum" component={SpectrumPage}>
+          <Route path="/spectrum/radiologie" component={RadiologiePage} />
+          <Route path="/spectrum/mrt" component={MRTPage} />
+          <Route path="/spectrum/herz-mrt" component={HerzMRTPage} />
+          <Route path="/spectrum/angiographie" component={AngiographiePage} />
+          <Route path="/spectrum/ct" component={CTPage} />
+          <Route path="/spectrum/herz-ct" component={HerzCTPage} />
+          <Route path="/spectrum/kardio-diagnostik" component={KardioDiagnostikPage} />
+          <Route path="/spectrum/roentgen" component={RoentgenPage} />
+          <Route path="/spectrum/ultraschall" component={UltraschallPage} />
+          <Route path="/spectrum/mammographie" component={MammographiePage} />
+          <Route path="/spectrum/nuklearmedizin" component={NuklearmedizinPage} />
+          <Route path="/spectrum/schmerztherapie" component={SchmerztherapiePage} />
+        </Route>
 
         <Route path="/patientenservice" component={PatientenPage} />
+        <Route path="/karriere" component={JobsPage} />
+        <Route path="/galerie" component={GalleryPage} />
       //</Route>
         <Route path="/impressum" component={ImpressumPage} />
     </Route>
