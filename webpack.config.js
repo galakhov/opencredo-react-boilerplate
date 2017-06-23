@@ -101,6 +101,27 @@ const webpackconfig = {
         include: /src\/styles/,
         loader: 'style!css?sourceMap!postcss!sass',
       },
+      {
+        test: /\.svg$/,
+        loaders: [
+          {
+            loader: 'babel-loader',
+            query: {
+              presets: ['es2015']
+            }
+          },
+          {
+            loader: 'react-svg-loader',
+            query: {
+              jsx: true
+            }
+          }
+        ]
+      },
+      //{
+      //  test: /\.svg$/,
+      //  loader: 'babel!svg-react',
+      //},
       // File loaders
       /* eslint-disable */
       { test: /\.woff(\?.*)?$/,  loader: 'url?prefix=fonts/&name=[path][name].[ext]&limit=10000&mimetype=application/font-woff' },

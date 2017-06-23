@@ -7,6 +7,8 @@ import HeroPageLayout from 'containers/HeroPageLayout';
 import AdminPageLayout from 'containers/AdminPageLayout';
 import LandingPage from 'pages/LandingPage/LandingPage';
 import AboutPage from 'pages/AboutPage/AboutPage';
+/* eslint camelcase: 0 */
+import AboutPage_01 from 'pages/AboutPage/AboutPage_01';
 import SpectrumPage from 'pages/SpectrumPage/SpectrumPage';
 import RadiologiePage from 'pages/SpectrumPage/RadiologiePage';
 import MRTPage from 'pages/SpectrumPage/MRTPage';
@@ -29,8 +31,6 @@ import PraxisPage from 'pages/PraxisPage/PraxisPage';
 import ProfileEditPage from 'pages/ProfileEditPage/ProfileEditPage';
 
 // TODO: [] /spectrum/ routes do not work in production.
-// TODO: [] implementation of drag and drop (the moving content window) of the 'hero' container in viewports' constrains
-
 export default(
   // Route components without path will render their children...
   <Route component={AppContainer}>
@@ -42,7 +42,9 @@ export default(
       //<Route path="/pages" >
         <IndexRedirect to="/praxis" />
         <Route path="/praxis" component={PraxisPage} />
-        <Route path="/about-us" component={AboutPage} />
+        <Route path="/about-us" component={AboutPage}>
+          <Route path="/about-us/01" component={AboutPage_01} />
+        </Route>
         <Route path="/spectrum" component={SpectrumPage}>
           <Route path="/spectrum/radiologie" component={RadiologiePage} />
           <Route path="/spectrum/mrt" component={MRTPage} />

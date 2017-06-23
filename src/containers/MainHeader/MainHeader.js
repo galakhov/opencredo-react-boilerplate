@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedHTMLMessage, FormattedMessage } from 'react-intl';
 import { Link } from 'react-router';
 import { Navbar, Nav, NavDropdown, MenuItem } from 'react-bootstrap';
 // import UserDropdownMenu from 'components/UserDropdownMenu/UserDropdownMenu';
@@ -9,6 +9,7 @@ import { loginRequest, logoutRequest } from 'redux/modules/auth/auth-actions';
 import debug from 'debug';
 // import LanguageSelectionDropdown from '../LanguageSelectionDropdown/LanguageSelectionDropdown';
 import { links } from 'shared/links';
+import styles from './MainHeader.scss';
 
 if (__DEBUG__) {
   debug.enable('app:*');
@@ -44,7 +45,7 @@ class MainHeader extends React.Component {
           <Navbar.Brand>
             <Link to="/">
               <FormattedMessage {...links.startPage} />
-              <img src="/images/radiologie.png" />
+              <img src="/images/radiologie_logo.png" />
               { /* The above is equivalent to
                 <FormattedMessage id={links.home.id}
                                   description={links.home.description}
@@ -100,6 +101,11 @@ class MainHeader extends React.Component {
                 <FormattedMessage {...links.gallery} />
               </Link>
             </li>
+            <li role="presentation">
+              <Link activeClassName="active" to="/kontakt">
+                <FormattedMessage {...links.kontakt} />
+              </Link>
+            </li>
 
             { /* this.props.isAuthenticated && this.props.user ?
               <UserDropdownMenu user={this.props.user} logout={this.onLogout} />
@@ -114,6 +120,8 @@ class MainHeader extends React.Component {
             { /* <LanguageSelectionDropdown /> */ }
           </Nav>
         </Navbar.Collapse>
+        <div className={styles['radiologie-contact']}><FormattedHTMLMessage {...links.radiologie_contact} /></div>
+        <div className={styles['header-line']}></div>
       </Navbar>
     );
   }

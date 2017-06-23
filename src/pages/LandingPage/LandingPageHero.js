@@ -11,11 +11,12 @@ const styles_custom = {
   },
 };
 
+// <HeroBackground image={"./images/header_bg.png"} />
+
 const LandingPageHero = (props) =>
   (
     <Hero displayUnderNavbar>
       <HeroBackground image={props.backgroundImage} />
-      <HeroBackground image={"./images/header_bg.png"} />
       <HeroContent style={styles_custom.container}>
         <VAContainer horizontal vertical>
           <VAMiddle>

@@ -35,18 +35,28 @@ a {
   }
 }
 
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .navbar-collapse {
   background-color: rgba(#e7e7e7, 0);
+  margin-top: 38px;
+  position: relative;
 }
 
 .navbar-default {
   // background-color: rgba(#f8f8f8, 0.3);
   background-color: rgba(#f4f9f4, 0.4);
   border-color: rgba(#e7e7e7, 0.0);
+  height: 150px;
 
   .navbar-brand {
+    img {
+      margin-left: 15px;
+    }
     color: rgba(#777, 0.0);
-
     span {
       display: none;
     }
@@ -93,10 +103,10 @@ div.team-photos {
     width: 100%;
     position: absolute;
     top: 0px;
-    margin-left: 16%;
+    margin-left: 17%;
   }
   .navbar {
-    margin-bottom: 0px;
+    //margin-bottom: 0px;
     padding-bottom: 20px;
   }
   .nav>li>a {
@@ -107,7 +117,8 @@ div.team-photos {
 @media screen and (max-width: 960px) {
   .navbar-brand>img {
     position: absolute;
-    width: 180px;
+    width: 120px;
+    top: 25px;
   }
   .navbar-nav {
     margin-left: 14%;

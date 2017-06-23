@@ -134,6 +134,13 @@ export const links = {
     defaultMessage: 'Galerie',
   },
 
+  kontakt: {
+    to: '/kontakt',
+    id: 'navigation.kontakt',
+    description: 'Kontakt',
+    defaultMessage: 'Kontakt',
+  },
+
   logIn: {
     id: 'navigation.logIn',
     description: 'Log in',
@@ -146,11 +153,18 @@ export const links = {
     defaultMessage: 'Log out',
   },
 
-  kontakt: {
-    to: '/kontakt',
-    id: 'navigation.kontakt',
-    description: 'Kontakt',
-    defaultMessage: 'Kontakt',
+  downloads: {
+    to: '/downloads',
+    id: 'navigationdownloads',
+    description: 'Downloads',
+    defaultMessage: 'Downloads',
+  },
+
+  anfahrt: {
+    to: '/anfahrt',
+    id: 'navigation.anfahrt',
+    description: 'Anfahrt',
+    defaultMessage: 'Anfahrt',
   },
 
   policies: {
@@ -172,6 +186,12 @@ export const links = {
     id: 'navigation.help',
     description: 'Help',
     defaultMessage: 'Help',
+  },
+
+  radiologie_contact: {
+    id: 'navigation.info',
+    description: 'Info',
+    defaultMessage: '<span>Telefon:</span><br /><h1>0203 / 286 76 - 0</h1><span>Öffnungszeiten:</span><br /><h1>Mo • Di • Do:</h1><p>von 7:30 bis 17:30 Uhr</p><h1>Mi • Fr:</h1><p>von 7:30 bis 15:30 Uhr</p>',
   },
 
 };

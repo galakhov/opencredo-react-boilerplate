@@ -1,11 +1,14 @@
-$color-text: #000;
+$color-text: #fff;
 $border-color: #b3d3b3;
+$text-size: 15px;
+$background-color-content-block: rgba(#333, 0.9);
+$borders-color-content-block: rgba(#f8f8f8, 0.0);
 
 .hero {
   height: 850px;
   min-height: 350px;
   // position: relative; // fix for safari browser: false height of a block
-  color: black;
+  color: white;
   transition: height .75s;
 }
 
@@ -53,20 +56,30 @@ $border-color: #b3d3b3;
   width: 45%;
   min-width: 40%;
   min-height: 30%;
-  left: 23%;
-  background-color: rgba(#f8f8f8, 0.9);
+  left: 3%;
+  background-color: $background-color-content-block;
   // height: 65%;
   max-height: 80%;
   overflow-y: scroll;
-  border-top: 15px solid rgba(#f8f8f8, 0.0);
-  border-bottom: 15px solid rgba(#f8f8f8, 0.0);
+  border-top: 15px solid $borders-color-content-block;
+  border-bottom: 15px solid $borders-color-content-block;
 
   p:first-of-type {
     margin-top: 18px;
   }
 
-  p {
+  a {
+    color: $border-color;
+  }
+
+  p, ul li, h5 {
     text-align: left;
+    color: $color-text;
+    font-size: $text-size;
+  }
+
+  h5 {
+    font-weight: 500;
   }
 
   h1 {
@@ -102,14 +115,23 @@ $border-color: #b3d3b3;
 @media screen and (max-width: 1280px) {
   .content {
     width: 53%;
+    transition: 0.75s;
   }
 }
 
 @media screen and (max-width: 768px) {
   .content {
-    width: 70%;
+    width: 60%;
     min-width: 250px;
-    left: 10%;
+    left: 5%;
+    transition: 0.75s;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .content {
+    min-width: 250px;
+    left: 4%;
     transition: 0.75s;
   }
 }
