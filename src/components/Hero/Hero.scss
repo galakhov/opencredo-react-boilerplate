@@ -123,6 +123,15 @@ body #patienten-page .content {
   }
 }
 
+@media screen and (max-width: 960px) {
+  .content {
+    min-width: 250px;
+    left: 4%;
+    transition: 0.75s;
+    width: 68%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .content {
     width: 60%;
@@ -132,11 +141,10 @@ body #patienten-page .content {
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 680px) {
   .content {
-    min-width: 250px;
-    left: 4%;
-    transition: 0.75s;
+    left: 10%;
+    width: 80%;
   }
 }
 
