@@ -68,7 +68,7 @@ export class LandingPage extends React.Component {
   render() {
     return (
       <div id="landing-page" style={styles_custom.container}>
-        <LandingPageHero backgroundImage="/images/bg_radilogie0.jpg" />
+        <LandingPageHero backgroundImage="/images/bg_radiologie_welcome.jpg" />
           {
             /*
             <div className="radiologie_home" style={styles_custom.content_container}>

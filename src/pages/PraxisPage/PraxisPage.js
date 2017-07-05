@@ -52,7 +52,7 @@ export class PraxisPage extends React.Component {
   render() {
     return (
       <div id="praxis-page">
-        <PraxisPageHero backgroundImage="/images/bg_radiologie_outdoor.jpg" />
+        <PraxisPageHero backgroundImage="/images/bg_ragiologie_indoor.jpg" />
         { /* <Grid>
           <Row>
             <Col xs={12}>

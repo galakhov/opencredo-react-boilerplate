@@ -7,7 +7,9 @@ import { VAContainer, VAMiddle } from 'components/VAlign/VAlign';
 /* eslint camelcase: 0 */
 const styles_custom = {
   content_img: {
-    position: 'relative',
+    position: 'absolute',
+    top: '27%',
+    left: '11%',
   },
   content_container: {
     position: 'absolute',
@@ -21,30 +23,32 @@ const styles_custom = {
     maxHeight: '80%',
   },
   site_container: {
-    width: 'auto',
-    minWidth: '1920px',
+    width: '100%',
+    // minWidth: '1920px',
     height: '800px',
     position: 'relative',
   },
 };
 
 // <HeroBackground image={"./images/header_bg.png"} />
+/*
+  <div style={styles_custom.site_container}>
+    <VAContainer horizontal vertical>
+      <VAMiddle>
+*/
+// <div style={styles_custom.content_container}> </div>
 
 const LandingPageHero = (props) =>
   (
     <Hero displayUnderNavbar style={styles_custom.site_container}>
       <HeroBackground image={props.backgroundImage} />
-
-      <div style={styles_custom.site_container}>
         <VAContainer horizontal vertical>
           <VAMiddle>
-              <div style={styles_custom.content_container}>
+            <div className="text-left">
                 <img src="/images/welcome.png" width="800" style={styles_custom.content_img} />
-              </div>
+            </div>
           </VAMiddle>
         </VAContainer>
-      </div>
-
       {
         /* <HeroContent style={styles_custom.container}>
 

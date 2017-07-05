@@ -11,6 +11,7 @@ import {
   resetDocumentTitle,
 } from 'redux/modules/document-title/document-title';
 
+
 class PatientenPage extends Component {
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
@@ -27,7 +28,7 @@ class PatientenPage extends Component {
   render() {
     return (
       <section id="patienten-page">
-        <PatientenPageHero backgroundImage="/images/bg_radiologie.jpg" />
+        <PatientenPageHero backgroundImage="/images/bg_radiologie_patients.jpg" />
         {
           /*
           <Hero displayUnderNavbar>

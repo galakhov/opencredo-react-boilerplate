@@ -17,11 +17,13 @@ export const messages = {
   },
   overview3: {
     id: 'page.overview3',
-    defaultMessage: 'Zuständige Aufsichtsbehörde:<br />Kassenärztliche Vereinigung Nordrhein, Emanuel-Leutze-Str. 8, 40547 Düsseldorf',
+    defaultMessage: ' ',
+    // defaultMessage: 'Zuständige Aufsichtsbehörde:<br />Kassenärztliche Vereinigung Nordrhein, Emanuel-Leutze-Str. 8, 40547 Düsseldorf',
   },
   overview4: {
     id: 'page.overview4',
-    defaultMessage: 'Zuständige Kammer:<br />Landesärztekammer Nordrhein, Tersteegenstr. 31, 40474 Düsseldorf',
+    defaultMessage: ' ',
+    // defaultMessage: 'Zuständige Kammer:<br />Landesärztekammer Nordrhein, Tersteegenstr. 31, 40474 Düsseldorf',
   },
   overview5: {
     id: 'page.overview5',

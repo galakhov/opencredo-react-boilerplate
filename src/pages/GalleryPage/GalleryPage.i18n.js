@@ -21,7 +21,8 @@ export const messages = {
   },
   overview4: {
     id: 'page.overview4',
-    defaultMessage: 'Zuständige Kammer:<br />Landesärztekammer Nordrhein, Tersteegenstr. 31, 40474 Düsseldorf',
+    defaultMessage: '',
+    // defaultMessage: 'Zuständige Kammer:<br />Landesärztekammer Nordrhein, Tersteegenstr. 31, 40474 Düsseldorf',
   },
   overview5: {
     id: 'page.overview5',

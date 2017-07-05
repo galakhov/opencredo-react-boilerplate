@@ -16,17 +16,10 @@ const PraxisPageHero = (props) =>
                 {config.name}<br />
               </h1>
 
-              <p className={styles['hero-description']}>
-                <br />{config.description1}
-              </p>
+              <p className={styles['hero-description']}>{config.description1}</p>
 
-              <p className={styles['hero-description']}>
-                {config.description2}
-              </p>
+              <p className={styles['hero-description']}>{config.description2}</p>
 
-              <p className={styles['hero-description']}>
-                {config.description3}
-              </p>
             </div>
           </VAMiddle>
         </VAContainer>

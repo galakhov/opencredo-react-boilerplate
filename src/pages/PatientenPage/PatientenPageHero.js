@@ -30,38 +30,33 @@ const styles_patients = {
     height: '325px',
     backgroundSize: 'contain',
   },
+  custom_container_position: {
+    left: '13%',
+  },
 };
 
 // https://facebook.github.io/react/docs/dom-elements.html#all-supported-html-attributeshero
-
 const PatientenPageHero = (props) =>
   (
     <Hero displayUnderNavbar>
       <HeroBackground image={props.backgroundImage} />
-      <HeroContent>
+      <HeroContent style={styles_patients.custom_container_position}> { /* styles={props.styles} */ }
         <VAContainer horizontal vertical>
           <VAMiddle>
-
             <div className="text-left">
               <h1 className={styles['hero-title']}>
                 {config.name}
               </h1>
 
-              <p className={styles['hero-description']}>
-                <FormattedHTMLMessage {...messages.description0} />
-              </p>
+              <p className={styles['hero-description']}>{config.description1}</p>
+              <p className={styles['hero-description']}>{config.description2}</p>
+              <p className={styles['hero-description']}><b>{config.description3}</b></p>
 
-              <p className={styles['hero-description']}>
-                <b>{config.description1}</b>
-              </p>
+              <h1 className={styles['hero-title']}><FormattedHTMLMessage {...messages.description01_title} /></h1>
+              <p className={styles['hero-description']}><FormattedHTMLMessage {...messages.description01} /></p>
 
-              <p className={styles['hero-description']}>
-                <FormattedHTMLMessage {...messages.description01} />
-              </p>
-
-              <p className={styles['hero-description']}>
-                {config.description2}
-              </p>
+              <h1 className={styles['hero-title']}><FormattedHTMLMessage {...messages.description02_title} /></h1>
+              <p className={styles['hero-description']}><FormattedHTMLMessage {...messages.description02} /></p>
 
               <Grid style={styles_patients.container}>
                 <Row>
@@ -79,6 +74,7 @@ const PatientenPageHero = (props) =>
 
 PatientenPageHero.propTypes = {
   backgroundImage: PropTypes.string.isRequired,
+  styles: PropTypes.string.isRequired,
 };
 
 export default PatientenPageHero;

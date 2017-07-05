@@ -41,7 +41,7 @@ export default {
   'navigation.spectrum.mammographie': 'Digitale Mammographie',
   'navigation.spectrum.nuklearmedizin': 'Nuklearmedizin',
   'navigation.spectrum.schmerztherapie': 'Schmerztherapie',
-  'navigation.service': 'Patientenservice',
+  'navigation.service': 'Unsere Leistungen',
   'profile.edit.title': 'Edit Profile',
   'profile.form.age.placeholder': 'Age',
   'profile.form.emailVerified.label': 'Email verified',

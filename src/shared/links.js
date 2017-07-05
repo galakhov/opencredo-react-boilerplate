@@ -138,7 +138,7 @@ export const links = {
     to: '/impressum',
     id: 'navigation.kontakt',
     description: 'Kontakt',
-    defaultMessage: 'Kontakt',
+    defaultMessage: 'Impressum',
   },
 
   logIn: {
@@ -191,7 +191,7 @@ export const links = {
   radiologie_contact: {
     id: 'navigation.info',
     description: 'Info',
-    defaultMessage: '<span>Telefon:</span><br /><h1>0211 / 959 83 40</h1><span>Öffnungszeiten:</span><br /><h1>Mo • Di • Do:</h1><p>von 7:30 bis 17:30 Uhr</p><h1>Mi • Fr:</h1><p>von 7:30 bis 15:30 Uhr</p>',
+    defaultMessage: '<span>Telefon:</span><h1>0211 / 959 83 40</h1><br /><span>Öffnungszeiten:</span><br /><h1>Mo — Fr: 08.30 — 16.00 Uhr</h1><p>und nach Vereinbarung</p>',
   },
 
 };

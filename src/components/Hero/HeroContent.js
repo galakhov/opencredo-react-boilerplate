@@ -9,7 +9,7 @@ export default class HeroContent extends React.Component {
   render() {
     const children = this.props.children;
     return (
-      <div className={styles.content}>
+      <div className={styles.content}> { /* style={styles_patients.custom_container_position} */ }
         {children || ''}
       </div>
     );

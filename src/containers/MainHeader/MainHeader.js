@@ -90,7 +90,7 @@ class MainHeader extends React.Component {
             </NavDropdown> */
             }
             <li role="presentation">
-              <Link activeClassName="active" to="/patientenservice">
+              <Link activeClassName="active" to="/leistungen">
                 <FormattedMessage {...links.service} />
               </Link>
             </li>

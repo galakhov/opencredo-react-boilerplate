@@ -64,7 +64,7 @@ export default(
           */
         }
 
-        <Route path="/patientenservice" component={PatientenPage} />
+        <Route path="/leistungen" component={PatientenPage} />
         <Route path="/karriere" component={JobsPage} />
         <Route path="/galerie" component={GalleryPage} />
       //</Route>
