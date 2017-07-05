@@ -27,7 +27,7 @@ class PatientenPage extends Component {
   render() {
     return (
       <section id="patienten-page">
-        <PatientenPageHero backgroundImage="/images/bg0.jpg" />
+        <PatientenPageHero backgroundImage="/images/bg_radiologie.jpg" />
         {
           /*
           <Hero displayUnderNavbar>

@@ -38,7 +38,6 @@ const PatientenPageHero = (props) =>
   (
     <Hero displayUnderNavbar>
       <HeroBackground image={props.backgroundImage} />
-      <HeroBackground image={"./images/header_bg.png"} style={styles_patients.bg} />
       <HeroContent>
         <VAContainer horizontal vertical>
           <VAMiddle>
@@ -57,11 +56,11 @@ const PatientenPageHero = (props) =>
               </p>
 
               <p className={styles['hero-description']}>
-                {config.description2}
+                <FormattedHTMLMessage {...messages.description01} />
               </p>
 
               <p className={styles['hero-description']}>
-                {config.description3}
+                {config.description2}
               </p>
 
               <Grid style={styles_patients.container}>

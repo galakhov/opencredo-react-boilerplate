@@ -9,11 +9,11 @@ export const messages = {
   },
   overview1: {
     id: 'page.overview1',
-    defaultMessage: 'Überörtliche Radiologische Gemeinschaftspraxis<br />Duisburg-Moers<br />Dres. Dabir/Hirning/Poll und Kollegen<br />Radiologie am Kaiserteich<br />Musterstr. 1<br />2345 Düsseldorf<br />47051 Duisburg',
+    defaultMessage: 'Radiologie am Kaiserteich<br />Reichsstraße 59 · 40217 Düsseldorf<br />',
   },
   overview2: {
     id: 'page.overview2',
-    defaultMessage: 'Telefon:	+49 211 123 456 7<br />Fax:	F +49 211 123 456 8<br />E-Mail: info@radiologie-am-kaiserteich.de<br />Web: <a href="http://www.radiologie-am-kaiserteich.de">www.radiologie-am-kaiserteich.de</a>',
+    defaultMessage: 'T (0) 211 / 959 83 40<br />F (0) 211 / 959 83 411<br /><a href="mailto:info@radiologie-kaiserteich.de">info@radiologie-kaiserteich.de</a><br /><a href="www.radiologie-kaiserteich.de">radiologie-kaiserteich.de</a>',
   },
   overview3: {
     id: 'page.overview3',

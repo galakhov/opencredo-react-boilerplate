@@ -1,13 +1,30 @@
 import React, { PropTypes } from 'react';
-import config from 'app-config';
-import { Hero, HeroContent, HeroBackground } from 'components/Hero/index';
+// import config from 'app-config';
+import { Hero, HeroBackground } from 'components/Hero/index';
 import { VAContainer, VAMiddle } from 'components/VAlign/VAlign';
-import styles from './LandingPage.scss';
+// import styles from './LandingPage.scss';
 
 /* eslint camelcase: 0 */
 const styles_custom = {
-  container: {
-    left: '52%',
+  content_img: {
+    position: 'relative',
+  },
+  content_container: {
+    position: 'absolute',
+    left: '13%',
+    top: '38%',
+  },
+  content_landingpage: {
+    backgroundColor: 'rgba(0,0,0,0)',
+    position: 'relative',
+    width: '45%',
+    maxHeight: '80%',
+  },
+  site_container: {
+    width: 'auto',
+    minWidth: '1920px',
+    height: '800px',
+    position: 'relative',
   },
 };
 
@@ -15,52 +32,65 @@ const styles_custom = {
 
 const LandingPageHero = (props) =>
   (
-    <Hero displayUnderNavbar>
+    <Hero displayUnderNavbar style={styles_custom.site_container}>
       <HeroBackground image={props.backgroundImage} />
-      <HeroContent style={styles_custom.container}>
+
+      <div style={styles_custom.site_container}>
         <VAContainer horizontal vertical>
           <VAMiddle>
-            <div className="text-left">
-              <h1 className={styles['hero-title']}>
-                {config.news}
-              </h1>
-
-              <p className={styles['hero-description']}><b>{config.news_entry0_date}</b>
-              <h5>{config.news_entry0_title}</h5></p>
-              <p className={styles['hero-description']}>
-                {config.news_entry0_text}
-              </p>
-
-              <br />
-              <p className={styles['hero-description']}><b>{config.news_entry1_date}</b> <h5>{config.news_entry1_title}</h5></p>
-              <p className={styles['hero-description']}>
-                {config.news_entry1_text}
-              </p>
-
-              <br />
-              <h1 className={styles['hero-title']}>
-                {config.landingPage}<br />
-              </h1>
-
-              <p className={styles['hero-description']}>
-                <br />{config.landingPage_p0}
-              </p>
-
-              <p className={styles['hero-description']}>
-                {config.landingPage_p1}
-              </p>
-
-              <p className={styles['hero-description']}>
-                {config.landingPage_p2}
-              </p>
-
-              <p className={styles['hero-description']}>
-                {config.landingPage_p3}
-              </p>
-            </div>
+              <div style={styles_custom.content_container}>
+                <img src="/images/welcome.png" width="800" style={styles_custom.content_img} />
+              </div>
           </VAMiddle>
         </VAContainer>
-      </HeroContent>
+      </div>
+
+      {
+        /* <HeroContent style={styles_custom.container}>
+
+          <VAContainer horizontal vertical>
+            <VAMiddle>
+              <div className="text-left">
+                <h1 className={styles['hero-title']}>
+                  {config.news}
+                </h1>
+
+                <p className={styles['hero-description']}><b>{config.news_entry0_date}</b>
+                <h5>{config.news_entry0_title}</h5></p>
+                <p className={styles['hero-description']}>
+                  {config.news_entry0_text}
+                </p>
+
+                <br />
+                <p className={styles['hero-description']}><b>{config.news_entry1_date}</b> <h5>{config.news_entry1_title}</h5></p>
+                <p className={styles['hero-description']}>
+                  {config.news_entry1_text}
+                </p>
+
+                <br />
+                <h1 className={styles['hero-title']}>
+                  {config.landingPage}<br />
+                </h1>
+
+                <p className={styles['hero-description']}>
+                  <br />{config.landingPage_p0}
+                </p>
+
+                <p className={styles['hero-description']}>
+                  {config.landingPage_p1}
+                </p>
+
+                <p className={styles['hero-description']}>
+                  {config.landingPage_p2}
+                </p>
+
+                <p className={styles['hero-description']}>
+                  {config.landingPage_p3}
+                </p>
+              </div>
+            </VAMiddle>
+          </VAContainer>
+      </HeroContent> */ }
     </Hero>
   );
 

@@ -1,7 +1,8 @@
 import React, { PropTypes } from 'react';
 import { FormattedHTMLMessage, FormattedMessage } from 'react-intl';
 import { Link } from 'react-router';
-import { Navbar, Nav, NavDropdown, MenuItem } from 'react-bootstrap';
+// import { Navbar, Nav, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 // import UserDropdownMenu from 'components/UserDropdownMenu/UserDropdownMenu';
 import { connect } from 'react-redux';
 import { autobind } from 'core-decorators';
@@ -62,15 +63,16 @@ class MainHeader extends React.Component {
               </Link>
             </li>
 
-            <li role="presentation">
+            { /* <li role="presentation">
               <Link activeClassName="active" to="/about-us">
                 <FormattedMessage {...links.aboutUs} />
               </Link>
-            </li>
+            </li> */
+            }
               { /* <Link activeClassName="active" to="/spectrum">
                 <FormattedMessage {...links.spectrum} />
               </Link> */ }
-            <NavDropdown activeClassName="active" eventKey="/spectrum" title="Behandlungsspektrum" id="nav-dropdown">
+            { /* <NavDropdown activeClassName="active" eventKey="/spectrum" title="Behandlungsspektrum" id="nav-dropdown">
               <MenuItem eventKey="/spectrum" href="/spectrum"><FormattedMessage {...links.spectrum} /></MenuItem>
               <MenuItem eventKey="/spectrum/radiologie" href="/spectrum/radiologie"><FormattedMessage {...links.spectrum_radiologie} /></MenuItem>
               <MenuItem eventKey="/spectrum/mrt" href="/spectrum/mrt"><FormattedMessage {...links.spectrum_mrt} /></MenuItem>
@@ -84,23 +86,28 @@ class MainHeader extends React.Component {
               <MenuItem eventKey="/spectrum/mammographie" href="/spectrum/mammographie"><FormattedMessage {...links.spectrum_mammographie} /></MenuItem>
               <MenuItem eventKey="/spectrum/nuklearmedizin" href="/spectrum/nuklearmedizin"><FormattedMessage {...links.spectrum_nuklearmedizin} /></MenuItem>
               <MenuItem eventKey="/spectrum/schmerztherapie" href="/spectrum/schmerztherapie"><FormattedMessage {...links.spectrum_schmerztherapie} /></MenuItem>
-              { /* <MenuItem divider /> */ }
-            </NavDropdown>
+              { // <MenuItem divider /> }
+            </NavDropdown> */
+            }
             <li role="presentation">
               <Link activeClassName="active" to="/patientenservice">
                 <FormattedMessage {...links.service} />
               </Link>
             </li>
-            <li role="presentation">
-              <Link activeClassName="active" to="/karriere">
-                <FormattedMessage {...links.jobs} />
-              </Link>
-            </li>
-            <li role="presentation">
-              <Link activeClassName="active" to="/galerie">
-                <FormattedMessage {...links.gallery} />
-              </Link>
-            </li>
+            {
+              /*
+              <li role="presentation">
+                <Link activeClassName="active" to="/karriere">
+                  <FormattedMessage {...links.jobs} />
+                </Link>
+              </li>
+              <li role="presentation">
+                <Link activeClassName="active" to="/galerie">
+                  <FormattedMessage {...links.gallery} />
+                </Link>
+              </li>
+              */
+            }
             <li role="presentation">
               <Link activeClassName="active" to="/kontakt">
                 <FormattedMessage {...links.kontakt} />

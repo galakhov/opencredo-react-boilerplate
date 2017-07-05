@@ -3,6 +3,7 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 // import styles from './LandingPage.scss';
 // import { Grid, Row, Col, Button } from 'react-bootstrap';
+// import { Grid, Row, Col } from 'react-bootstrap';
 import debug from 'debug';
 import { autobind } from 'core-decorators';
 import { messages } from './LandingPage.i18n';
@@ -17,6 +18,21 @@ if (__DEBUG__) {
 }
 
 const log = debug('landing-page:info');
+
+/* eslint camelcase: 0 */
+const styles_custom = {
+  container: {
+    // width: 'auto',
+  },
+  content_img: {
+    position: 'relative',
+  },
+  content_container: {
+    position: 'absolute',
+    left: '13%',
+    top: '38%',
+  },
+};
 
 export class LandingPage extends React.Component {
 
@@ -51,8 +67,24 @@ export class LandingPage extends React.Component {
 
   render() {
     return (
-      <div id="landing-page">
-        <LandingPageHero backgroundImage="/images/bg_start.jpg" />
+      <div id="landing-page" style={styles_custom.container}>
+        <LandingPageHero backgroundImage="/images/bg_radilogie0.jpg" />
+          {
+            /*
+            <div className="radiologie_home" style={styles_custom.content_container}>
+            </div>
+
+            <Grid>
+              <Row>
+                <Col xs={12} md={12} style={styles_custom.content_container}>
+                  <img src="/images/welcome.png" width="800" style={styles_custom.content_img} />
+                </Col>
+              </Row>
+            </Grid>
+
+            */
+          }
+
         { /* <Grid>
           <Row>
             <Col xs={12}>

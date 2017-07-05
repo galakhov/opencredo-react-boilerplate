@@ -70,10 +70,6 @@ export const messages = {
         route: '/about-us/08',
         defaultMessage: 'Dr. med. D. Dabir-Scherfeld',
       },
-      doc8_title: {
-        id: 'aboutPage.content.doc8_title',
-        defaultMessage: 'Fachärztin für Radiologie',
-      },
       doc9: {
         id: 'aboutPage.content.doc9',
         route: '/about-us/09',
@@ -87,6 +83,8 @@ export const messages = {
     },
   },
   photos: {
+    id: 'aboutPage.photos',
+    defaultMessage: 'Bilder von unseren Ärzten',
     doc1: {
       id: '01',
       route: '/about-us/01',

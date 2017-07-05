@@ -26,7 +26,6 @@ const ImpressumPageHero = (props) =>
 (
     <Hero displayUnderNavbar>
       <HeroBackground image={props.backgroundImage} />
-      <HeroBackground image={"./images/header_bg.png"} />
 
       <HeroContent>
         <VAContainer horizontal vertical>
@@ -100,7 +99,7 @@ class ImpressumPage extends Component {
   render() {
     return (
       <section id="impressum-page">
-        <ImpressumPageHero backgroundImage="/images/bg00.jpg" />
+        <ImpressumPageHero backgroundImage="/images/bg_contact.jpg" />
       </section>
     );
   }

@@ -101,7 +101,7 @@ const webpackconfig = {
         include: /src\/styles/,
         loader: 'style!css?sourceMap!postcss!sass',
       },
-      {
+      /*{
         test: /\.svg$/,
         loaders: [
           {
@@ -117,7 +117,7 @@ const webpackconfig = {
             }
           }
         ]
-      },
+      },*/
       //{
       //  test: /\.svg$/,
       //  loader: 'babel!svg-react',
