@@ -41,6 +41,7 @@ const SchmerztherapiePageHero = (props) =>
                       </h1>
 
                       <p><FormattedMessage {...messages.overview0} /></p>
+                      <p><FormattedMessage {...messages.overview1} /></p>
                   </Col>
                 </Row>
               </Grid>

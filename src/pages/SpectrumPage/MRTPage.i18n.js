@@ -1,19 +1,19 @@
 export const messages = {
   title: { /* MRT */
     id: 'page.title',
-    defaultMessage: 'Fortschrittliche Technik für Ihre Untersuchung',
+    defaultMessage: 'Magnetresonanztomographie',
   },
   overview0: {
     id: 'page.desc0',
-    defaultMessage: 'Die Magnetresonanztomographie oder auch Kernspintomographie genannt, zählt zu den diagnostischen Verfahren zur Darstellung von Gelenken, Gewebe und innerer Organe mittels Magnetfeld und Radiowellen. Der MRT liefert somit schnell und präzise Schnittbilder des gesamten Körpers.',
+    defaultMessage: 'Die Magnetresonanztomographie (Kernspintomographie) ist ein modernes Schnittbildverfahren, welches ein starkes Magnetfeldes und Radiowellen zur Bilderzeugung nutzt – ohne Anwendung von Röntgenstrahlen. Es können sämtliche Organsysteme nicht-invasiv untersucht werden. Bei einigen Fragestellungen ist die Gabe eines MR-Kontrastmittels (Gadolinium) in die Arm- oder Handvene erforderlich.',
   },
   overview1: {
     id: 'page.desc1',
-    defaultMessage: 'Im MRT können Gewebeveränderungen sehr leicht entdeckt werden, da der Kontrast zwischen gesundem und krankem Gewebe deutlich zu erkennen ist.',
+    defaultMessage: 'Wesentliche diagnostische Vorteile der MRT liegen u.a. im hohen Weichteilkontrast sowie in der Gefäss- und Gelenkdiagnostik. Patienten mit eingebauten Schrittmachern oder Defibrillatoren bzw. Medikamentenpumpen können nicht untersucht werden. Hier sollte Rücksprache mit unserem Radiologen im Vorfeld erfolgen. Unser hochmodernes MRT sorgt für einen besonders hohen Patientenkomfort während der Untersuchung durch die größte auf dem Markt derzeit verfügbare Öffnung (Gantry) des Magneten.',
   },
   overview2: {
     id: 'page.desc2',
-    defaultMessage: 'Mit diesem MRT sind Ganzkörperuntersuchungen möglich. Die Untersuchung verläuft schnell und leise. Während der Tomographie werden Sie einem Magnetfeld ausgesetzt, das Einfluss auf die Anordnung der Wasserstoffatome der Körperzellen hat. Diese Atome nehmen innerhalb des Magnetfeldes eine bestimmte Position an, die abgebildet werden kann. Radiowellen bewirken anschließend, dass die Atome nach der Untersuchung in ihren natürlichen Zustand zurückkehren. Das Verfahren ist wenig belastend und arbeitet ohne ionisierende Strahlen (energiereiche Strahlungsarten, wie z.B. Röntgenstrahlen). Bislang ist keine schädigende Wirkung des Verfahrens bekannt.',
+    defaultMessage: 'MR-Untersuchungen des Herzens sowie Ganzkörper-MR-Untersuchungen inkl. Ganzkörpergefäßdarstellungen gehören ebenso zum Leistungsspektrum wie die Kontrastmittel-Untersuchung von Gelenken (direkte MR-Arthrographie).',
   },
 };
 

@@ -1,11 +1,15 @@
 export const messages = {
   title: { /* Schmerztherapie */
     id: 'page.title',
-    defaultMessage: 'Schmerztherapie',
+    defaultMessage: 'CT-gesteuerte Schmerztherapie',
   },
   overview0: {
     id: 'page.desc0',
-    defaultMessage: 'Schmerzen betreffen jeden von uns und schränken uns in unserem täglichen Leben teilweise enorm ein. Um die Schmerzen schnellstmöglich zu beseitigen, ist eine gründliche Diagnosefindung von enormer Bedeutung und eine entsprechende Therapie einzuleiten. Schmerzen zu lindern oder zu beseitigen, hat oberste Priorität, sodass Sie schnell wieder die gewohnte Lebensqualität zurückbekommen. Sprechen Sie uns an und wir entwickeln eine individuelle Therapie gegen Ihre Schmerzen.',
+    defaultMessage: 'Bei der periradikulären (Schmerz)-Therapie (PRT) wird ein Gemisch aus einem örtlichen Betäubungsmittel und Cortison CT-gesteuert mit einer feinen Nadel in die Nähe einer Nervenwurzel injiziert, die möglicherweise durch Verschleißveränderungen, eine Bandscheibenvorwölbung oder einen Bandscheibenvorfall irritiert wird.',
+  },
+  overview1: {
+    id: 'page.desc1',
+    defaultMessage: 'Die PRT kann ambulant an der gesamten Wirbelsäule durchgeführt und wiederholt werden und dauert nur wenige Minuten.',
   },
 };
 

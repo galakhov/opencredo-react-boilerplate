@@ -1,6 +1,6 @@
 module.exports = {
   server: {
-    hostname: '<your production domain>',
+    hostname: 'www.radiologie.4dd-communication.com',
     port: 80,
   },
 

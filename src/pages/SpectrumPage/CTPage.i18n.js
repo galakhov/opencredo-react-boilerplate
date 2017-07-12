@@ -1,19 +1,23 @@
 export const messages = {
   title: { /* CT */
     id: 'page.title',
-    defaultMessage: 'Die CT-Untersuchung der Herzkranzarterien',
+    defaultMessage: 'Computertomographie (CT)',
   },
   overview0: {
     id: 'page.desc0',
-    defaultMessage: 'Die Computertomographie (CT) ist ein Röntgenverfahren, bei dem die Schnittbilder des Körpers angefertigt werden. Diese Bilder kann der Computer in dreidimensionale Darstellungen umwandeln. Bei der CT-Aufnahme liegen Sie – in Bauch- oder Rückenlage – auf einer bequemen Liege, mit der Sie durch eine kurze, geräumige Röntgenröhre gefahren werden.',
+    defaultMessage: 'Die Spiral-Computertomographie ist ein hochmodernes Schnittbildverfahren. Sie liefert digitale Schnittbilder und stellt die untersuchte Körperregion überlagerungsfrei dar.',
   },
   overview1: {
     id: 'page.desc1',
-    defaultMessage: 'Die Bilder entstehen während des Rotierens der Röntgenröhre. Das CT-Gerät in unser Praxis zeichnet sich durch sehr kurze Untersuchungszeiten und eine äußerst geringe Strahlenbelastung aus. In einigen Fällen ist es nötig, dass Ihnen bei uns vor Ort ein gut verträgliches jodhaltiges Kontrastmittel gespritzt wird, um die Weichteile besser abgrenzen zu können.',
+    defaultMessage: 'Der Patient liegt auf einer bequemen Untersuchungsliege, welche sich langsam durch die Öffnung des CT bewegt. Die Untersuchungen dauern nur wenige Sekunden. Die akquirierten Bildinformationen werden zu hochaufgelösten dünnen Schichten berechnet und können dreidimensional dargestellt werden.',
   },
   overview2: {
     id: 'page.desc2',
-    defaultMessage: 'Mit Hilfe dieses bildgebenden Verfahrens ist es uns möglich, eine präzise Diagnose zustellen und eine dementsprechende Therapie einzuleiten.',
+    defaultMessage: 'Für manche Untersuchungen und Fragestellungen ist es notwendig, dass jodhaltiges Kontrastmittel in eine Arm- oder Handvene injiziert wird.',
+  },
+  overview3: {
+    id: 'page.desc3',
+    defaultMessage: 'Unser hochmoderner Computertomograph entspricht der neuesten Gerätetechnik und zeichnet sich vor allem durch höchste Bildqualität bei gleichzeitiger Reduzierung der Strahlendosen aus.',
   },
 };
 

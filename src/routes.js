@@ -1,27 +1,29 @@
 import React from 'react';
-import { Route, IndexRedirect } from 'react-router';
+import { IndexRoute, Route, IndexRedirect } from 'react-router';
 import { requireAuthentication as restrict } from 'containers/AuthenticatedComponent';
 
+/* eslint camelcase: 0 */
 import AppContainer from 'containers/AppContainer';
 import HeroPageLayout from 'containers/HeroPageLayout';
 import AdminPageLayout from 'containers/AdminPageLayout';
 import LandingPage from 'pages/LandingPage/LandingPage';
 // import AboutPage from 'pages/AboutPage/AboutPage';
-/* eslint camelcase: 0 */
 /* import AboutPage_01 from 'pages/AboutPage/AboutPage_01';
 import SpectrumPage from 'pages/SpectrumPage/SpectrumPage';
 import RadiologiePage from 'pages/SpectrumPage/RadiologiePage';
-import MRTPage from 'pages/SpectrumPage/MRTPage';
 import HerzMRTPage from 'pages/SpectrumPage/HerzMRTPage';
 import AngiographiePage from 'pages/SpectrumPage/AngiographiePage';
-import CTPage from 'pages/SpectrumPage/CTPage';
 import HerzCTPage from 'pages/SpectrumPage/HerzCTPage';
-import KardioDiagnostikPage from 'pages/SpectrumPage/KardioDiagnostikPage';
+import KardioDiagnostikPage from 'pages/SpectrumPage/KardioDiagnostikPage';*/
+
+/* eslint camelcase: 0 */
 import RoentgenPage from 'pages/SpectrumPage/RoentgenPage';
-import UltraschallPage from 'pages/SpectrumPage/UltraschallPage';
-import MammographiePage from 'pages/SpectrumPage/MammographiePage';
-import NuklearmedizinPage from 'pages/SpectrumPage/NuklearmedizinPage';
-import SchmerztherapiePage from 'pages/SpectrumPage/SchmerztherapiePage'; */
+import CTPage from 'pages/SpectrumPage/CTPage';
+import MRTPage from 'pages/SpectrumPage/MRTPage';
+// import UltraschallPage from 'pages/SpectrumPage/UltraschallPage';
+// import MammographiePage from 'pages/SpectrumPage/MammographiePage';
+// import NuklearmedizinPage from 'pages/SpectrumPage/NuklearmedizinPage';
+import SchmerztherapiePage from 'pages/SpectrumPage/SchmerztherapiePage';
 import PatientenPage from 'pages/PatientenPage/PatientenPage';
 import ImpressumPage from 'pages/ImpressumPage/ImpressumPage';
 import JobsPage from 'pages/JobsPage/JobsPage';
@@ -64,7 +66,13 @@ export default(
           */
         }
 
-        <Route path="/leistungen" component={PatientenPage} />
+        <Route path="/leistungen">
+          <IndexRoute component={PatientenPage} />
+          <Route path="roentgen" component={RoentgenPage} />
+          <Route path="ct" component={CTPage} />
+          <Route path="prt" component={SchmerztherapiePage} />
+          <Route path="mrt" component={MRTPage} />
+        </Route>
         <Route path="/karriere" component={JobsPage} />
         <Route path="/galerie" component={GalleryPage} />
       //</Route>

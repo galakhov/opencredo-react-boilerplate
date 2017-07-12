@@ -43,6 +43,7 @@ const CTPageHero = (props) =>
                       <p><FormattedMessage {...messages.overview0} /></p>
                       <p><FormattedHTMLMessage {...messages.overview1} /></p>
                       <p><FormattedHTMLMessage {...messages.overview2} /></p>
+                      <p><FormattedHTMLMessage {...messages.overview3} /></p>
                   </Col>
                 </Row>
               </Grid>

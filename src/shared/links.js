@@ -22,25 +22,25 @@ export const links = {
     defaultMessage: 'Team',
   },
 
-  spectrum: {
-    to: '/spectrum',
-    id: 'navigation.spectrum',
+  leistungen: {
+    to: '/leistungen',
+    id: 'navigation.leistungen',
     description: 'Übersicht Link',
-    defaultMessage: 'Übersicht',
+    defaultMessage: 'Unsere Leistungen',
   },
 
-  spectrum_radiologie: {
-    to: '/spectrum/radiologie',
-    id: 'navigation.spectrum.radiologie',
+  leistungen_radiologie: {
+    to: '/leistungen/radiologie',
+    id: 'navigation.leistungen.radiologie',
     description: 'Radiologie Link',
     defaultMessage: 'Radiologie',
   },
 
-  spectrum_mrt: {
-    to: '/spectrum/mrt',
-    id: 'navigation.spectrum.mrt',
-    description: 'MRT Untersuchung in Düsseldorf Link',
-    defaultMessage: 'MRT Untersuchung in Düsseldorf',
+  leistungen_mrt: {
+    to: '/leistungen/mrt',
+    id: 'navigation.leistungen.mrt',
+    description: 'Magnetresonanztomographie (MRT) Link',
+    defaultMessage: 'Magnetresonanztomographie (MRT)',
   },
 
   spectrum_herz: {
@@ -57,11 +57,11 @@ export const links = {
     defaultMessage: 'Angiographie',
   },
 
-  spectrum_ct: {
-    to: '/spectrum/ct',
-    id: 'navigation.spectrum.ct',
-    description: 'CT-Untersuchungen Link',
-    defaultMessage: 'CT-Untersuchungen',
+  leistungen_ct: {
+    to: '/leistungen/ct',
+    id: 'navigation.leistungen.ct',
+    description: 'Computertomographie (CT) Link',
+    defaultMessage: 'Computertomographie (CT)',
   },
 
   spectrum_herz_ct: {
@@ -78,11 +78,11 @@ export const links = {
     defaultMessage: 'Kardiologische Diagnostik',
   },
 
-  spectrum_roentgen: {
-    to: '/spectrum/roentgen',
-    id: 'navigation.spectrum.roentgen',
-    description: 'Digitales strahlungsarmes Röntgen Link',
-    defaultMessage: 'Digitales strahlungsarmes Röntgen',
+  leistungen_roentgen: {
+    to: '/leistungen/roentgen',
+    id: 'navigation.leistungen.roentgen',
+    description: 'Volldigitales Röntgen Link',
+    defaultMessage: 'Volldigitales Röntgen',
   },
 
   spectrum_ultraschall: {
@@ -106,11 +106,11 @@ export const links = {
     defaultMessage: 'Nuklearmedizin',
   },
 
-  spectrum_schmerztherapie: {
-    to: '/spectrum/schmerztherapie',
-    id: 'navigation.spectrum.schmerztherapie',
-    description: 'Schmerztherapie Link',
-    defaultMessage: 'Schmerztherapie',
+  leistungen_prt: {
+    to: '/leistungen/prt',
+    id: 'navigation.leistungen.prt',
+    description: 'CT-gesteuerte Schmerztherapie (PRT) Link',
+    defaultMessage: 'CT-gesteuerte Schmerztherapie (PRT)',
   },
 
   service: {

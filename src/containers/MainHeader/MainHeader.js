@@ -1,8 +1,7 @@
 import React, { PropTypes } from 'react';
 import { FormattedHTMLMessage, FormattedMessage } from 'react-intl';
 import { Link } from 'react-router';
-// import { Navbar, Nav, NavDropdown, MenuItem } from 'react-bootstrap';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, MenuItem } from 'react-bootstrap';
 // import UserDropdownMenu from 'components/UserDropdownMenu/UserDropdownMenu';
 import { connect } from 'react-redux';
 import { autobind } from 'core-decorators';
@@ -90,9 +89,21 @@ class MainHeader extends React.Component {
             </NavDropdown> */
             }
             <li role="presentation">
-              <Link activeClassName="active" to="/leistungen">
-                <FormattedMessage {...links.service} />
-              </Link>
+              {
+                /*
+                <Link activeClassName="active" to="/leistungen">
+                  <FormattedMessage {...links.service} />
+                </Link>
+                */
+              }
+
+              <NavDropdown activeClassName="active" eventKey="/leistungen" title="Behandlungsspektrum" id="nav-dropdown">
+                <MenuItem eventKey="/leistungen" href="/leistungen"><FormattedMessage {...links.service} /></MenuItem>
+                <MenuItem eventKey="/leistungen/roentgen" href="/leistungen/roentgen"><FormattedMessage {...links.leistungen_roentgen} /></MenuItem>
+                <MenuItem eventKey="/leistungen/ct" href="/leistungen/ct"><FormattedMessage {...links.leistungen_ct} /></MenuItem>
+                <MenuItem eventKey="/leistungen/prt" href="/leistungen/prt"><FormattedMessage {...links.leistungen_prt} /></MenuItem>
+                <MenuItem eventKey="/leistungen/mrt" href="/leistungen/mrt"><FormattedMessage {...links.leistungen_mrt} /></MenuItem>
+              </NavDropdown>
             </li>
             {
               /*

@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 import config from './PatientenPage.i18n';
 import { messages } from './PatientenPage.i18n';
 import { FormattedHTMLMessage } from 'react-intl';
+import { Link } from 'react-router';
 import { Hero, HeroContent, HeroBackground } from 'components/Hero/index';
 import { VAContainer, VAMiddle } from 'components/VAlign/VAlign';
 import styles from './PatientenPage.scss';
@@ -53,7 +54,14 @@ const PatientenPageHero = (props) =>
               <p className={styles['hero-description']}><b>{config.description3}</b></p>
 
               <h1 className={styles['hero-title']}><FormattedHTMLMessage {...messages.description01_title} /></h1>
-              <p className={styles['hero-description']}><FormattedHTMLMessage {...messages.description01} /></p>
+              <p className={styles['hero-description']}>
+                <ul>
+                  <li><Link to={messages.description01_1.route}><FormattedHTMLMessage {...messages.description01_1} /></Link></li>
+                  <li><Link to={messages.description01_2.route}><FormattedHTMLMessage {...messages.description01_2} /></Link></li>
+                  <li><Link to={messages.description01_3.route}><FormattedHTMLMessage {...messages.description01_3} /></Link></li>
+                  <li><Link to={messages.description01_4.route}><FormattedHTMLMessage {...messages.description01_4} /></Link></li>
+                </ul>
+              </p>
 
               <h1 className={styles['hero-title']}><FormattedHTMLMessage {...messages.description02_title} /></h1>
               <p className={styles['hero-description']}><FormattedHTMLMessage {...messages.description02} /></p>

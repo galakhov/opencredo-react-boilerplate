@@ -40,9 +40,7 @@ const RoentgenPageHero = (props) =>
                         <FormattedMessage {...messages.title} />
                       </h1>
 
-                      <p><FormattedMessage {...messages.overview0} /></p>
-
-                      <p><FormattedHTMLMessage {...messages.overview1} /></p>
+                      <p><FormattedHTMLMessage {...messages.overview0} /></p>
                   </Col>
                 </Row>
               </Grid>
