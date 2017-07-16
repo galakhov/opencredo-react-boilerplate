@@ -1,13 +1,13 @@
 import React, { PropTypes } from 'react';
-import { FormattedMessage } from 'react-intl';
-import { Link } from 'react-router';
-import { Navbar, Nav } from 'react-bootstrap';
-import UserDropdownMenu from 'components/UserDropdownMenu/UserDropdownMenu';
 import { connect } from 'react-redux';
 import { autobind } from 'core-decorators';
 import { loginRequest, logoutRequest } from 'redux/modules/auth/auth-actions';
 import debug from 'debug';
-import LanguageSelectionDropdown from '../LanguageSelectionDropdown/LanguageSelectionDropdown';
+import { FormattedMessage } from 'react-intl';
+import { Link } from 'react-router';
+import { Navbar, Nav } from 'react-bootstrap';
+// import UserDropdownMenu from 'components/UserDropdownMenu/UserDropdownMenu';
+// import LanguageSelectionDropdown from '../LanguageSelectionDropdown/LanguageSelectionDropdown';
 import { links } from 'shared/links';
 
 if (__DEBUG__) {
@@ -44,7 +44,7 @@ class MainHeader extends React.Component {
           <Navbar.Brand>
             <Link to="/">
               <FormattedMessage {...links.home} />
-              <img src="/images/radiologie.png" />
+              <img src="/images/logo.jpg" />
               { /* The above is equivalent to
                 <FormattedMessage id={links.home.id}
                                   description={links.home.description}
@@ -56,11 +56,31 @@ class MainHeader extends React.Component {
         <Navbar.Collapse>
           <Nav pullLeft>
             <li role="presentation">
-              <Link activeClassName="active" to="/about-us">
-                <FormattedMessage {...links.aboutUs} />
+              <Link activeClassName="active" to="/unternehmen">
+                <FormattedMessage {...links.unternehmen} />
               </Link>
             </li>
-            {this.props.isAuthenticated && this.props.user ?
+            <li role="presentation">
+              <Link activeClassName="active" to="/service">
+                <FormattedMessage {...links.service} />
+              </Link>
+            </li>
+            <li role="presentation">
+              <Link activeClassName="active" to="/autos">
+                <FormattedMessage {...links.autos} />
+              </Link>
+            </li>
+            <li role="presentation">
+              <Link activeClassName="active" to="/maschienen">
+                <FormattedMessage {...links.maschienen} />
+              </Link>
+            </li>
+            <li role="presentation">
+              <Link activeClassName="active" to="/hallen">
+                <FormattedMessage {...links.hallen} />
+              </Link>
+            </li>
+            { /* this.props.isAuthenticated && this.props.user ?
               <UserDropdownMenu user={this.props.user} logout={this.onLogout} />
               :
               <li role="presentation">
@@ -68,9 +88,12 @@ class MainHeader extends React.Component {
                   <FormattedMessage {...links.logIn} />
                 </a>
               </li>
+              */
             }
 
-            <LanguageSelectionDropdown />
+            {
+              /* <LanguageSelectionDropdown /> */
+            }
           </Nav>
         </Navbar.Collapse>
       </Navbar>

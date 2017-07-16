@@ -17,34 +17,172 @@ html, body {
 *:after {
   box-sizing: inherit;
 }
+
 body {
   font-family: $fonts;
+  // background-color: rgba($color, 0.8);
 }
 
 a {
   cursor: pointer;
 }
 
+@media (min-width: 768px) {
+  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+      margin-left: 5%;
+  }
+}
+
+.view-container {
+  div.container {
+    color: $white;
+    position: absolute;
+    bottom: 0vh;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 37vh;
+  }
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+
+    .sidebar {
+      background-color: rgba($white, 1.0);
+      // width: 25%;
+      height: 100%;
+      position: absolute;
+    }
+
+    .main_content {
+      height: 100%;
+      background-color: rgba($blue, 0.8);
+      left: 25%;
+
+      article {
+        margin-top: 12%;
+        margin-left: 25px;
+      }
+
+      h1 {
+        font-family: $eurostile_font;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .view-container .row .main_content {
+    left: 33.33333333%;
+  }
+
+  .view-container .row .main_content article {
+    margin-top: 13%;
+  }
+}
+
 .navbar-collapse {
   background-color: rgba(#e7e7e7, 0);
+  left: 25%;
+  position: absolute;
 }
 
 .navbar-default {
-  background-color: rgba(#f8f8f8, 0.3);
+  position: absolute;
+  bottom: 27%;
+  width: 100%;
+  background-color: rgba(#f8f8f8, 0.0);
   border-color: rgba(#e7e7e7, 0.0);
 
-  .navbar-brand {
-    color: rgba(#777, 0.0);
+  .navbar-header {
+    width: 25%;
+  }
 
+  .navbar-brand {
+    // color: rgba(#777, 0.0);
+    position: relative;
+    width: 100%;
+
+    // .navbar-brand span
     span {
       display: none;
+    }
+
+    img {
+      width: 87%;
     }
   }
   .navbar-brand:hover {
     color: rgba(#777, 0.0);
   }
 
+  .navbar-nav {
+    margin-left: 25px;
+  }
+
+  // .navbar-default span
   span {
     font-family: $eurostile_font;
+    color: $white;
+    text-transform: uppercase;
   }
+
+  span:hover {
+    border-bottom: 1px solid rgba($white, 1.0);
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    left: 33.33333333%;
+  }
+  .navbar-default {
+    bottom: 29%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .navbar-default {
+    bottom: 24%;
+  }
+
+  .navbar-default .navbar-header {
+    width: 33.33333333%;
+  }
+
+  .navbar-header .navbar-toggle {
+    margin-right: 0px;
+    top: -47px;
+  }
+
+  .navbar-default .navbar-collapse,
+  .navbar-default .collapse.in {
+    top: 11px;
+    background-color: $white;
+  }
+
+  .navbar-default span {
+    color: $dark-grey;
+  }
+
+  .navbar-default .navbar-nav {
+    margin-left: 10px;
+  }
+
+  .nav>li>a {
+    padding-left: 0px;
+  }
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
 }

@@ -11,7 +11,7 @@ export default {
   'common.form.error.min': 'Must be at least {min}',
   'common.form.error.minLength': `Must be at least
     {minLength, plural, one {1 character} other {{minLength} characters}} long`,
-  'landingPage.title': 'Praxis',
+  'landingPage.title': 'Über uns',
   'landingPage.button.clickMe': 'mehr lesen',
   'landingPage.para.pressCtrlH': 'Press <code>ctrl-h</code> to toggle Redux Dev Tools (development build only).',
   'landingPage.para.autoUpdate': 'This pages auto-updates when you make changes and save.',
@@ -19,7 +19,11 @@ export default {
     <code>@autobind</code> ES7 decorator.`,
   'lang.en': 'Deutsch', // ENGLISH
   'lang.es': 'Español',
-  'navigation.aboutUs': 'Team',
+  'navigation.aboutUs': 'Unternehmen',
+  'navigation.service': 'Service',
+  'navigation.autos': 'Autos',
+  'navigation.maschienen': 'Maschienen',
+  'navigation.hallen': 'Hallen',
   'navigation.account': 'Account',
   'navigation.faq': 'FAQ',
   'navigation.help': 'Help',

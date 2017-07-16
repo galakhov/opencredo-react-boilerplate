@@ -6,7 +6,7 @@ import AppContainer from 'containers/AppContainer';
 import HeroPageLayout from 'containers/HeroPageLayout';
 import AdminPageLayout from 'containers/AdminPageLayout';
 import LandingPage from 'pages/LandingPage/LandingPage';
-import AboutPage from 'pages/AboutPage/AboutPage';
+import AutosPage from 'pages/AutosPage/AutosPage';
 import ProfileEditPage from 'pages/ProfileEditPage/ProfileEditPage';
 
 export default(
@@ -18,9 +18,9 @@ export default(
       <Route path="/" component={LandingPage} />
       // Routes without a component will render their children:
       //<Route path="/pages" >
-        <IndexRedirect to="/about-us" />
-        <Route path="/about-us" component={AboutPage} />
-        <Route path="/faq" component={AboutPage} />
+        <IndexRedirect to="/" />
+        <Route path="/unternehmen" component={LandingPage} />
+        <Route path="/autos" component={AutosPage} />
       //</Route>
     </Route>
 

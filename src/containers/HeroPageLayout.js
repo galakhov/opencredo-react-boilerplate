@@ -8,10 +8,10 @@ const mapStateToProps = ({ spinner }) => ({ spinner });
 const HeroPageLayout = (props) =>
   (
     <div className="page-container">
-      <MainHeader />
       <div className="view-container">
         {props.children}
       </div>
+      <MainHeader />
       <MainFooter />
       <Spinner
         canShow={props.spinner.canShow}

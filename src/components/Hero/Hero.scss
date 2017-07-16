@@ -1,8 +1,8 @@
-$color-text: #000;
+$color-text: #0f3f94;
 $border-color: #b3d3b3;
 
 .hero {
-  height: 850px;
+  height: 100vh;
   position: relative;
   background: black;
   color: black;
@@ -10,7 +10,7 @@ $border-color: #b3d3b3;
 }
 
 .move-up {
-  margin-top: -20px;
+  margin-top: 0px;
 }
 
 /*#landing-page {
@@ -21,14 +21,13 @@ $border-color: #b3d3b3;
 
 .content {
   height: auto;
-  top: 50px;
+  top: 43vh;
+  left: 10%;
   position: relative;
   padding-bottom: 20px;
-  padding-left: 36px;
-  padding-right: 25px;
-  width: 40%;
-  left: 23%;
-  background-color: rgba(#f8f8f8, 0.7);
+  padding-left: 0;
+  padding-right: 0;
+  width: 75%;
 
   p {
     text-align: left;
@@ -38,18 +37,20 @@ $border-color: #b3d3b3;
     text-align: left;
     color: $color-text;
     font-family: "Michroma";
-    font-size: 16px;
+    font-size: 2.6em;
     text-transform: none;
     font-weight: bold;
-    border-bottom: 5px solid $border-color;
+    // border-bottom: 5px solid $border-color;
+    padding-top: 13px;
     padding-bottom: 13px;
     display: table;
     margin-top: 0px;
+    text-transform: uppercase;
   }
 
   //h1:before-after-background("18px", "18px", '/images/cross.png');
 
-  &:before {
+  /* &:before {
     height: 18px;
     width: 18px;
     position: relative;
@@ -59,7 +60,7 @@ $border-color: #b3d3b3;
     content: '';
     display: block;
     top: 18px;
-  }
+  } */
 }
 
 .background {

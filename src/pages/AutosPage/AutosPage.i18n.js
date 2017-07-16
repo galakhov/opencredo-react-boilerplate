@@ -1,7 +1,7 @@
 export const messages = {
-  title: {
-    id: 'landingPage.title',
-    defaultMessage: 'Über uns',
+  title_autos: {
+    id: 'autosPage.title_autos',
+    defaultMessage: 'Autos / Fahrzeuge',
   },
   landingText: {
     id: 'landingPage.text',

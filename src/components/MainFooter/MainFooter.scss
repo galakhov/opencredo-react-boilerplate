@@ -2,24 +2,49 @@
 
 .footer {
   background-color: $color-footer;
-  width: 100%;
+  width: 25%;
+  position: absolute;
+  bottom: 0vh;
+  left: 0;
+
+  .footer_contact {
+    margin-left: 8%;
+
+    p {
+      font-size: 0.9em;
+    }
+
+    span:first-child, .footer_contact_span {
+      color: $blue;
+    }
+
+    span {
+      color: $medium-grey;
+    }
+  }
 
   ul {
     padding: 0;
     margin: 0;
-    text-align: center;
+    text-align: left;
+    float: left;
+    margin-left: 8%;
+    margin-bottom: 6%;
   }
 }
 
 .item {
   display: inline-block;
-  margin: 1rem;
+  margin: 0.2rem 0 0;
+  float: left;
+  width: 100%;
 
   a {
     font-size: 1.2rem;
-    font-weight: bold;
-    color: #BCBCBC;
+    font-weight: normal;
+    color: $black;
     text-transform: uppercase;
+    font-style: $eurostile_font;
   }
 }
 .social {

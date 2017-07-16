@@ -1,22 +1,22 @@
 import React, { PropTypes } from 'react';
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import { connect } from 'react-redux';
-import styles from './LandingPage.scss';
+import styles from './AutosPage.scss';
 import { Grid, Row, Col } from 'react-bootstrap'; // , Button
 import debug from 'debug';
 import { autobind } from 'core-decorators';
-import { messages } from './LandingPage.i18n';
-import LandingPageHero from './LandingPageHero';
+import { messages } from './AutosPage.i18n';
+import LandingPageHero from './AutosPageHero';
 import {
   updateDocumentTitle,
   resetDocumentTitle,
 } from 'redux/modules/document-title/document-title';
 
 if (__DEBUG__) {
-  debug.enable('landing-page:*');
+  debug.enable('autos-page:*');
 }
 
-const log = debug('landing-page:info');
+const log = debug('autos-page:info');
 
 export class LandingPage extends React.Component {
 
@@ -40,19 +40,10 @@ export class LandingPage extends React.Component {
     log('button click handler context:', this);
   }
 
-/*
-  <p>
-    <FormattedHTMLMessage {...messages.para.autoUpdate} />
-  </p>
-  <p>
-    <FormattedHTMLMessage {...messages.para.es7Decorator} />
-  </p>
-*/
-
   render() {
     return (
-      <div id="landing-page">
-        <LandingPageHero backgroundImage="/images/bg.jpg" />
+      <div id="autos-page">
+        <LandingPageHero backgroundImage="/images/autos_gura.jpg" />
         <Grid>
           <Row>
             <Col className="sidebar" sm={4} md={3} xs={4}>
@@ -61,23 +52,12 @@ export class LandingPage extends React.Component {
             <Col className="main_content" sm={8} md={9} xs={8}>
               <article>
                 <h1 className={styles.title}>
-                  <FormattedMessage {...messages.title} />
+                  <FormattedMessage {...messages.title_autos} />
                 </h1>
                 <FormattedHTMLMessage {...messages.landingText} />
               </article>
             </Col>
           </Row>
-          {
-            /*
-            <Row>
-              <Col xs={6} md={2}>
-                <Button bsStyle="primary" onClick={this.handleButtonClick}>
-                  <FormattedMessage {...messages.button.clickMe} />
-                </Button>
-              </Col>
-            </Row>
-            */
-          }
         </Grid>
       </div>
     );

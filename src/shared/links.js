@@ -8,11 +8,39 @@ export const links = {
     defaultMessage: config.name,
   },
 
-  aboutUs: {
-    to: '/about-us',
-    id: 'navigation.aboutUs',
-    description: 'About Us page link',
-    defaultMessage: 'About Us',
+  unternehmen: {
+    to: '/unternehmen',
+    id: 'navigation.Unternehmen',
+    description: 'Unternehmen link',
+    defaultMessage: 'Unternehmen',
+  },
+
+  service: {
+    to: '/service',
+    id: 'navigation.service',
+    description: 'Service',
+    defaultMessage: 'Service',
+  },
+
+  autos: {
+    to: '/autos',
+    id: 'navigation.autos',
+    description: 'Autos',
+    defaultMessage: 'Autos',
+  },
+
+  maschienen: {
+    to: '/maschienen',
+    id: 'navigation.maschienen',
+    description: 'Maschienen',
+    defaultMessage: 'Maschienen',
+  },
+
+  hallen: {
+    to: '/hallen',
+    id: 'navigation.hallen',
+    description: 'Hallen',
+    defaultMessage: 'Hallen',
   },
 
   logIn: {
@@ -27,25 +55,25 @@ export const links = {
     defaultMessage: 'Log out',
   },
 
-  faq: {
-    to: '/faq',
-    id: 'navigation.faq',
-    description: 'FAQ',
-    defaultMessage: 'FAQ',
+  contact: {
+    to: '/contact',
+    id: 'navigation.contact',
+    description: 'Kontakt',
+    defaultMessage: 'Kontakt',
   },
 
   policies: {
-    to: '/policies',
-    id: 'navigation.policies',
-    description: 'Policies',
-    defaultMessage: 'Policies',
+    to: '/impressum',
+    id: 'navigation.impressum',
+    description: 'Impressum',
+    defaultMessage: 'Impressum',
   },
 
   terms: {
-    to: '/terms',
-    id: 'navigation.terms',
-    description: 'Terms & Privacy',
-    defaultMessage: 'Terms & Privacy',
+    to: '/agbs',
+    id: 'navigation.agbs',
+    description: 'agbs',
+    defaultMessage: 'AGB‘S',
   },
 
   help: {
