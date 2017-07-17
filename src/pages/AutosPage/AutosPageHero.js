@@ -13,7 +13,6 @@ const LandingPageHero = (props) =>
           <VAMiddle>
             <div className="text-center">
               <h1 className={styles['hero-title']}>
-                { /* config.name */ }
                 <img src="./images/autos_gura.png" />
               </h1>
 

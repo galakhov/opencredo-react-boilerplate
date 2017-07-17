@@ -1,6 +1,6 @@
 module.exports = {
   server: {
-    hostname: '<your production domain>',
+    hostname: 'www.gura-verwaltung.de',
     port: 80,
   },
 

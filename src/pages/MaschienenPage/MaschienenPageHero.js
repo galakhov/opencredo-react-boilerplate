@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import config from 'app-config';
 import { Hero, HeroContent, HeroBackground } from 'components/Hero/index';
 import { VAContainer, VAMiddle } from 'components/VAlign/VAlign';
-import styles from './LandingPage.scss';
+import styles from './MaschienenPage.scss';
 
 const LandingPageHero = (props) =>
   (
@@ -14,7 +14,7 @@ const LandingPageHero = (props) =>
             <div className="text-center">
               <h1 className={styles['hero-title']}>
                 { /* config.name */ }
-                <img src="./images/about_gura.png" />
+                <img src="./images/maschienen_gura.png" />
               </h1>
 
               <p className={styles['hero-description']}>

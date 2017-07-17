@@ -2,9 +2,9 @@ import React, { PropTypes } from 'react';
 import config from 'app-config';
 import { Hero, HeroContent, HeroBackground } from 'components/Hero/index';
 import { VAContainer, VAMiddle } from 'components/VAlign/VAlign';
-import styles from './LandingPage.scss';
+import styles from './ServicePage.scss';
 
-const LandingPageHero = (props) =>
+const ServicePageHero = (props) =>
   (
     <Hero displayUnderNavbar>
       <HeroBackground image={props.backgroundImage} />
@@ -14,7 +14,7 @@ const LandingPageHero = (props) =>
             <div className="text-center">
               <h1 className={styles['hero-title']}>
                 { /* config.name */ }
-                <img src="./images/about_gura.png" />
+                <img src="./images/service_gura.png" />
               </h1>
 
               <p className={styles['hero-description']}>
@@ -35,8 +35,8 @@ const LandingPageHero = (props) =>
     </Hero>
   );
 
-LandingPageHero.propTypes = {
+ServicePageHero.propTypes = {
   backgroundImage: PropTypes.string.isRequired,
 };
 
-export default LandingPageHero;
+export default ServicePageHero;

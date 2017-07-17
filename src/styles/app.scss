@@ -21,6 +21,7 @@ html, body {
 body {
   font-family: $fonts;
   // background-color: rgba($color, 0.8);
+  overflow-y: hidden;
 }
 
 a {
@@ -29,7 +30,11 @@ a {
 
 @media (min-width: 768px) {
   .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-      margin-left: 5%;
+    margin-left: 5%;
+    position: relative;
+    top: 30px;
+    left: 0;
+    margin-left: 15px;
   }
 }
 
@@ -58,14 +63,21 @@ a {
       position: absolute;
     }
 
+    .aside_content {
+      height: 100%;
+      background-color: rgba($blue, 0.8);
+      left: 25%;
+    }
+
     .main_content {
       height: 100%;
       background-color: rgba($blue, 0.8);
       left: 25%;
 
       article {
-        margin-top: 12%;
+        margin-top: 16%;
         margin-left: 25px;
+        padding-right: 33.33333333%;
       }
 
       h1 {
@@ -75,16 +87,33 @@ a {
         font-weight: bold;
       }
     }
+
+    ul.aside {
+      margin-top: 30%;
+      position: relative;
+      z-index: 10000;
+      padding-left: 0px;
+      float: right;
+      margin-right: 15px;
+
+      li {
+          list-style-type: none;
+        }
+    }
   }
 }
 
 @media (max-width: 991px) {
   .view-container .row .main_content {
-    left: 33.33333333%;
+    left: 25%;
   }
 
   .view-container .row .main_content article {
     margin-top: 13%;
+  }
+
+  .nav>li>a {
+    padding: 15px 10px;
   }
 }
 
@@ -96,7 +125,7 @@ a {
 
 .navbar-default {
   position: absolute;
-  bottom: 27%;
+  bottom: 29%;
   width: 100%;
   background-color: rgba(#f8f8f8, 0.0);
   border-color: rgba(#e7e7e7, 0.0);
@@ -139,12 +168,111 @@ a {
   }
 }
 
+@media (max-width: 1080px) {
+  .view-container .row .main_content article {
+      margin-top: 19%;
+      margin-left: 25px;
+      padding-right: 33.33333333%;
+  }
+}
+
 @media (max-width: 991px) {
   .navbar-collapse {
-    left: 33.33333333%;
+    left: 25%;
   }
   .navbar-default {
     bottom: 29%;
+
+    ul.navbar-nav {
+      margin-left: 30px;
+      padding-top: 0px;
+    }
+  }
+  .navbar-default .navbar-nav {
+    margin-left: 30px;
+  }
+}
+
+// toggle nav
+@media screen and (max-width: 920px) {
+  .navbar-nav {
+    position: relative;
+  }
+
+  .navbar-default {
+    ul {
+      padding-top: 0px;
+    }
+
+    .collapsing,
+    .collapse.in {
+      top: 58px;
+      ul.navbar-nav {
+        margin-left: 10px;
+      }
+    }
+
+    span {
+      color: $dark-grey;
+    }
+  }
+
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+      background-color: #fff;
+      margin-top: 0px;
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+      overflow-x: hidden;
+  }
+
+  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 5%;
+    position: relative;
+    top: 100px;
+    left: 0;
+    margin-left: 15px;
+  }
+
+  .main_content {
+    width: 75%;
+  }
+
+  .aside_content {
+    display: none;
+  }
+
+  .view-container .row .main_content article {
+    margin-top: 7%;
   }
 }
 
@@ -154,18 +282,22 @@ a {
     bottom: 24%;
   }
 
+  .navbar-collapse {
+    left: 25%;
+  }
+
   .navbar-default .navbar-header {
-    width: 33.33333333%;
+    width: 25%;
   }
 
   .navbar-header .navbar-toggle {
-    margin-right: 0px;
-    top: -47px;
+    margin-right: 15px;
+    top: -85px;
   }
 
   .navbar-default .navbar-collapse,
   .navbar-default .collapse.in {
-    top: 11px;
+    top: -26px;
     background-color: $white;
   }
 
@@ -180,6 +312,10 @@ a {
   .nav>li>a {
     padding-left: 0px;
   }
+
+   .navbar>.container-fluid .navbar-brand, .navbar>.container .navbar-brand {
+      top: 30px;
+    }
 }
 
 .container-fluid {

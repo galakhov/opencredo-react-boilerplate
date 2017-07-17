@@ -29,11 +29,11 @@ export const links = {
     defaultMessage: 'Autos',
   },
 
-  maschienen: {
-    to: '/maschienen',
-    id: 'navigation.maschienen',
-    description: 'Maschienen',
-    defaultMessage: 'Maschienen',
+  maschinen: {
+    to: '/maschinen',
+    id: 'navigation.maschinen',
+    description: 'Maschinen',
+    defaultMessage: 'Maschinen',
   },
 
   hallen: {

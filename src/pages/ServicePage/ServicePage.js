@@ -1,12 +1,12 @@
 import React, { PropTypes } from 'react';
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import { connect } from 'react-redux';
-import styles from './LandingPage.scss';
+import styles from './ServicePage.scss';
 import { Grid, Row, Col } from 'react-bootstrap'; // , Button
 import debug from 'debug';
 import { autobind } from 'core-decorators';
-import { messages } from './LandingPage.i18n';
-import LandingPageHero from './LandingPageHero';
+import { messages } from './ServicePage.i18n';
+import ServicePageHero from './ServicePageHero';
 import Sidebar from '../../containers/Sidebar/Sidebar';
 import {
   updateDocumentTitle,
@@ -14,12 +14,12 @@ import {
 } from 'redux/modules/document-title/document-title';
 
 if (__DEBUG__) {
-  debug.enable('landing-page:*');
+  debug.enable('service-page:*');
 }
 
-const log = debug('landing-page:info');
+const log = debug('service-page:info');
 
-export class LandingPage extends React.Component {
+export class ServicePage extends React.Component {
 
   static propTypes = {
     isAuthenticated: PropTypes.bool,
@@ -28,7 +28,7 @@ export class LandingPage extends React.Component {
 
   // executes only on the client
   componentDidMount() {
-    this.props.dispatch(updateDocumentTitle(messages.title));
+    this.props.dispatch(updateDocumentTitle(messages.service_title));
   }
 
   componentWillUnmount() {
@@ -41,19 +41,10 @@ export class LandingPage extends React.Component {
     log('button click handler context:', this);
   }
 
-/*
-  <p>
-    <FormattedHTMLMessage {...messages.para.autoUpdate} />
-  </p>
-  <p>
-    <FormattedHTMLMessage {...messages.para.es7Decorator} />
-  </p>
-*/
-
   render() {
     return (
-      <div id="landing-page">
-        <LandingPageHero backgroundImage="/images/bg.jpg" />
+      <div id="service-page">
+        <ServicePageHero backgroundImage="/images/service_gura.jpg" />
         <Grid>
           <Row>
             <Col className="sidebar" sm={3} md={3} xs={3}>
@@ -62,26 +53,15 @@ export class LandingPage extends React.Component {
             <Col className="main_content" sm={6} md={6} xs={7}>
               <article>
                 <h1 className={styles.title}>
-                  <FormattedMessage {...messages.title} />
+                  <FormattedMessage {...messages.service_title} />
                 </h1>
-                <FormattedHTMLMessage {...messages.landingText} />
+                <FormattedHTMLMessage {...messages.serviceText} />
               </article>
             </Col>
             <Col className="aside_content" sm={3} md={3} xs={2}>
               <Sidebar />
             </Col>
           </Row>
-          {
-            /*
-            <Row>
-              <Col xs={6} md={2}>
-                <Button bsStyle="primary" onClick={this.handleButtonClick}>
-                  <FormattedMessage {...messages.button.clickMe} />
-                </Button>
-              </Col>
-            </Row>
-            */
-          }
         </Grid>
       </div>
     );
@@ -91,4 +71,4 @@ export class LandingPage extends React.Component {
 const mapStateToProps = (state) =>
   ({ isAuthenticated: state.isAuthenticated });
 
-export default connect(mapStateToProps)(LandingPage);
+export default connect(mapStateToProps)(ServicePage);

@@ -3,22 +3,15 @@ import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import styles from './AutosPage.scss';
 import { Grid, Row, Col } from 'react-bootstrap'; // , Button
-import debug from 'debug';
-import { autobind } from 'core-decorators';
 import { messages } from './AutosPage.i18n';
-import LandingPageHero from './AutosPageHero';
+import AutosPageHero from './AutosPageHero';
+import Sidebar from '../../containers/Sidebar/Sidebar';
 import {
   updateDocumentTitle,
   resetDocumentTitle,
 } from 'redux/modules/document-title/document-title';
 
-if (__DEBUG__) {
-  debug.enable('autos-page:*');
-}
-
-const log = debug('autos-page:info');
-
-export class LandingPage extends React.Component {
+export class AutosPage extends React.Component {
 
   static propTypes = {
     isAuthenticated: PropTypes.bool,
@@ -27,35 +20,32 @@ export class LandingPage extends React.Component {
 
   // executes only on the client
   componentDidMount() {
-    this.props.dispatch(updateDocumentTitle(messages.title));
+    this.props.dispatch(updateDocumentTitle(messages.title_autos));
   }
 
   componentWillUnmount() {
-    log('remove custom document title');
     this.props.dispatch(resetDocumentTitle());
-  }
-
-  @autobind
-  handleButtonClick() {
-    log('button click handler context:', this);
   }
 
   render() {
     return (
       <div id="autos-page">
-        <LandingPageHero backgroundImage="/images/autos_gura.jpg" />
+        <AutosPageHero backgroundImage="/images/autos_gura.jpg" />
         <Grid>
           <Row>
-            <Col className="sidebar" sm={4} md={3} xs={4}>
+            <Col className="sidebar" sm={3} md={3} xs={3}>
               <div>&nbsp;</div>
             </Col>
-            <Col className="main_content" sm={8} md={9} xs={8}>
+            <Col className="main_content" sm={6} md={6} xs={7}>
               <article>
                 <h1 className={styles.title}>
                   <FormattedMessage {...messages.title_autos} />
                 </h1>
                 <FormattedHTMLMessage {...messages.landingText} />
               </article>
+            </Col>
+            <Col className="aside_content" sm={3} md={3} xs={2}>
+              <Sidebar />
             </Col>
           </Row>
         </Grid>
@@ -67,4 +57,4 @@ export class LandingPage extends React.Component {
 const mapStateToProps = (state) =>
   ({ isAuthenticated: state.isAuthenticated });
 
-export default connect(mapStateToProps)(LandingPage);
+export default connect(mapStateToProps)(AutosPage);

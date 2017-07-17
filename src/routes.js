@@ -7,6 +7,9 @@ import HeroPageLayout from 'containers/HeroPageLayout';
 import AdminPageLayout from 'containers/AdminPageLayout';
 import LandingPage from 'pages/LandingPage/LandingPage';
 import AutosPage from 'pages/AutosPage/AutosPage';
+import ServicePage from 'pages/ServicePage/ServicePage';
+import MaschienenPage from 'pages/MaschienenPage/MaschienenPage';
+import HallenPage from 'pages/HallenPage/HallenPage';
 import ProfileEditPage from 'pages/ProfileEditPage/ProfileEditPage';
 
 export default(
@@ -21,6 +24,9 @@ export default(
         <IndexRedirect to="/" />
         <Route path="/unternehmen" component={LandingPage} />
         <Route path="/autos" component={AutosPage} />
+        <Route path="/service" component={ServicePage} />
+        <Route path="/maschinen" component={MaschienenPage} />
+        <Route path="/hallen" component={HallenPage} />
       //</Route>
     </Route>
 

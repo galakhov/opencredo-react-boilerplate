@@ -13,7 +13,7 @@ debug.enable('app:*');
 const log = debug('app:webpack');
 
 // Environment
-const NODE_ENV = process.env.NODE_ENV || 'development';
+const NODE_ENV = process.env.NODE_ENV || 'production'; // development
 const DEVELOPMENT = NODE_ENV === 'development';
 const TESTING = NODE_ENV === 'test';
 const PRODUCTION = NODE_ENV === 'production';
@@ -42,11 +42,14 @@ const webpackconfig = {
 
   plugins: [
     new webpack.DefinePlugin({ DEVELOPMENT, PRODUCTION, __DEBUG__ }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+    }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(config.paths.app, 'index.html'),
       hash: true,
-      favicon: path.resolve(config.paths.static, 'favicon.png'),
+      favicon: path.resolve(config.paths.static, 'favicon.ico'),
       filename: 'index.html',
       inject: 'body',
       minify: {
