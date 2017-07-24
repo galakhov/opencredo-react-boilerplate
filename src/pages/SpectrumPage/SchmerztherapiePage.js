@@ -25,7 +25,6 @@ const SchmerztherapiePageHero = (props) =>
 (
     <Hero displayUnderNavbar>
       <HeroBackground image={props.backgroundImage} />
-      <HeroBackground image={"./images/header_bg.png"} />
 
       <HeroContent>
         <VAContainer horizontal vertical>
@@ -73,7 +72,7 @@ class SchmerztherapiePage extends Component {
   render() {
     return (
       <section id="spectrum-schmerztherapie-page">
-        <SchmerztherapiePageHero backgroundImage="/images/bg00.jpg" />
+        <SchmerztherapiePageHero backgroundImage="/images/bg_radiologie_texture.jpg" />
       </section>
     );
   }

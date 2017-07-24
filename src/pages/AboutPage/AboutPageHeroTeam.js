@@ -1,0 +1,87 @@
+import React, { PropTypes } from 'react';
+import config from './AboutPage.i18n';
+import { FormattedMessage } from 'react-intl'; // FormattedHTMLMessage
+import { Hero, HeroContent, HeroBackground } from 'components/Hero/index';
+import { VAContainer, VAMiddle } from 'components/VAlign/VAlign';
+import styles from './AboutPage.scss';
+import { messages } from './AboutPage.i18n';
+// import HeaderLineTop from '../../static/images/header_line_top.svg';
+// <HeaderLineTop />
+// import { FormattedMessage } from 'react-intl';
+import { Grid, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router';
+// import { Hero } from 'components/Hero'; // HeroBackground
+// import { messages } from './PatientenPage.i18n';
+
+// import StyleSheet from 'react-style-prototype';
+
+// https://facebook.github.io/react/docs/dom-elements.html#all-supported-html-attributeshero
+
+// TODO: Links to doctors' pages
+
+// <AboutPageHero backgroundImage="/images/bg00.jpg" />
+
+/* eslint camelcase: 0 */
+const styles_custom = {
+  container: {
+    width: '100%',
+    paddingLeft: 0,
+    paddingRight: 0,
+  },
+  team_container: {
+    position: 'absolute',
+    left: '26%',
+    top: '630px',
+    fontFamily: '"Michroma", "regular"',
+    fontWeight: 'bold',
+  },
+  team_container_caption: {
+    borderLeft: 'solid #b3d3b3 4px',
+    paddingLeft: '20px',
+    paddingTop: '1px',
+    paddingBottom: '7px',
+  },
+};
+
+const AboutPageHeroTeam = (props) =>
+  (
+    <Hero displayUnderNavbar>
+      <HeroBackground image={props.backgroundImage} />
+      <HeroBackground image={"./images/header_line_top.png"} />
+      <HeroContent>
+        <VAContainer horizontal vertical>
+          <VAMiddle>
+            <div className="text-left">
+
+            <h1 className={styles['hero-title']}>
+              { config.team }
+            </h1>
+
+            <p className={styles['hero-description']}><FormattedMessage {...messages.doctors.content} /></p>
+
+              <Grid style={styles_custom.container}>
+                <Row>
+                  <Col xs={12} className="text-left">
+                  <ul className="team-list">
+                    <li><Link to={messages.doctors.content.doc0.route}><FormattedMessage {...messages.doctors.content.doc0} /></Link></li>
+                    <li><Link to={messages.doctors.content.doc1.route}><FormattedMessage {...messages.doctors.content.doc1} /></Link></li>
+                    <li><Link to={messages.doctors.content.doc2.route}><FormattedMessage {...messages.doctors.content.doc2} /></Link></li>
+                    <li><Link to={messages.doctors.content.doc3.route}><FormattedMessage {...messages.doctors.content.doc3} /></Link></li>
+                    <li><Link to={messages.doctors.content.doc4.route}><FormattedMessage {...messages.doctors.content.doc4} /></Link></li>
+                  </ul>
+                  </Col>
+                </Row>
+              </Grid>
+            </div>
+
+          </VAMiddle>
+        </VAContainer>
+      </HeroContent>
+    </Hero>
+  );
+
+AboutPageHeroTeam.propTypes = {
+  backgroundImage: PropTypes.string.isRequired,
+};
+
+export default AboutPageHeroTeam;

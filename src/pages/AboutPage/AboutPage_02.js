@@ -28,8 +28,10 @@ const styles_custom = {
   },
 };
 
+// <AboutPageHero backgroundImage="/images/bg00.jpg" />
+
 /* eslint camelcase: 0 */
-class AboutPage_01 extends Component {
+class AboutPage_02 extends Component {
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
   };
@@ -45,14 +47,14 @@ class AboutPage_01 extends Component {
   render() {
     return (
       <section id="about-page">
-        <AboutPageHeroTeam backgroundImage="/images/team/dabir.jpg" />
+        <AboutPageHeroTeam backgroundImage="/images/team/hirning.jpg" />
 
           <Grid style={styles_custom.team_container}>
             <Row>
               <Col xs={12} className="text-left">
               <div className="text-team" style={styles_custom.team_container_caption}>
                 <h1>
-                  <FormattedMessage {...messages.doctors.content.doc0} />
+                  <FormattedMessage {...messages.doctors.content.doc1} />
                 </h1>
 
                 <p>
@@ -67,4 +69,4 @@ class AboutPage_01 extends Component {
   }
 }
 
-export default connect(() => ({}))(AboutPage_01);
+export default connect(() => ({}))(AboutPage_02);

@@ -61,13 +61,11 @@ class MainHeader extends React.Component {
                 <FormattedMessage {...links.home} />
               </Link>
             </li>
-
-            { /* <li role="presentation">
-              <Link activeClassName="active" to="/about-us">
+            <li role="presentation">
+              <Link activeClassName="active" to="/team">
                 <FormattedMessage {...links.aboutUs} />
               </Link>
-            </li> */
-            }
+            </li>
               { /* <Link activeClassName="active" to="/spectrum">
                 <FormattedMessage {...links.spectrum} />
               </Link> */ }
@@ -112,16 +110,11 @@ class MainHeader extends React.Component {
                   <FormattedMessage {...links.jobs} />
                 </Link>
               </li>
-              <li role="presentation">
-                <Link activeClassName="active" to="/galerie">
-                  <FormattedMessage {...links.gallery} />
-                </Link>
-              </li>
               */
             }
             <li role="presentation">
-              <Link activeClassName="active" to="/kontakt">
-                <FormattedMessage {...links.kontakt} />
+              <Link activeClassName="active" to="/galerie">
+                <FormattedMessage {...links.gallery} />
               </Link>
             </li>
 

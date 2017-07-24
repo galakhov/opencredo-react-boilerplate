@@ -5,15 +5,19 @@ export const messages = {
   },
   overview0: {
     id: 'page.desc0',
-    defaultMessage: 'Die Magnetresonanztomographie (Kernspintomographie) ist ein modernes Schnittbildverfahren, welches ein starkes Magnetfeldes und Radiowellen zur Bilderzeugung nutzt – ohne Anwendung von Röntgenstrahlen. Es können sämtliche Organsysteme nicht-invasiv untersucht werden. Bei einigen Fragestellungen ist die Gabe eines MR-Kontrastmittels (Gadolinium) in die Arm- oder Handvene erforderlich.',
+    defaultMessage: 'Die Magnetresonanztomographie (Kernspintomographie) ist ein modernes Schnittbildverfahren, welches ein starkes Magnetfeld und Radiowellen zur Bilderzeugung nutzt – ohne Anwendung von Röntgenstrahlen. Es können sämtliche Organsysteme nicht-invasiv untersucht werden. Bei einigen Fragestellungen ist die Gabe eines MR-Kontrastmittels (Gadolinium) in die Arm- oder Handvene erforderlich.',
   },
   overview1: {
     id: 'page.desc1',
-    defaultMessage: 'Wesentliche diagnostische Vorteile der MRT liegen u.a. im hohen Weichteilkontrast sowie in der Gefäss- und Gelenkdiagnostik. Patienten mit eingebauten Schrittmachern oder Defibrillatoren bzw. Medikamentenpumpen können nicht untersucht werden. Hier sollte Rücksprache mit unserem Radiologen im Vorfeld erfolgen. Unser hochmodernes MRT sorgt für einen besonders hohen Patientenkomfort während der Untersuchung durch die größte auf dem Markt derzeit verfügbare Öffnung (Gantry) des Magneten.',
+    defaultMessage: 'Während der Untersuchung liegt der Patient in einer etwa 70–100 cm langen Röhre, die Bilderstellung dauert je nach Körperregion etwa 30 Minuten. Unser hochmodernes MRT verfügt über die größtmögliche Öffnung (Gantry) mit einem Durchmesser von 70 cm – uns ist wichtig, den Vorgang für Sie so angenehm wie möglich zu gestalten. Sollte Sie sich dennoch unwohl fühlen, können Sie sich jederzeit bemerkbar machen und die Untersuchung gegebenenfalls abbrechen.',
   },
   overview2: {
     id: 'page.desc2',
-    defaultMessage: 'MR-Untersuchungen des Herzens sowie Ganzkörper-MR-Untersuchungen inkl. Ganzkörpergefäßdarstellungen gehören ebenso zum Leistungsspektrum wie die Kontrastmittel-Untersuchung von Gelenken (direkte MR-Arthrographie).',
+    defaultMessage: 'Wesentliche diagnostische Vorteile der MRT liegen u.a. im hohen Weichteilkontrast sowie in der Gefäß- und Gelenkdiagnostik. Bei Patienten mit eingebauten Schrittmachern oder Defibrillatoren bzw. Medikamentenpumpen kann die Untersuchung leider nicht durchgeführt werden – hier sollte in jedem Fall Rücksprache mit unserem Radiologen gehalten werden.',
+  },
+  overview3: {
+    id: 'page.desc3',
+    defaultMessage: 'Neben MR-Untersuchungen des Herzens sowie Ganzkörper-MR-Untersuchungen inkl. Ganzkörpergefäßdarstellungen gehören auch Kontrastmittel-Untersuchung von Gelenken (direkte MR-Arthrographie) zum Leistungsspektrum unserer Praxis.',
   },
 };
 

@@ -12,6 +12,7 @@
     "dist:clean": "rm -rf dist && mkdir dist",
     "copy:static": "cp -r src/static/* dist",
     "compile": "NODE_ENV=production webpack -p --bail",
+    "build-app": "webpack -p --bail --define process.env.NODE_ENV='\"production\"' --progress --colors",
     "dev": "node --harmony server",
     "dev:bs": "node --harmony server --with-browsersync",
     "flow-check": "flow check",

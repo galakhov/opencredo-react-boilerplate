@@ -25,7 +25,6 @@ const CTPageHero = (props) =>
 (
     <Hero displayUnderNavbar>
       <HeroBackground image={props.backgroundImage} />
-      <HeroBackground image={"./images/header_bg.png"} />
 
       <HeroContent>
         <VAContainer horizontal vertical>
@@ -43,7 +42,6 @@ const CTPageHero = (props) =>
                       <p><FormattedMessage {...messages.overview0} /></p>
                       <p><FormattedHTMLMessage {...messages.overview1} /></p>
                       <p><FormattedHTMLMessage {...messages.overview2} /></p>
-                      <p><FormattedHTMLMessage {...messages.overview3} /></p>
                   </Col>
                 </Row>
               </Grid>
@@ -75,7 +73,7 @@ class CTPage extends Component {
   render() {
     return (
       <section id="spectrum-ct-page">
-        <CTPageHero backgroundImage="/images/bg00.jpg" />
+        <CTPageHero backgroundImage="/images/bg_radiologie_hall.jpg" />
       </section>
     );
   }

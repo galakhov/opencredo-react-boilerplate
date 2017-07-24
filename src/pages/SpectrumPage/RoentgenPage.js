@@ -25,7 +25,6 @@ const RoentgenPageHero = (props) =>
 (
     <Hero displayUnderNavbar>
       <HeroBackground image={props.backgroundImage} />
-      <HeroBackground image={"./images/header_bg.png"} />
 
       <HeroContent>
         <VAContainer horizontal vertical>
@@ -41,6 +40,8 @@ const RoentgenPageHero = (props) =>
                       </h1>
 
                       <p><FormattedHTMLMessage {...messages.overview0} /></p>
+                      <p><FormattedHTMLMessage {...messages.overview1} /></p>
+                      <p><FormattedHTMLMessage {...messages.overview2} /></p>
                   </Col>
                 </Row>
               </Grid>
@@ -72,7 +73,7 @@ class RoentgenPage extends Component {
   render() {
     return (
       <section id="spectrum-roentgen-page">
-        <RoentgenPageHero backgroundImage="/images/bg00.jpg" />
+        <RoentgenPageHero backgroundImage="/images/bg_radiologie_waiting_room.jpg" />
       </section>
     );
   }

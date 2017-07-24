@@ -7,7 +7,7 @@ module.exports = {
   webpack: {
     devtool: 'source-map',
     output: {
-      publicPath: '/',
+      // publicPath: '/',
     },
   },
 
@@ -18,5 +18,8 @@ module.exports = {
       chunkModules: true,
       colors: true,
     },
+    log: console.log,
+    path: '/__webpack_hmr',
+    heartbeat: 10 * 1000,
   },
 };

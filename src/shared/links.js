@@ -16,7 +16,7 @@ export const links = {
   },
 
   aboutUs: {
-    to: '/about-us',
+    to: '/team',
     id: 'navigation.aboutUs',
     description: 'Team',
     defaultMessage: 'Team',

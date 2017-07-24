@@ -7,9 +7,13 @@ import AppContainer from 'containers/AppContainer';
 import HeroPageLayout from 'containers/HeroPageLayout';
 import AdminPageLayout from 'containers/AdminPageLayout';
 import LandingPage from 'pages/LandingPage/LandingPage';
-// import AboutPage from 'pages/AboutPage/AboutPage';
-/* import AboutPage_01 from 'pages/AboutPage/AboutPage_01';
-import SpectrumPage from 'pages/SpectrumPage/SpectrumPage';
+import AboutPage from 'pages/AboutPage/AboutPage';
+import AboutPage_01 from 'pages/AboutPage/AboutPage_01';
+import AboutPage_02 from 'pages/AboutPage/AboutPage_02';
+import AboutPage_03 from 'pages/AboutPage/AboutPage_03';
+import AboutPage_04 from 'pages/AboutPage/AboutPage_04';
+import AboutPage_05 from 'pages/AboutPage/AboutPage_05';
+/* import SpectrumPage from 'pages/SpectrumPage/SpectrumPage';
 import RadiologiePage from 'pages/SpectrumPage/RadiologiePage';
 import HerzMRTPage from 'pages/SpectrumPage/HerzMRTPage';
 import AngiographiePage from 'pages/SpectrumPage/AngiographiePage';
@@ -44,11 +48,17 @@ export default(
       //<Route path="/pages" >
         <IndexRedirect to="/praxis" />
         <Route path="/praxis" component={PraxisPage} />
+        <Route path="/team">
+          <IndexRoute component={AboutPage} />
+          <Route path="dabir" component={AboutPage_01} />
+          <Route path="hirning" component={AboutPage_02} />
+          <Route path="poll" component={AboutPage_03} />
+          <Route path="dabir-scherfeld" component={AboutPage_04} />
+          <Route path="meyer" component={AboutPage_05} />
+        </Route>
         {
           /*
-          <Route path="/about-us" component={AboutPage}>
-            <Route path="/about-us/01" component={AboutPage_01} />
-          </Route>
+
           <Route path="/spectrum" component={SpectrumPage}>
             <Route path="/spectrum/radiologie" component={RadiologiePage} />
             <Route path="/spectrum/mrt" component={MRTPage} />

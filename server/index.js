@@ -19,6 +19,9 @@ const log = debug('app:server');
 log('Redirecting all other requests to index.html');
 app.use(history({ verbose: false }));
 
+log(`Serving static content from ${config.paths.static}`);
+app.use(express.static(config.paths.static));
+
 log('Enabling webpack dev middleware.');
 app.use(webpackDevMiddleware(compiler, {
   lazy: false,
@@ -28,10 +31,9 @@ app.use(webpackDevMiddleware(compiler, {
 }));
 
 log('Enabling Webpack Hot Module Replacement (HMR).');
-app.use(webpackHotMiddleware(compiler));
+// app.use(webpackHotMiddleware(compiler));
 
-log(`Serving static content from ${config.paths.static}`);
-app.use(express.static(config.paths.static));
+app.use(webpackHotMiddleware(compiler));
 
 const port = yargs.argv.port || config.server.port;
 app.listen(port, config.server.hostname, () => {

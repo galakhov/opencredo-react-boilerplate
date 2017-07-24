@@ -9,7 +9,7 @@ export const messages = {
   },
   overview1: {
     id: 'page.desc1',
-    defaultMessage: 'Die PRT kann ambulant an der gesamten Wirbelsäule durchgeführt und wiederholt werden und dauert nur wenige Minuten.',
+    defaultMessage: 'Die PRT kann ambulant an der gesamten Wirbelsäule durchgeführt und zyklisch wiederholt werden. Die Behandlung dauert nur wenige Minuten – Sie können danach direkt nach Hause gehen.',
   },
 };
 

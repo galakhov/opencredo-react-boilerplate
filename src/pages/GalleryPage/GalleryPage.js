@@ -26,7 +26,6 @@ const GaleriePageHero = (props) =>
 (
     <Hero displayUnderNavbar>
       <HeroBackground image={props.backgroundImage} />
-      <HeroBackground image={"./images/header_bg.png"} />
 
       <HeroContent>
         <VAContainer horizontal vertical>

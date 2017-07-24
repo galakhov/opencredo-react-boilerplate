@@ -11,6 +11,8 @@ import {
 } from 'redux/modules/document-title/document-title';
 import AboutPageHeroTeam from './AboutPageHeroTeam';
 
+// <AboutPageHero backgroundImage="/images/bg00.jpg" />
+
 /* eslint camelcase: 0 */
 const styles_custom = {
   team_container: {
@@ -29,7 +31,7 @@ const styles_custom = {
 };
 
 /* eslint camelcase: 0 */
-class AboutPage_01 extends Component {
+class AboutPage_04 extends Component {
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
   };
@@ -45,26 +47,25 @@ class AboutPage_01 extends Component {
   render() {
     return (
       <section id="about-page">
-        <AboutPageHeroTeam backgroundImage="/images/team/dabir.jpg" />
+        <AboutPageHeroTeam backgroundImage="/images/team/dabir_scherfeld.jpg" />
+        <Grid style={styles_custom.team_container}>
+          <Row>
+            <Col xs={12} className="text-left">
+            <div className="text-team" style={styles_custom.team_container_caption}>
+              <h1>
+                <FormattedMessage {...messages.doctors.content.doc3} />
+              </h1>
 
-          <Grid style={styles_custom.team_container}>
-            <Row>
-              <Col xs={12} className="text-left">
-              <div className="text-team" style={styles_custom.team_container_caption}>
-                <h1>
-                  <FormattedMessage {...messages.doctors.content.doc0} />
-                </h1>
-
-                <p>
-                  <FormattedMessage {...messages.doctors.content.job0} />
-                </p>
-              </div>
-              </Col>
-            </Row>
-          </Grid>
+              <p>
+                <FormattedMessage {...messages.doctors.content.job0} />
+              </p>
+            </div>
+            </Col>
+          </Row>
+        </Grid>
       </section>
     );
   }
 }
 
-export default connect(() => ({}))(AboutPage_01);
+export default connect(() => ({}))(AboutPage_04);

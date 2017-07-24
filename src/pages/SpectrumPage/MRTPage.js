@@ -25,7 +25,6 @@ const MRTPageHero = (props) =>
 (
     <Hero displayUnderNavbar>
       <HeroBackground image={props.backgroundImage} />
-      <HeroBackground image={"./images/header_bg.png"} />
 
       <HeroContent>
         <VAContainer horizontal vertical>
@@ -74,7 +73,7 @@ class MRTPage extends Component {
   render() {
     return (
       <section id="spectrum-mrt-page">
-        <MRTPageHero backgroundImage="/images/bg00.jpg" />
+        <MRTPageHero backgroundImage="/images/bg_radiologie_waiting_area.jpg" />
       </section>
     );
   }

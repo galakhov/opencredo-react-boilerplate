@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import config from './AboutPage.i18n';
-import { FormattedMessage, FormattedHTMLMessage } from 'react-intl'; // FormattedHTMLMessage
+import { FormattedMessage } from 'react-intl'; // FormattedHTMLMessage
 import { Hero, HeroContent, HeroBackground } from 'components/Hero/index';
 import { VAContainer, VAMiddle } from 'components/VAlign/VAlign';
 import styles from './AboutPage.scss';
@@ -21,6 +21,7 @@ import { Grid, Row, Col } from 'react-bootstrap';
     width: '45%',
   },
 }); */
+
 /* eslint camelcase: 0 */
 const styles_custom = {
   container: {
@@ -52,47 +53,59 @@ const AboutPageHero = (props) =>
 
             <div className="text-left">
               <h1 className={styles['hero-title']}>
-                {config.name}
+                { config.team }
               </h1>
 
-              <p className={styles['hero-description']}>
-                {config.description0}
-              </p>
+              <p className={styles['hero-description']}><FormattedMessage {...messages.doctors.content} /></p>
 
               <Grid style={styles_custom.container}>
                 <Row>
                   <Col xs={12} className="text-left">
-                    <h1><FormattedMessage {...messages.doctors} /></h1>
-                    <p><b><FormattedMessage {...messages.doctors.content.title0} /></b></p>
-                    <ul className="team-list">
-                      <li key={messages.doctors.content.doc0.route}><Link to={messages.doctors.content.doc0.route}><FormattedMessage {...messages.doctors.content.doc0} /></Link></li>
-                      <li key={messages.doctors.content.doc1.route}><Link to={messages.doctors.content.doc1.route}><FormattedMessage{...messages.doctors.content.doc1.route} /></Link></li>
-                      <li key={messages.doctors.content.doc2.route}><Link to={messages.doctors.content.doc2.route}><FormattedMessage{...messages.doctors.content.doc2.route} /></Link></li>
-                      <li key={messages.doctors.content.doc3.route}><Link to={messages.doctors.content.doc3.route}><FormattedMessage{...messages.doctors.content.doc3.route} /></Link></li>
-                      <li key={messages.doctors.content.doc4.route}><Link to={messages.doctors.content.doc4.route}><FormattedMessage{...messages.doctors.content.doc4.route} /></Link></li>
-                      <li key={messages.doctors.content.doc7.route}><Link to={messages.doctors.content.doc7.route}><FormattedMessage{...messages.doctors.content.doc7.route} /></Link></li>
-                      <li key={messages.doctors.content.doc9.route}><Link to={messages.doctors.content.doc9.route}><FormattedMessage{...messages.doctors.content.doc9.route} /></Link></li>
-                    </ul>
-                    <p><b><FormattedMessage {...messages.doctors.content.title1} /></b></p>
-                    <ul className="team-list">
-                      <li><FormattedMessage{...messages.doctors.content.doc5} /></li>
-                      <li><FormattedMessage{...messages.doctors.content.doc6} /></li>
-                    </ul>
-                    <p><b><FormattedMessage {...messages.doctors.content.title2} /></b></p>
-                    <ul className="team-list">
-                      <li><FormattedMessage{...messages.doctors.content.doc8} /></li>
-                      <li><FormattedMessage{...messages.doctors.content.doc10} /></li>
-                    </ul><br />
+                  <ul className="team-list">
+                    <li><Link to={messages.doctors.content.doc0.route}><FormattedMessage {...messages.doctors.content.doc0} /></Link></li>
+                    <li><Link to={messages.doctors.content.doc1.route}><FormattedMessage {...messages.doctors.content.doc1} /></Link></li>
+                    <li><Link to={messages.doctors.content.doc2.route}><FormattedMessage {...messages.doctors.content.doc2} /></Link></li>
+                    <li><Link to={messages.doctors.content.doc3.route}><FormattedMessage {...messages.doctors.content.doc3} /></Link></li>
+                    <li><Link to={messages.doctors.content.doc4.route}><FormattedMessage {...messages.doctors.content.doc4} /></Link></li>
+                  </ul>
+                  {
+                    /*
+                    <h1><FormattedHTMLMessage {...messages.doctors} /></h1>
+                    <p><b><FormattedHTMLMessage {...messages.doctors.content.title0} /></b></p>
 
-                    <Row className="team-photos">
-                    <FormattedHTMLMessage{...messages.photos.doc1} />
-                    <FormattedHTMLMessage{...messages.photos.doc2} />
-                    <FormattedHTMLMessage{...messages.photos.doc3} />
-                    <FormattedHTMLMessage{...messages.photos.doc4} />
-                    <FormattedHTMLMessage{...messages.photos.doc5} />
-                    <FormattedHTMLMessage{...messages.photos.doc6} />
-                    <FormattedHTMLMessage{...messages.photos.doc7} />
-                    </Row>
+                        <ul className="team-list">
+                          <li><Link to={...messages.doctors.content.doc0.route}><FormattedMessage {...messages.doctors.content.doc0} /></Link></li>
+                          <li><Link to={...messages.doctors.content.doc1.route}><FormattedMessage{...messages.doctors.content.doc1.route} /></Link></li>
+                          <li><Link to={...messages.doctors.content.doc2.route}><FormattedMessage{...messages.doctors.content.doc2.route} /></Link></li>
+                          <li><Link to={...messages.doctors.content.doc3.route}><FormattedMessage{...messages.doctors.content.doc3.route} /></Link></li>
+                          <li><Link to={...messages.doctors.content.doc4.route}><FormattedMessage{...messages.doctors.content.doc4.route} /></Link></li>
+                          <li><Link to={...messages.doctors.content.doc7.route}><FormattedMessage{...messages.doctors.content.doc7.route} /></Link></li>
+                          <li><Link to={...messages.doctors.content.doc9.route}><FormattedMessage{...messages.doctors.content.doc9.route} /></Link></li>
+                        </ul>
+
+                        <p><b><FormattedMessage {...messages.doctors.content.title1} /></b></p>
+                        <ul className="team-list">
+                          <li><FormattedMessage{...messages.doctors.content.doc5} /></li>
+                          <li><FormattedMessage{...messages.doctors.content.doc6} /></li>
+                        </ul>
+                        <p><b><FormattedMessage {...messages.doctors.content.title2} /></b></p>
+                        <ul className="team-list">
+                          <li><FormattedMessage{...messages.doctors.content.doc8} /></li>
+                          <li><FormattedMessage{...messages.doctors.content.doc10} /></li>
+                        </ul><br />
+
+
+                      <Row className="team-photos">
+                      <FormattedHTMLMessage{...messages.photos.doc1} />
+                      <FormattedHTMLMessage{...messages.photos.doc2} />
+                      <FormattedHTMLMessage{...messages.photos.doc3} />
+                      <FormattedHTMLMessage{...messages.photos.doc4} />
+                      <FormattedHTMLMessage{...messages.photos.doc5} />
+                      <FormattedHTMLMessage{...messages.photos.doc6} />
+                      <FormattedHTMLMessage{...messages.photos.doc7} />
+                      </Row>
+                      */
+                    }
                   </Col>
                 </Row>
               </Grid>

@@ -10,9 +10,11 @@ export const messages = {
   doctors: {
     id: 'aboutPage.doctors',
     defaultMessage: 'Unsere Ärzte',
+
     content: {
       id: 'aboutPage.content',
-      defaultMessage: 'content',
+      defaultMessage: 'Unsere Fachärzte für Diagnostische Radiologie:',
+
       title0: {
         id: 'aboutPage.title0',
         defaultMessage: 'Unsere Fachärzte für Diagnostische Radiologie:',
@@ -27,57 +29,61 @@ export const messages = {
       },
       doc0: {
         id: 'aboutPage.content.doc0',
-        route: '/about-us/00',
+        route: '/team/dabir',
         defaultMessage: 'Dr. med. K. Dabir',
+      },
+      job0: {
+        id: 'aboutPage.content.job0',
+        defaultMessage: 'Facharzt für Diagnostische Radiologie',
       },
       doc1: {
         id: 'aboutPage.content.doc1',
-        route: '/about-us/01',
+        route: '/team/hirning',
         defaultMessage: 'Dr. med. M. Hirning',
       },
       doc2: {
         id: 'aboutPage.content.doc2',
-        route: '/about-us/02',
+        route: '/team/poll',
         defaultMessage: 'Prof. Dr. med. L. W. Poll',
       },
       doc3: {
         id: 'aboutPage.content.doc3',
-        route: '/about-us/03',
-        defaultMessage: 'Dr. med. D. Meyer',
+        route: '/team/dabir-scherfeld',
+        defaultMessage: 'Dr. med. D. Dabir-Scherfeld',
       },
       doc4: {
         id: 'aboutPage.content.doc4',
-        route: '/about-us/04',
-        defaultMessage: 'Peter Flake',
+        route: '/team/meyer',
+        defaultMessage: 'Dr. med. D. Meyer',
       },
       doc5: {
         id: 'aboutPage.content.doc5',
-        route: '/about-us/05',
+        route: '/team/05',
         defaultMessage: 'Dr. med. D. Fröhling',
       },
       doc6: {
         id: 'aboutPage.content.doc6',
-        route: '/about-us/06',
+        route: '/team/06',
         defaultMessage: 'Dr. med. R. Larraß',
       },
       doc7: {
         id: 'aboutPage.content.doc7',
-        route: '/about-us/07',
+        route: '/team/07',
         defaultMessage: 'Dr. med. S. Cubukcu',
       },
       doc8: {
         id: 'aboutPage.content.doc8',
-        route: '/about-us/08',
-        defaultMessage: 'Dr. med. D. Dabir-Scherfeld',
+        route: '/team/08',
+        defaultMessage: 'Peter Flake',
       },
       doc9: {
         id: 'aboutPage.content.doc9',
-        route: '/about-us/09',
+        route: '/team/09',
         defaultMessage: 'Karin Scheidung',
       },
       doc10: {
         id: 'aboutPage.content.doc10',
-        route: '/about-us/10',
+        route: '/team/10',
         defaultMessage: 'Dr. med. I. Reddig',
       },
     },
@@ -85,39 +91,40 @@ export const messages = {
   photos: {
     id: 'aboutPage.photos',
     defaultMessage: 'Bilder von unseren Ärzten',
+
     doc1: {
-      id: '01',
-      route: '/about-us/01',
+      id: 'aboutPage.photos.01',
+      // route: '/team/01',
       defaultMessage: '<img src="./images/photo_01.jpg" alt="" border="0" />',
     },
     doc2: {
-      id: '02',
-      route: '/about-us/02',
+      id: 'aboutPage.photos.02',
+      // route: '/team/02',
       defaultMessage: '<img src="./images/photo_02.jpg" alt="" border="0" />',
     },
     doc3: {
-      id: '03',
-      route: '/about-us/03',
+      id: 'aboutPage.photos.03',
+      // route: '/team/03',
       defaultMessage: '<img src="./images/photo_03.jpg" alt="" border="0" />',
     },
     doc4: {
-      id: '04',
-      route: '/about-us/04',
+      id: 'aboutPage.photos.04',
+      // route: '/team/04',
       defaultMessage: '<img src="./images/photo_04.jpg" alt="" border="0" />',
     },
     doc5: {
-      id: '05',
-      route: '/about-us/05',
+      id: 'aboutPage.photos.05',
+      // route: '/team/05',
       defaultMessage: '<img src="./images/photo_05.jpg" alt="" border="0" />',
     },
     doc6: {
-      id: '06',
-      route: '/about-us/06',
+      id: 'aboutPage.photos.06',
+      // route: '/team/06',
       defaultMessage: '<img src="./images/photo_06.jpg" alt="" border="0" />',
     },
     doc7: {
-      id: '07',
-      route: '/about-us/07',
+      id: 'aboutPage.photos.07',
+      // route: '/team/07',
       defaultMessage: '<img src="./images/photo_07.jpg" alt="" border="0" />',
     },
   },
@@ -125,5 +132,7 @@ export const messages = {
 
 export default {
   name: 'Ihre Ansprechpartner in allen Belangen – für Ihr Wohlbefinden',
-  description0: 'Unser Ärzteteam besteht aus Spezialisten im Bereich der Radiologie und betreut und behandelt Ihre Schmerzen individuell und zielgerichtet. Unser wichtigstes Anliegen in unsere Praxis ist Ihre Zufriedenheit und Ihr Wohlbefinden. Das Team der Radiologischen Gemeinschaftspraxis legt größten Wert darauf, dass Sie Ihr Leben schmerzfrei und aktiv genießen können.',
+  team: 'Das Ärzteteam',
+  description0: 'Ihr Anliegen ist unsere Mission. Unser Team aus fünf erfahrenen Fachärztinnen und Fachärzten für Diagnostische Radiologie ist für Sie da und berät Sie jederzeit auf höchstem Niveau.',
+  description1: 'Durch kontinuierliche Weiterbildung und modernste medizinische Geräte-Technik bieten wir Ihnen Diagnostik auf neuestem Stand der Forschung. Wir möchten, dass Sie sich bei uns rundum wohlfühlen. Daher bieten wir hohen Komfort und ein gehobenes Ambiente ohne Wartezeiten. Empathie und Fachwissen gehören bei uns zusammen. Lernen Sie unsere Ärzte kennen.',
 };

@@ -7,8 +7,8 @@ import { links } from 'shared/links';
 
 const footerLinks = [
   // links.aboutUs,
-  links.downloads,
-  links.anfahrt,
+  // links.downloads,
+  // links.anfahrt,
   // links.terms,
   // links.help,
   links.policies,
