@@ -53,7 +53,7 @@ export class LandingPage extends React.Component {
   render() {
     return (
       <div id="landing-page">
-        <LandingPageHero backgroundImage="/images/bg.jpg" />
+        <LandingPageHero backgroundImage="/images/gura_verwaltungs_gmbh.jpg" />
         <Grid>
           <Row>
             <Col className="sidebar" sm={3} md={3} xs={3}>

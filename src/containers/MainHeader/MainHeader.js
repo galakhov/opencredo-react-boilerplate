@@ -44,7 +44,7 @@ class MainHeader extends React.Component {
           <Navbar.Brand>
             <Link to="/">
               <FormattedMessage {...links.home} />
-              <img src="/images/logo.jpg" />
+              <img src="/images/gura_logo_verwaltungs_gmbh.jpg" />
               { /* The above is equivalent to
                 <FormattedMessage id={links.home.id}
                                   description={links.home.description}

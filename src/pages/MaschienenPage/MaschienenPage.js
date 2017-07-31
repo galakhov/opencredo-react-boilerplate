@@ -66,9 +66,7 @@ export class MaschienenPage extends React.Component {
                 {
                   /*
                   Boschert Powerline
-
                   EHT Multibend
-
                   HAAS VF 2 SS
                   HAAS VF 1
                   Konventionelle Drehm.
