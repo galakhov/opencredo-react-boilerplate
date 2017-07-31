@@ -76,8 +76,15 @@ a {
     color: rgba(#777, 0.0);
   }
 
-  span {
+  span,
+  a.dropdown-toggle {
     font-family: $eurostile_font;
+  }
+
+  a.dropdown-toggle {
+    color: rgba(#777, 1.0);
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   ul {

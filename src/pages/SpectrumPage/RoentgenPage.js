@@ -40,7 +40,9 @@ const RoentgenPageHero = (props) =>
                       </h1>
 
                       <p><FormattedHTMLMessage {...messages.overview0} /></p>
-                      <p><FormattedHTMLMessage {...messages.overview1} /></p>
+                      {
+                        /* <p><FormattedHTMLMessage {...messages.overview1} /></p> */
+                      }
                       <p><FormattedHTMLMessage {...messages.overview2} /></p>
                   </Col>
                 </Row>
@@ -73,7 +75,7 @@ class RoentgenPage extends Component {
   render() {
     return (
       <section id="spectrum-roentgen-page">
-        <RoentgenPageHero backgroundImage="/images/bg_radiologie_waiting_room.jpg" />
+        <RoentgenPageHero backgroundImage="/images/galerie/roentgen1.jpg" />
       </section>
     );
   }

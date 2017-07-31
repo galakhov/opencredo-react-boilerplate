@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Hero.scss';
 
 export default class HeroBackground extends React.Component {
   static propTypes = {
-    image: React.PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
   };
 
   render() {

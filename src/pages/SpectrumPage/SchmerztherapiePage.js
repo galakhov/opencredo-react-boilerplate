@@ -72,7 +72,7 @@ class SchmerztherapiePage extends Component {
   render() {
     return (
       <section id="spectrum-schmerztherapie-page">
-        <SchmerztherapiePageHero backgroundImage="/images/bg_radiologie_texture.jpg" />
+        <SchmerztherapiePageHero backgroundImage="/images/galerie/ct.jpg" />
       </section>
     );
   }

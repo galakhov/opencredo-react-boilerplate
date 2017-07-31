@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import styles from './VAlign.scss';
+import PropTypes from 'prop-types';
 
 export const VAMiddle = ({ children = '' }) => <div className={styles.middle}>{children}</div>;
 export const VATop = ({ children = '' }) => <div className={styles.top}>{children}</div>;
@@ -17,16 +18,16 @@ export const VAContainer = ({ horizontal, vertical, children = '' }) => {
 };
 
 VAContainer.propTypes = {
-  children: React.PropTypes.node,
-  horizontal: React.PropTypes.bool,
-  vertical: React.PropTypes.bool,
+  children: PropTypes.node,
+  horizontal: PropTypes.bool,
+  vertical: PropTypes.bool,
 };
 VAMiddle.propTypes = {
-  children: React.PropTypes.node,
+  children: PropTypes.node,
 };
 VATop.propTypes = {
-  children: React.PropTypes.node,
+  children: PropTypes.node,
 };
 VABottom.propTypes = {
-  children: React.PropTypes.node,
+  children: PropTypes.node,
 };

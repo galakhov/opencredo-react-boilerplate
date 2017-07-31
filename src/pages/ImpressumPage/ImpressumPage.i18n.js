@@ -5,11 +5,15 @@ export const messages = {
   },
   overview0: {
     id: 'page.overview0',
-    defaultMessage: 'Verantwortlich für den Inhalt gem. § 5 TMG:',
+    defaultMessage: 'Radiologie am Kaiserteich<br />',
   },
   overview1: {
     id: 'page.overview1',
-    defaultMessage: 'Überörtliche Radiologische Gemeinschaftspraxis<br />Dres. Dabir/Hirning/Poll und Kollegen<br />Radiologie am Kaiserteich<br />Reichsstraße 59 · 40217 Düsseldorf<br />',
+    defaultMessage: 'Verantwortlich für den Inhalt gem. § 5 TMG:<br />Überörtliche Radiologische Gemeinschaftspraxis<br />Dres. Dabir/Hirning/Poll und Kollegen<br />Radiologie am Kaiserteich<br />Reichsstraße 59<br />40217 Düsseldorf<br />',
+  },
+  overview_doctors: {
+    id: 'page.overview',
+    defaultMessage: 'Dr. med. Khosrow Dabir<br />Facharzt für Diagnostische Radiologie<br /><br />Dr. med. Michael Hirning<br />Facharzt für Diagnostische Radiologie<br /><br />Prof. Dr. med. Ludger Wilhelm Poll<br />Facharzt für Diagnostische Radiologie<br /><br />',
   },
   overview2: {
     id: 'page.overview2',
@@ -17,7 +21,7 @@ export const messages = {
   },
   overview3: {
     id: 'page.overview3',
-    defaultMessage: ' ',
+    defaultMessage: '<br />Zuständige Ärztekammer:<br />Ärztekammer Nordrhein, 40474 Düsseldorf<br /><br />Berufsbezeichnungen:<br />Alle o. g. Facharzttitel wurden in der Bundesrepublik Deutschland verliehen<br /><br />Berufsrechtliche Regelungen:<br />Berufsordnung Ärztekammer Nordrhein<br />',
     // defaultMessage: 'Zuständige Aufsichtsbehörde:<br />Kassenärztliche Vereinigung Nordrhein, Emanuel-Leutze-Str. 8, 40547 Düsseldorf',
   },
   overview4: {
@@ -27,7 +31,7 @@ export const messages = {
   },
   overview5: {
     id: 'page.overview5',
-    defaultMessage: 'Design und Realisierung: <a href="http://www.4dd.de" target="_blank">www.4dd.de</a>',
+    defaultMessage: '<br /><br />Design und Realisierung: <a href="http://www.4dd.de" target="_blank">www.4dd.de</a>',
   },
   overview6: {
     id: 'page.overview6',

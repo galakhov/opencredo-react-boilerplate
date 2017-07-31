@@ -42,6 +42,7 @@ const CTPageHero = (props) =>
                       <p><FormattedMessage {...messages.overview0} /></p>
                       <p><FormattedHTMLMessage {...messages.overview1} /></p>
                       <p><FormattedHTMLMessage {...messages.overview2} /></p>
+                      <p><FormattedHTMLMessage {...messages.overview3} /></p>
                   </Col>
                 </Row>
               </Grid>
@@ -73,7 +74,7 @@ class CTPage extends Component {
   render() {
     return (
       <section id="spectrum-ct-page">
-        <CTPageHero backgroundImage="/images/bg_radiologie_hall.jpg" />
+        <CTPageHero backgroundImage="/images/galerie/ct.jpg" />
       </section>
     );
   }

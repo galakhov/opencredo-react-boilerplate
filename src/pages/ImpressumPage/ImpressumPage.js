@@ -1,6 +1,6 @@
 /* @flow */
 import React, { PropTypes, Component } from 'react';
-import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
+import { FormattedHTMLMessage } from 'react-intl'; // FormattedMessage,
 import { connect } from 'react-redux';
 import { Grid, Row, Col } from 'react-bootstrap';
 import { HeroBackground, Hero, HeroContent } from 'components/Hero';
@@ -58,7 +58,8 @@ const ImpressumPageHero = (props) =>
                       </h1>
                       */
                     }
-                    <p><FormattedMessage {...messages.overview0} /></p>
+                    <p><FormattedHTMLMessage {...messages.overview0} /></p>
+                    <p><FormattedHTMLMessage {...messages.overview_doctors} /></p>
                     <p><FormattedHTMLMessage {...messages.overview1} /></p>
                     <p><FormattedHTMLMessage {...messages.overview2} /></p>
                     <p><FormattedHTMLMessage {...messages.overview3} /></p>

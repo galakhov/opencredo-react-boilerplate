@@ -57,19 +57,19 @@ class MainHeader extends React.Component {
         <Navbar.Collapse>
           <Nav pullLeft>
             <li role="presentation">
-              <Link activeClassName="active" to="/praxis">
+              <Link to="/praxis">
                 <FormattedMessage {...links.home} />
               </Link>
             </li>
             <li role="presentation">
-              <Link activeClassName="active" to="/team">
+              <Link to="/team">
                 <FormattedMessage {...links.aboutUs} />
               </Link>
             </li>
               { /* <Link activeClassName="active" to="/spectrum">
                 <FormattedMessage {...links.spectrum} />
               </Link> */ }
-            { /* <NavDropdown activeClassName="active" eventKey="/spectrum" title="Behandlungsspektrum" id="nav-dropdown">
+            { /* <NavDropdown activeClassName="active" eventKey="/spectrum" title="Behandlungsspektrum" ClassName="nav-dropdown">
               <MenuItem eventKey="/spectrum" href="/spectrum"><FormattedMessage {...links.spectrum} /></MenuItem>
               <MenuItem eventKey="/spectrum/radiologie" href="/spectrum/radiologie"><FormattedMessage {...links.spectrum_radiologie} /></MenuItem>
               <MenuItem eventKey="/spectrum/mrt" href="/spectrum/mrt"><FormattedMessage {...links.spectrum_mrt} /></MenuItem>
@@ -86,23 +86,13 @@ class MainHeader extends React.Component {
               { // <MenuItem divider /> }
             </NavDropdown> */
             }
-            <li role="presentation">
-              {
-                /*
-                <Link activeClassName="active" to="/leistungen">
-                  <FormattedMessage {...links.service} />
-                </Link>
-                */
-              }
-
-              <NavDropdown activeClassName="active" eventKey="/leistungen" title="Behandlungsspektrum" id="nav-dropdown">
-                <MenuItem eventKey="/leistungen" href="/leistungen"><FormattedMessage {...links.service} /></MenuItem>
-                <MenuItem eventKey="/leistungen/roentgen" href="/leistungen/roentgen"><FormattedMessage {...links.leistungen_roentgen} /></MenuItem>
-                <MenuItem eventKey="/leistungen/ct" href="/leistungen/ct"><FormattedMessage {...links.leistungen_ct} /></MenuItem>
-                <MenuItem eventKey="/leistungen/prt" href="/leistungen/prt"><FormattedMessage {...links.leistungen_prt} /></MenuItem>
-                <MenuItem eventKey="/leistungen/mrt" href="/leistungen/mrt"><FormattedMessage {...links.leistungen_mrt} /></MenuItem>
+              <NavDropdown title="Behandlungsspektrum" className="nav-dropdown">
+                <MenuItem href="/leistungen"><FormattedMessage {...links.service} /></MenuItem>
+                <MenuItem href="/leistungen/roentgen"><FormattedMessage {...links.leistungen_roentgen} /></MenuItem>
+                <MenuItem href="/leistungen/ct"><FormattedMessage {...links.leistungen_ct} /></MenuItem>
+                <MenuItem href="/leistungen/prt"><FormattedMessage {...links.leistungen_prt} /></MenuItem>
+                <MenuItem href="/leistungen/mrt"><FormattedMessage {...links.leistungen_mrt} /></MenuItem>
               </NavDropdown>
-            </li>
             {
               /*
               <li role="presentation">
@@ -113,7 +103,7 @@ class MainHeader extends React.Component {
               */
             }
             <li role="presentation">
-              <Link activeClassName="active" to="/galerie">
+              <Link to="/galerie">
                 <FormattedMessage {...links.gallery} />
               </Link>
             </li>

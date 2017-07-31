@@ -1,5 +1,10 @@
 {
   "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
   "extends": [
     "airbnb"
   ],
@@ -22,6 +27,20 @@
     "no-dupe-class-members": 2,
     "no-this-before-super": 1,
     "prefer-template": 2,
-    "max-len": [1, 120]
-  }
+    "react/prefer-stateless-function": 0,
+    "max-len": [1, 255],
+    // "inferno/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "arrow-body-style": [1, "as-needed"],
+    "func-style": [1, "declaration", {
+        "allowArrowFunctions": true,
+        // "allowSimpleArrowFunctionExpression": true
+    }],
+    // "inferno/jsx-uses-inferno": "error",
+    // "inferno/jsx-uses-vars": "error",
+  },
+  // {
+  // "plugins": [
+  //  "inferno"
+  //  ]
+  // }
 }

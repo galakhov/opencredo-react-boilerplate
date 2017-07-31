@@ -25,5 +25,5 @@ const store = configureStore({}, browserHistory);
 // Render the React application to the DOM
 ReactDOM.render(
   <Root history={browserHistory} store={store} routes={routes} />,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

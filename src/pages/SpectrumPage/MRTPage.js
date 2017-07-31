@@ -42,6 +42,7 @@ const MRTPageHero = (props) =>
                       <p><FormattedMessage {...messages.overview0} /></p>
                       <p><FormattedMessage {...messages.overview1} /></p>
                       <p><FormattedMessage {...messages.overview2} /></p>
+                      <p><FormattedMessage {...messages.overview3} /></p>
                   </Col>
                 </Row>
               </Grid>
@@ -73,7 +74,7 @@ class MRTPage extends Component {
   render() {
     return (
       <section id="spectrum-mrt-page">
-        <MRTPageHero backgroundImage="/images/bg_radiologie_waiting_area.jpg" />
+        <MRTPageHero backgroundImage="/images/galerie/mrt1.jpg" />
       </section>
     );
   }

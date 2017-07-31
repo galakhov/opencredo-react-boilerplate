@@ -1,6 +1,6 @@
 /* @flow */
 import React, { PropTypes, Component } from 'react';
-import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
+import { FormattedMessage } from 'react-intl'; // FormattedHTMLMessage
 import { connect } from 'react-redux';
 import { Grid, Row, Col } from 'react-bootstrap';
 import { HeroBackground, Hero, HeroContent } from 'components/Hero';
@@ -12,6 +12,7 @@ import {
   updateDocumentTitle,
   resetDocumentTitle,
 } from 'redux/modules/document-title/document-title';
+import LightboxGallery from './Gallery';
 
 /* eslint camelcase: 0 */
 const styles_custom = {
@@ -36,38 +37,14 @@ const GaleriePageHero = (props) =>
                 {config.name}
               </h1>
 
-              <p className={styles['hero-description']}>
-                {config.description0}
-              </p>
-
-              <p className={styles['hero-description']}>
-                {config.description1}
-              </p>
-
-              <p className={styles['hero-description']}>
-                {config.description2}
-              </p>
-
               <Grid style={styles_custom.container}>
                 <Row>
                   <Col xs={12} className="text-left">
-                    {
-                      /*
-                      <h1>
-                        <FormattedMessage {...messages.title} />
-                      </h1>
-                      */
-                    }
                     <p><FormattedMessage {...messages.overview0} /></p>
-                    <p><FormattedHTMLMessage {...messages.overview1} /></p>
-                    <p><FormattedHTMLMessage {...messages.overview2} /></p>
-                    <p><FormattedHTMLMessage {...messages.overview3} /></p>
-                    <p><FormattedHTMLMessage {...messages.overview4} /></p>
-                    <p><FormattedHTMLMessage {...messages.overview5} /></p>
-                    <p><FormattedHTMLMessage {...messages.overview6} /></p>
-                    <p><FormattedHTMLMessage {...messages.overview7} /></p>
-                    <p><FormattedHTMLMessage {...messages.overview8} /></p>
-                    <p><FormattedHTMLMessage {...messages.overview9} /></p>
+                    {
+                      /* <LightBoxComponent /> */
+                    }
+                      <LightboxGallery />
                   </Col>
                 </Row>
               </Grid>

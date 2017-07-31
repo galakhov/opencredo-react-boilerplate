@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './MainFooter.scss';
 import { Link } from 'react-router';
 import { FormattedMessage } from 'react-intl';
@@ -16,7 +17,7 @@ const footerLinks = [
 // <Image source={require('../../static/images/footer_line_bottom.png')} className={styles['footer-line']} />
 export default class MainFooter extends React.Component {
   static propTypes = {
-    children: React.PropTypes.node,
+    children: PropTypes.node,
   };
 
   render() {

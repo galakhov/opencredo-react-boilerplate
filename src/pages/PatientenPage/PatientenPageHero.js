@@ -54,7 +54,7 @@ const PatientenPageHero = (props) =>
               <p className={styles['hero-description']}><b>{config.description3}</b></p>
 
               <h1 className={styles['hero-title']}><FormattedHTMLMessage {...messages.description01_title} /></h1>
-              <p className={styles['hero-description']}>
+              <p className={styles['hero-description']}><br />
                 <ul>
                   <li><Link to={messages.description01_1.route}><FormattedHTMLMessage {...messages.description01_1} /></Link></li>
                   <li><Link to={messages.description01_2.route}><FormattedHTMLMessage {...messages.description01_2} /></Link></li>

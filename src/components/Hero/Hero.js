@@ -1,12 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Hero.scss';
 import classNames from 'classnames';
 
 export default class Hero extends React.Component {
   static propTypes = {
-    children: React.PropTypes.node,
-    displayUnderNavbar: React.PropTypes.bool,
-    small: React.PropTypes.bool,
+    children: PropTypes.node,
+    displayUnderNavbar: PropTypes.bool,
+    small: PropTypes.bool,
   };
 
   render() {

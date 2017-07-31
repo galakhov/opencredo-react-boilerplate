@@ -58,7 +58,6 @@ export default(
         </Route>
         {
           /*
-
           <Route path="/spectrum" component={SpectrumPage}>
             <Route path="/spectrum/radiologie" component={RadiologiePage} />
             <Route path="/spectrum/mrt" component={MRTPage} />

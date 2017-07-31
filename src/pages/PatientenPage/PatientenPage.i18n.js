@@ -15,7 +15,7 @@ export const messages = {
     id: 'patientenPage.desc01_1',
     defaultMessage: 'Volldigitales Röntgen',
     route: '/leistungen/roentgen',
-    //defaultMessage: 'In der <a href="downloads/kaiserteich-broschuere.pdf">Patientenbroschüre</a> finden Sie Informationen über die einzelnen Bereiche sowie Behandlungs- und Diagnosemethoden unserer Praxis.',
+    // defaultMessage: 'In der <a href="downloads/kaiserteich-broschuere.pdf">Patientenbroschüre</a> finden Sie Informationen über die einzelnen Bereiche sowie Behandlungs- und Diagnosemethoden unserer Praxis.',
   },
   description01_2: {
     id: 'patientenPage.desc01_2',
