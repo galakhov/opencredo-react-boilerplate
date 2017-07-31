@@ -1,10 +1,10 @@
 export const messages = {
   title_hallen: {
     id: 'hallenPage.title_hallen',
-    defaultMessage: 'Hallen',
+    defaultMessage: 'Über die Immobilien',
   },
   hallenText: {
     id: 'hallenPage.text_hallen',
-    defaultMessage: 'Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.',
+    defaultMessage: '<p>In enger Abstimmung mit Kunden, Anwohnern und der Gemeinde Lindlar wird unser 10.500 qm großes Grundstück kontinuierlich ausgebaut: (Bild) Das Bürogebäude, die Produktionshallen 1–3 sowie die Nebengebäude mit Garagen und Abstellräumen werden modernisiert und erweitert. Im Zuge der Baumaßnahmen wurden auch die Parkflächen vor dem Bürogebäude erworben, gepflastert und mit einem effizienten Entwässerungssystem versehen. Für die Zukunft planen wir:</p><ul><li>den Anbau von „Halle 3 Berg“ in 2017 (Bauantrag soll positiv beschieden werden) (Bild)</li><li>die Errichtung eines Technikums in 2018 (Baugenehmigung liegt vor) (Bild)</li></ul>',
   },
 };

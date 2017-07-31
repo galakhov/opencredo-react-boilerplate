@@ -1,10 +1,10 @@
 export const messages = {
   title_maschienen: {
     id: 'maschienenPage.title_maschienen',
-    defaultMessage: 'Maschinen',
+    defaultMessage: 'Über die Maschinen',
   },
   maschienenText: {
     id: 'maschienenPage.text',
-    defaultMessage: 'Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.',
+    defaultMessage: '<p>Durch den Einsatz der GURA Verwaltungs GmbH & Co. KG konnte der stark veraltete Maschinenpark der GURA Fördertechnik GmbH in den Jahren 2015 bis 2017 nahezu komplett erneuert werden: Hochmoderne Stanzbearbeitungszentren, Plasmaschneidanlagen, Tafelscheren, High Speed Fräsbearbeitungszentren, Schwerdrehmaschinen sowie diverse Kreis- und Bandsägeanlagen wurden beschafft und die Effektivität der GURA Fördertechnik damit deutlich gesteigert.<br />Auch die bisher eingesetzten einfachen Schweißgeräte wurden durch professionelle und wesentlich leistungsfähigere Modelle mit Absaugung in der Brennerspitze ersetzt.</p>',
   },
 };

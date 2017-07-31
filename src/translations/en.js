@@ -11,7 +11,7 @@ export default {
   'common.form.error.min': 'Must be at least {min}',
   'common.form.error.minLength': `Must be at least
     {minLength, plural, one {1 character} other {{minLength} characters}} long`,
-  'landingPage.title': 'Über uns',
+  'landingPage.title': 'Über das Unternehmen',
   'landingPage.button.clickMe': 'mehr lesen',
   'landingPage.para.pressCtrlH': 'Press <code>ctrl-h</code> to toggle Redux Dev Tools (development build only).',
   'landingPage.para.autoUpdate': 'This pages auto-updates when you make changes and save.',
