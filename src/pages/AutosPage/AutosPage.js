@@ -36,7 +36,7 @@ export class AutosPage extends React.Component {
             <Col className="sidebar" sm={3} md={3} xs={3}>
               <div>&nbsp;</div>
             </Col>
-            <Col className="main_content_top" sm={6} md={6} xs={7}>
+            <Col className="main_content_top" sm={9} md={6} xs={9}>
               <article className="gura_verwaltungs_gmbh_homepage">
                 &nbsp;
               </article>
