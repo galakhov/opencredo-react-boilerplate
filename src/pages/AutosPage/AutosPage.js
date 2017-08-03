@@ -49,28 +49,32 @@ export class AutosPage extends React.Component {
                 <FormattedHTMLMessage {...messages.landingText} />
                 <br />
                 <div className="text-right">
-                  <p className="img_content"><a href="/images/content/sprinter1.jpg" target="_blank"><img alt="Gura Sprinter" src="/images/content/sprinter1.jpg" /></a></p>
-                  <p className="img_content"><a href="/images/content/lkw.jpg" target="_blank"><img alt="Gura LKW" src="/images/content/lkw.jpg" /></a></p>
-                  <p className="img_content"><a href="/images/content/sprinter2.jpg" target="_blank"><img alt="Gura Sprinter" src="/images/content/sprinter2.jpg" /></a></p>
-                  <p className="img_content"><a href="/images/content/spier_einachsanhaenger.jpg" target="_blank"><img alt="Spier Einachsanhänger" src="/images/content/spier_einachsanhaenger.jpg" /></a></p>
-                  <p className="img_content"><a href="/images/content/GM_NH_27.jpg" target="_blank"><img alt="GM NH 27" src="/images/content/GM_NH_27.jpg" /></a></p>
-                  <p className="img_content"><a href="/images/content/gura_autos_ueberblick.jpg" target="_blank"><img alt="Autos Überblick" src="/images/content/gura_autos_ueberblick.jpg" /></a></p>
-                  <p className="img_content"><a href="/images/content/GM_NH_27_Detail.jpg" target="_blank"><img alt="Autos" src="/images/content/GM_NH_27_Detail.jpg" /></a></p>
-                  <p className="img_content"><a href="/images/content/autos_ueberblick.jpg" target="_blank"><img alt="Autos Überblick" src="/images/content/autos_ueberblick.jpg" /></a></p>
-                  <p className="img_content"><a href="/images/content/gura_autos.jpg" target="_blank"><img alt="Gura Autos" src="/images/content/gura_autos.jpg" /></a></p>
-                  <p className="img_content"><a href="/images/content/gura_autos_detail.jpg" target="_blank"><img alt="Gura Autos" src="/images/content/gura_autos_detail.jpg" /></a></p>
-                  <p className="img_content"><a href="/images/content/humbauer.jpg" target="_blank"><img alt="Humbauer" src="/images/content/humbauer.jpg" /></a></p>
-                  {
-                    /*
-                    1 x Ford Transit Pritsche?
-                    3 x MB C180?
-                    1 x VW T6?
-                    3 x Gabelstapler
-                    3 x Elektrohubwagen
-                    3 x Scherenhubwagen
-                    4 x Säulenschwenkkran
-                    */
-                  }
+                {
+                  /*
+                  es fehlen noch:
+                  1 x VW T6?
+                  3 x Scherenhubwagen
+                  4 x Säulenschwenkkran
+                  */
+                }
+                  <p className="img_content"><a href="/images/content/fahrzeuge/sprinter1.jpg" target="_blank"><img alt="Gura Sprinter" src="/images/content/fahrzeuge/sprinter1.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/fahrzeuge/lkw.jpg" target="_blank"><img alt="Gura LKW" src="/images/content/fahrzeuge/lkw.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/fahrzeuge/sprinter2.jpg" target="_blank"><img alt="Gura Sprinter" src="/images/content/fahrzeuge/sprinter2.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/fahrzeuge/spier_einachsanhaenger.jpg" target="_blank"><img alt="Spier Einachsanhänger" src="/images/content/fahrzeuge/spier_einachsanhaenger.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/fahrzeuge/GM_NH_27.jpg" target="_blank"><img alt="GM NH 27" src="/images/content/fahrzeuge/GM_NH_27.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/fahrzeuge/gura_autos_ueberblick.jpg" target="_blank" title="MB C180 Überblick"><img alt="MB C180 Überblick" src="/images/content/fahrzeuge/gura_autos_ueberblick.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/fahrzeuge/GM_NH_27_Detail.jpg" target="_blank"><img alt="Autos" src="/images/content/fahrzeuge/GM_NH_27_Detail.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/fahrzeuge/autos_ueberblick.jpg" target="_blank"><img alt="Autos Überblick" src="/images/content/fahrzeuge/autos_ueberblick.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/fahrzeuge/gura_autos.jpg" target="_blank"><img alt="Gura Autos" src="/images/content/fahrzeuge/gura_autos.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/fahrzeuge/gura_autos_detail.jpg" target="_blank"><img alt="Gura Autos" src="/images/content/fahrzeuge/gura_autos_detail.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/fahrzeuge/humbauer.jpg" target="_blank"><img alt="Humbauer" src="/images/content/fahrzeuge/humbauer.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/fahrzeuge/ford_transit_pritsche.jpg" target="_blank" title="Ford Transit Pritsche"><img alt="Ford Transit Pritsche" src="/images/content/fahrzeuge/ford_transit_pritsche.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/fahrzeuge/gabelstapler_2.jpg" target="_blank" title="Gabelstapler"><img alt="Gabelstapler" src="/images/content/fahrzeuge/gabelstapler_2.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/fahrzeuge/elektrohubwagen_2.jpg" target="_blank" title="Elektrohubwagen"><img alt="Elektrohubwagen" src="/images/content/fahrzeuge/elektrohubwagen_2.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/fahrzeuge/elektrohubwagen_3.jpg" target="_blank" title="Elektrohubwagen"><img alt="Elektrohubwagen" src="/images/content/fahrzeuge/elektrohubwagen_3.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/fahrzeuge/gabelstapler_1.jpg" target="_blank" title="Gabelstapler"><img alt="Gabelstapler" src="/images/content/fahrzeuge/gabelstapler_1.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/fahrzeuge/elektrohubwagen_1.jpg" target="_blank" title="Elektrohubwagen"><img alt="Elektrohubwagen" src="/images/content/fahrzeuge/elektrohubwagen_1.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/fahrzeuge/gabelstapler_3.jpg" target="_blank" title="Gabelstapler"><img alt="Gabelstapler" src="/images/content/fahrzeuge/gabelstapler_3.jpg" /></a></p>
                 </div>
               </article>
             </Col>

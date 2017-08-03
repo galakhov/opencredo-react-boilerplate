@@ -65,24 +65,25 @@ export class MaschienenPage extends React.Component {
                 <div className="text-right">
                 {
                   /*
-                  Boschert Powerline
+                  es fehlen noch folgende Maschinen:
                   EHT Multibend
-                  HAAS VF 2 SS
                   HAAS VF 1
-                  Konventionelle Drehm.
-                  Konventionelle Fräsm.
-                  Exzenterpressen
                   Punktschweißmaschine
-                  Schweißgeräte
                   */
                 }
-                  <p className="img_content"><a href="/images/content/Boschert_Multipunch.jpg" target="_blank"><img alt="Boschert Multipunch" src="/images/content/Boschert_Multipunch.jpg" /></a></p>
-                  <p className="img_content"><a href="/images/content/Boschert_ErgoCut.jpg" target="_blank"><img alt="Boschert ErgoCut" src="/images/content/Boschert_ErgoCut.jpg" /></a></p>
-                  <p className="img_content"><a href="/images/content/Haas_ST10.jpg" target="_blank"><img alt="Haas ST10" src="/images/content/Haas_ST10.jpg" /></a></p>
-                  <p className="img_content"><a href="/images/content/HaasST35.jpg" target="_blank"><img alt="Haas ST35" src="/images/content/HaasST35.jpg" /></a></p>
-                  <p className="img_content"><a href="/images/content/Haas_ST35.jpg" target="_blank"><img alt="Haas ST35 Big Bore" src="/images/content/Haas_ST35.jpg" /></a></p>
-                  <p className="img_content"><a href="/images/content/schroeder.jpg" target="_blank"><img alt="Schröder Professional" src="/images/content/schroeder.jpg" /></a></p>
-                  <p className="img_content"><a href="/images/content/KAMI_DKM_500-2CS.jpg" target="_blank"><img alt="KAMI DKM 500 2CS Konventionelle Drehmaschine" src="/images/content/KAMI_DKM_500-2CS.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/maschinen/Boschert_Multipunch.jpg" target="_blank" title="Boschert Multipunch"><img alt="Boschert Multipunch" src="/images/content/maschinen/Boschert_Multipunch.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/maschinen/Boschert_ErgoCut.jpg" target="_blank" title="Boschert ErgoCut"><img alt="Boschert ErgoCut" src="/images/content/maschinen/Boschert_ErgoCut.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/maschinen/Haas_ST10.jpg" target="_blank" title="Haas ST10"><img alt="Haas ST10" src="/images/content/maschinen/Haas_ST10.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/maschinen/HaasST35.jpg" target="_blank" title="Haas ST35"><img alt="Haas ST35" src="/images/content/maschinen/HaasST35.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/maschinen/Haas_ST35.jpg" target="_blank" title="Haas ST35 Big Bore"><img alt="Haas ST35 Big Bore" src="/images/content/maschinen/Haas_ST35.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/maschinen/schroeder.jpg" target="_blank" title="Schröder Professional"><img alt="Schröder Professional" src="/images/content/maschinen/schroeder.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/maschinen/KAMI_DKM_500-2CS.jpg" target="_blank" title="KAMI DKM 500 2CS Konventionelle Drehmaschine"><img alt="KAMI DKM 500 2CS Konventionelle Drehmaschine" src="/images/content/maschinen/KAMI_DKM_500-2CS.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/maschinen/haas_vf_2_ss.jpg" target="_blank" title="HAAS VF 2 SS"><img alt="HAAS VF 2 SS" src="/images/content/maschinen/haas_vf_2_ss.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/maschinen/boschert_powerline.jpg" target="_blank" title="Boschert Powerline"><img alt="Boschert Powerline" src="/images/content/maschinen/boschert_powerline.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/maschinen/haas_vf_2_ss_hochformatig.jpg" target="_blank" title="HAAS VF 2 SS"><img alt="HAAS VF 2 SS" src="/images/content/maschinen/haas_vf_2_ss_hochformatig.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/maschinen/exenterpresse.jpg" target="_blank" title="Exzenterpressen"><img alt="Exzenterpressen" src="/images/content/maschinen/exenterpresse.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/maschinen/konventionelle_fraesmaschine.jpg" target="_blank" title="Konventionelle Fräsmaschine"><img alt="Konventionelle Fräsmaschine" src="/images/content/maschinen/konventionelle_fraesmaschine.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/maschinen/schweissgeraet.jpg" target="_blank" title="Schweißgerät"><img alt="Schweißgerät" src="/images/content/maschinen/schweissgeraet.jpg" /></a></p>
                 </div>
               </article>
             </Col>
