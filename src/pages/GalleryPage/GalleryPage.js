@@ -1,5 +1,6 @@
 /* @flow */
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl'; // FormattedHTMLMessage
 import { connect } from 'react-redux';
 import { Grid, Row, Col } from 'react-bootstrap';

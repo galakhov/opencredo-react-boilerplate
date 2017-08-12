@@ -1,11 +1,12 @@
 import React from 'react';
-import { IndexRoute, Route, IndexRedirect } from 'react-router';
-import { requireAuthentication as restrict } from 'containers/AuthenticatedComponent';
+// import { IndexRedirect } from 'react-router';
+import { Route, Switch } from 'react-router-dom'; // , Match, withRouter
+// import { requireAuthentication as restrict } from 'containers/AuthenticatedComponent';
 
 /* eslint camelcase: 0 */
 import AppContainer from 'containers/AppContainer';
 import HeroPageLayout from 'containers/HeroPageLayout';
-import AdminPageLayout from 'containers/AdminPageLayout';
+// import AdminPageLayout from 'containers/AdminPageLayout';
 import LandingPage from 'pages/LandingPage/LandingPage';
 import AboutPage from 'pages/AboutPage/AboutPage';
 import AboutPage_01 from 'pages/AboutPage/AboutPage_01';
@@ -30,67 +31,135 @@ import MRTPage from 'pages/SpectrumPage/MRTPage';
 import SchmerztherapiePage from 'pages/SpectrumPage/SchmerztherapiePage';
 import PatientenPage from 'pages/PatientenPage/PatientenPage';
 import ImpressumPage from 'pages/ImpressumPage/ImpressumPage';
-import JobsPage from 'pages/JobsPage/JobsPage';
+// import JobsPage from 'pages/JobsPage/JobsPage';
 import GalleryPage from 'pages/GalleryPage/GalleryPage';
 import PraxisPage from 'pages/PraxisPage/PraxisPage';
 
-import ProfileEditPage from 'pages/ProfileEditPage/ProfileEditPage';
+// import ProfileEditPage from 'pages/ProfileEditPage/ProfileEditPage';
 
-// TODO: [] /spectrum/ routes do not work in production.
-export default(
+// route config
+/* const routes = [
+  {
+    path: '/radiologie',
+    exact: true,
+    component: LandingPage,
+  },
+  {
+    path: '/praxis',
+    component: PraxisPage,
+  },
+  {
+    path: '/team',
+    component: AboutPage,
+    routes: [
+      {
+        path: '/team-dabir',
+        component: AboutPage_01,
+      },
+      {
+        path: '/team-hirning',
+        component: AboutPage_02,
+      },
+      {
+        path: '/team-poll',
+        component: AboutPage_03,
+      },
+      {
+        path: '/team-dabir-scherfeld',
+        component: AboutPage_04,
+      },
+      {
+        path: '/team-meyer',
+        component: AboutPage_05,
+      },
+    ],
+  },
+  {
+    path: '/leistungen',
+    component: PatientenPage,
+    routes: [
+      {
+        path: 'leistungen/roentgen',
+        component: RoentgenPage,
+      },
+      {
+        path: 'leistungen/ct',
+        component: CTPage,
+      },
+      {
+        path: 'leistungen/prt',
+        component: SchmerztherapiePage,
+      },
+      {
+        path: 'leistungen/mrt',
+        component: MRTPage,
+      },
+    ],
+  },
+  {
+    path: '/karriere',
+    component: JobsPage,
+  },
+  {
+    path: '/galerie/',
+    component: GalleryPage,
+  },
+  {
+    path: '/impressum',
+    component: ImpressumPage,
+  },
+  {
+    path: '/kontakt',
+    component: ImpressumPage,
+  },
+]; */
+
+// wrap <Route> and use this everywhere instead, then when sub routes are added to any route it'll work
+/* const RouteWithSubRoutes = (route) => (
+    <Route path={route.path} render = { props => (
+      // match.url +
+      // pass the sub-routes down to keep nesting
+      <route.component {...props } routes={route.routes} />
+    )}
+    />
+); */
+// https://reacttraining.com/react-router/web/example/recursive-paths
+
+export default (
   // Route components without path will render their children...
-  <Route component={AppContainer}>
-    // until a match is found...
-    <Route component={HeroPageLayout}>
-      // here
-      <Route path="/" component={LandingPage} />
-      // Routes without a component will render their children:
-      //<Route path="/pages" >
-        <IndexRedirect to="/praxis" />
+  <AppContainer>
+    <HeroPageLayout>
+      <Switch>
+        <Route exact path="/" component={LandingPage} />
         <Route path="/praxis" component={PraxisPage} />
-        <Route path="/team">
-          <IndexRoute component={AboutPage} />
-          <Route path="dabir" component={AboutPage_01} />
-          <Route path="hirning" component={AboutPage_02} />
-          <Route path="poll" component={AboutPage_03} />
-          <Route path="dabir-scherfeld" component={AboutPage_04} />
-          <Route path="meyer" component={AboutPage_05} />
+        <Route path="/team" component={AboutPage}>
+          <Route path="/team/dabir" component={AboutPage_01} />
+          <Route path="/team/hirning" component={AboutPage_02} />
+          <Route path="/team/poll" component={AboutPage_03} />
+          <Route path="/team/dabir-scherfeld" component={AboutPage_04} />
+          <Route path="/team/meyer" component={AboutPage_05} />
         </Route>
-        {
-          /*
-          <Route path="/spectrum" component={SpectrumPage}>
-            <Route path="/spectrum/radiologie" component={RadiologiePage} />
-            <Route path="/spectrum/mrt" component={MRTPage} />
-            <Route path="/spectrum/herz-mrt" component={HerzMRTPage} />
-            <Route path="/spectrum/angiographie" component={AngiographiePage} />
-            <Route path="/spectrum/ct" component={CTPage} />
-            <Route path="/spectrum/herz-ct" component={HerzCTPage} />
-            <Route path="/spectrum/kardio-diagnostik" component={KardioDiagnostikPage} />
-            <Route path="/spectrum/roentgen" component={RoentgenPage} />
-            <Route path="/spectrum/ultraschall" component={UltraschallPage} />
-            <Route path="/spectrum/mammographie" component={MammographiePage} />
-            <Route path="/spectrum/nuklearmedizin" component={NuklearmedizinPage} />
-            <Route path="/spectrum/schmerztherapie" component={SchmerztherapiePage} />
-          </Route>
-          */
-        }
-
-        <Route path="/leistungen">
-          <IndexRoute component={PatientenPage} />
-          <Route path="roentgen" component={RoentgenPage} />
-          <Route path="ct" component={CTPage} />
-          <Route path="prt" component={SchmerztherapiePage} />
-          <Route path="mrt" component={MRTPage} />
+        <Route path="/leistungen" component={PatientenPage}>
+          <Route path="/leistungen/roentgen" component={RoentgenPage} />
+          <Route path="/leistungen/ct" component={CTPage} />
+          <Route path="/leistungen/prt" component={SchmerztherapiePage} />
+          <Route path="/leistungen/mrt" component={MRTPage} />
         </Route>
-        <Route path="/karriere" component={JobsPage} />
         <Route path="/galerie" component={GalleryPage} />
-      //</Route>
         <Route path="/impressum" component={ImpressumPage} />
         <Route path="/kontakt" component={ImpressumPage} />
-    </Route>
 
-    <Route path="/account" component={AdminPageLayout}>
-      <Route path="/profile/edit" component={restrict(ProfileEditPage)} />
-    </Route>
-  </Route>
+        { /* routes.map((route, i) => (
+            <RouteWithSubRoutes key={i} {...route} />
+        )) */ }
+      </Switch>
+    </HeroPageLayout>
+  </AppContainer>
 );
+
+  /*
+  <Route path="/account" component={AdminPageLayout}>
+    <Route path="/profile/edit" component={restrict(ProfileEditPage)} />
+  </Route>
+  <Route path='*' component={NotFoundView}/>
+  */

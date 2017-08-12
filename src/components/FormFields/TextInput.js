@@ -1,5 +1,6 @@
 /* @flow */
-import React, { PropTypes, Element } from 'react';
+import React, { Element } from 'react';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 class TextInput extends React.Component {

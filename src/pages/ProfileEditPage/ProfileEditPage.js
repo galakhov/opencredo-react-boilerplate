@@ -1,7 +1,8 @@
 /* @flow */
 
 import debug from 'debug';
-import React, { PropTypes, Component, Element } from 'react';
+import React, { Component, Element } from 'react';
+import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import type { User } from 'declarations/app';
 import ProfileEditForm from 'containers/ProfileEditForm/ProfileEditForm';

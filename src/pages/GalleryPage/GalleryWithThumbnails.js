@@ -20,6 +20,8 @@ class Gallery extends Component {
     this.handleClickImage = this.handleClickImage.bind(this);
     this.openLightbox = this.openLightbox.bind(this);
   }
+
+  // TODO: @autobind?
   openLightbox(index, event) {
     event.preventDefault();
     this.setState({
@@ -121,7 +123,7 @@ class Gallery extends Component {
           href={obj.src}
           className={css(classes.thumbnail, classes[obj.orientation])}
           key={i}
-          onClick={ function (e) { this.openLightbox(i, e); } }
+          onClick={ (e) => this.openLightbox(i, e) }
         >
           <img src={obj.thumbnail} className={css(classes.source)} />
         </a>

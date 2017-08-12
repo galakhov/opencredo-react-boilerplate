@@ -1,5 +1,6 @@
 /* @flow */
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 // import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 // import { Grid, Row, Col } from 'react-bootstrap';
@@ -29,8 +30,7 @@ class PatientenPage extends Component {
     return (
       <section id="patienten-page">
         <PatientenPageHero backgroundImage="/images/bg_radiologie_patients.jpg" />
-        {
-          /*
+        { /*
           <Hero displayUnderNavbar>
             <HeroBackground image="/images/bg.jpg" />
           </Hero>
@@ -46,8 +46,7 @@ class PatientenPage extends Component {
               </Col>
             </Row>
           </Grid>
-          */
-        }
+          */ }
       </section>
     );
   }

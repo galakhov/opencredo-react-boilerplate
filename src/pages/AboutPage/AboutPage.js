@@ -1,5 +1,6 @@
 /* @flow */
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 // import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 // import { Grid, Row, Col } from 'react-bootstrap';
@@ -28,27 +29,26 @@ class AboutPage extends Component {
 
   render() {
     return (
-      <section id="about-page">
+      <div id="about-page">
         <AboutPageHero backgroundImage="/images/bg_radiologie.jpg" />
-        {
-          /*
-          <Grid>
-            <Row>
-              <Col xs={12} className="text-center">
-                <h1>
-                  <FormattedMessage {...messages.title} />
-                </h1>
-                <p>
-                  <FormattedMessage {...messages.overview} />
-                </p>
-              </Col>
-            </Row>
-          </Grid>
-          */
-        }
-      </section>
+      </div>
     );
   }
 }
+
+  /*
+  <Grid>
+    <Row>
+      <Col xs={12} className="text-center">
+        <h1>
+          <FormattedMessage {...messages.title} />
+        </h1>
+        <p>
+          <FormattedMessage {...messages.overview} />
+        </p>
+      </Col>
+    </Row>
+  </Grid>
+  */
 
 export default connect(() => ({}))(AboutPage);

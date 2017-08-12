@@ -11,7 +11,8 @@ function makeUnsplashSrcSet(id, size) {
   // return `https://images.unsplash.com/photo-${id}?dpr=2&auto=format&w=${size} ${size}w`;
   // return id + '_' + size + '.jpg';
   // const s = 'w=' + size;
-  return id + size;
+  const str = `?${size}`;
+  return id + str;
 }
 function makeUnsplashThumbnail(id, orientation = 'landscape') {
   const dimensions = orientation === 'square'
@@ -45,127 +46,127 @@ function makeUnsplashThumbnail(id, orientation = 'landscape') {
 
 const THEMED_IMAGES = [
   {
-    id: '/images/galerie/besprechungsraum0.jpg',
+    id: './images/galerie/besprechungsraum0.jpg',
     caption: 'Besprechungsraum',
     orientation: 'square',
     useForDemo: true,
   },
   {
-    id: '/images/galerie/atmo1.jpg',
+    id: './images/galerie/atmo1.jpg',
     caption: 'Impressionen 1',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
-    id: '/images/galerie/atmo2.jpg',
+    id: './images/galerie/atmo2.jpg',
     caption: 'Impressionen 2',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
-    id: '/images/galerie/aussen1.jpg',
+    id: './images/galerie/aussen1.jpg',
     caption: 'Außenansicht',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
-    id: '/images/galerie/aussen2.jpg',
+    id: './images/galerie/aussen2.jpg',
     caption: 'Außenansicht',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
-    id: '/images/galerie/aussen3.jpg',
+    id: './images/galerie/aussen3.jpg',
     caption: 'Außenansicht',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
-    id: '/images/galerie/aussen4.jpg',
+    id: './images/galerie/aussen4.jpg',
     caption: 'Außenansicht',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
-    id: '/images/galerie/roentgen0.jpg',
+    id: './images/galerie/roentgen0.jpg',
     caption: 'Röntgen Gerät',
     orientation: 'square',
     useForDemo: true,
   },
   {
-    id: '/images/galerie/flur2.jpg',
+    id: './images/galerie/flur2.jpg',
     caption: 'Flur 2',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
-    id: '/images/galerie/warteraum1.jpg',
+    id: './images/galerie/warteraum1.jpg',
     caption: 'Warteraum 1',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
-    id: '/images/galerie/warteraum2.jpg',
+    id: './images/galerie/warteraum2.jpg',
     caption: 'Warteraum 2',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
-    id: '/images/galerie/roentgen2.jpg',
+    id: './images/galerie/roentgen2.jpg',
     caption: 'Röntgen Gerät',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
-    id: '/images/galerie/ct.jpg',
+    id: './images/galerie/ct.jpg',
     caption: 'CT Gerät',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
-    id: '/images/galerie/mrt2.jpg',
+    id: './images/galerie/mrt2.jpg',
     caption: 'MRT Gerät 3',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
-    id: '/images/galerie/mrt0_square.jpg',
+    id: './images/galerie/mrt0_square.jpg',
     caption: 'MRT Gerät 1',
     orientation: 'square',
     useForDemo: true,
   },
   {
-    id: '/images/galerie/mrt1.jpg',
+    id: './images/galerie/mrt1.jpg',
     caption: 'MRT Gerät 2',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
-    id: '/images/galerie/mrt3.jpg',
+    id: './images/galerie/mrt3.jpg',
     caption: 'MRT Gerät 4',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
-    id: '/images/bg_ragiologie_indoor.jpg',
+    id: './images/bg_ragiologie_indoor.jpg',
     caption: 'Theke',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
-    id: '/images/galerie/flur1.jpg',
+    id: './images/galerie/flur1.jpg',
     caption: 'Flur 1',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
-    id: '/images/bg_radiologie_waiting_area.jpg',
+    id: './images/bg_radiologie_waiting_area.jpg',
     caption: 'Wartezimmer',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
-    id: '/images/bg_radiologie_.jpg',
+    id: './images/bg_radiologie_.jpg',
     caption: 'Halle',
     orientation: 'landscape',
     useForDemo: true,

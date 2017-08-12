@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import MainHeader from 'containers/MainHeader/MainHeader';
 import MainFooter from 'components/MainFooter/MainFooter';
@@ -22,7 +23,7 @@ const HeroPageLayout = (props) =>
 
 HeroPageLayout.propTypes = {
   spinner: PropTypes.object,
-  children: PropTypes.element,
+  children: PropTypes.object,
 };
 
 export default connect(mapStateToProps)(HeroPageLayout);

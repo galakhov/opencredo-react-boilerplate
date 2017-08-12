@@ -1,5 +1,5 @@
 /* @flow */
-import React, { PropTypes, Element } from 'react';
+import React, { Element } from 'react';
 import { FormattedMessage } from 'react-intl';
 import FormMessages from 'redux-form-validation';
 import { messages } from 'shared/forms';

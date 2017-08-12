@@ -1,8 +1,12 @@
 {
   "parser": "babel-eslint",
   "parserOptions": {
+    "ecmaVersion": 7,
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
+      "arrowFunctions": true,
+      "binaryLiterals": true,
+      "classes": true,
     }
   },
   "extends": [
@@ -11,6 +15,7 @@
   "env": {
     "browser": true,
     "mocha": true,
+    "es6": true,
   },
   "globals": {
     "DEVELOPMENT": false,
@@ -35,6 +40,7 @@
         "allowArrowFunctions": true,
         // "allowSimpleArrowFunctionExpression": true
     }],
+    "react/jsx-no-bind": 1, // error  JSX props should not use arrow functions
     // "inferno/jsx-uses-inferno": "error",
     // "inferno/jsx-uses-vars": "error",
   },

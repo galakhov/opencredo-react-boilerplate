@@ -1,5 +1,6 @@
 /* @flow */
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { injectIntl } from 'react-intl';
 
 type DocumentTitleProps = {
@@ -13,7 +14,7 @@ type DocumentTitleProps = {
 class DocumentTitle extends Component {
   static propTypes = {
     title: PropTypes.object.isRequired,
-    children: PropTypes.element.isRequired,
+    children: PropTypes.object.isRequired,
   };
 
   componentWillMount(): void {
@@ -30,7 +31,7 @@ class DocumentTitle extends Component {
     document.title = props.intl.formatMessage(props.title);
   }
 
-  render(): React.Element {
+  render() {
     return (
       <div>
         {this.props.children}

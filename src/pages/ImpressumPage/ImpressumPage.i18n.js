@@ -47,7 +47,7 @@ export const messages = {
   },
   overview9: {
     id: 'page.overview9',
-    defaultMessage: 'Erklärung Dres. med. Dabir/Hirning/Poll & Kollegen und www.4dd.de:<br />Hiermit distanzieren sich die Dres. med. Dabir/Hirning/Poll & Kollegen sowie 4DD Communications GmbH ausdrücklich von den Inhalten aller gelinkten Seiten in diesem Internetangebot und machen sich diese Inhalte nicht zu eigen. Diese Erklärung gilt für alle auf dieser Website angebrachten Links.',
+    defaultMessage: 'Erklärung Dres. med. Dabir/Hirning/Poll & Kollegen und www.4dd.de:<br />Hiermit distanzieren sich die Dres. med. Dabir/Hirning/Poll & Kollegen sowie 4DD Communications GmbH ausdrücklich von den Inhalten aller gelinkten Seiten in diesem Internetangebot und machen sich diese Inhalte nicht zu eigen. Diese Erklärung gilt für alle auf dieser Website angebrachten Links.<br /><br />Wir haften ebenfalls nicht für die Inhalte auf sozialen Netzwerken und distanzieren und von denen: <a href="https://www.facebook.com/radiologieamkaiserteich/">facebook.com/radiologieamkaiserteich/</a>.',
   },
   overview10: {
     id: 'page.overview10',

@@ -1,5 +1,6 @@
 /* @flow */
-import React, { PropTypes, Element } from 'react';
+import React, { Element } from 'react';
+import PropTypes from 'prop-types';
 
 // Support for radio buttons in react-bootstrap is currently lame.
 // It's worth watching this though:

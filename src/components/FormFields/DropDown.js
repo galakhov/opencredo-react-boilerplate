@@ -1,5 +1,6 @@
 /* @flow */
-import React, { PropTypes, Element } from 'react';
+import React, { Element } from 'react';
+import PropTypes from 'prop-types';
 import { Input } from 'react-bootstrap';
 
 class DropDown extends React.Component {

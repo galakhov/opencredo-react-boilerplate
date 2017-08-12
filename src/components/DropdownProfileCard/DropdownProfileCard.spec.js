@@ -1,7 +1,7 @@
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
 import DropdownProfileCard from './DropdownProfileCard';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 function shallowRender(component) {
   const renderer = TestUtils.createRenderer();

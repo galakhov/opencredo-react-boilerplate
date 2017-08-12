@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import { NavDropdown, MenuItem } from 'react-bootstrap';
 import DropdownProfileCard from 'components/DropdownProfileCard/DropdownProfileCard';
@@ -12,7 +13,9 @@ const UserDropdownMenu = (props) => {
       <li>
         <DropdownProfileCard picture={picture} name={name} nickname={nickname} />
       </li>
-      <MenuItem divider />
+      {
+        /* <MenuItem divider /> */
+      }
       <li>
         <a onClick={props.logout}><FormattedMessage {...links.logOut} /></a>
       </li>

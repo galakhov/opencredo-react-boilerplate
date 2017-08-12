@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import config from './AboutPage.i18n';
 import { FormattedMessage } from 'react-intl'; // FormattedHTMLMessage
 import { Hero, HeroContent, HeroBackground } from 'components/Hero/index';
@@ -9,7 +10,7 @@ import { messages } from './AboutPage.i18n';
 // <HeaderLineTop />
 // import { FormattedMessage } from 'react-intl';
 import { Grid, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 // import { Hero } from 'components/Hero'; // HeroBackground
 // import { messages } from './PatientenPage.i18n';
 

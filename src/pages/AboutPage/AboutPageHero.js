@@ -1,11 +1,12 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import config from './AboutPage.i18n';
 import { FormattedMessage } from 'react-intl'; // FormattedHTMLMessage
 import { Hero, HeroContent, HeroBackground } from 'components/Hero/index';
 import { VAContainer, VAMiddle } from 'components/VAlign/VAlign';
 import styles from './AboutPage.scss';
 import { messages } from './AboutPage.i18n';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 // import HeaderLineTop from '../../static/images/header_line_top.svg';
 // <HeaderLineTop />
 

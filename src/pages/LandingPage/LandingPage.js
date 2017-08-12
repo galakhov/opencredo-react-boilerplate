@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 // import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import { connect } from 'react-redux';
 // import styles from './LandingPage.scss';
@@ -82,10 +83,7 @@ export class LandingPage extends React.Component {
               </Row>
             </Grid>
 
-            */
-          }
-
-        { /* <Grid>
+        <Grid>
           <Row>
             <Col xs={12}>
               <h1 className={styles.title}>
