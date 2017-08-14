@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import config from './PatientenPage.i18n';
 import { messages } from './PatientenPage.i18n';
 import { FormattedHTMLMessage } from 'react-intl';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { MenuItem } from 'react-bootstrap';
 import { Hero, HeroContent, HeroBackground } from 'components/Hero/index';
 import { VAContainer, VAMiddle } from 'components/VAlign/VAlign';
 import styles from './PatientenPage.scss';
@@ -57,10 +58,18 @@ const PatientenPageHero = (props) =>
               <h1 className={styles['hero-title']}><FormattedHTMLMessage {...messages.description01_title} /></h1>
               <p className={styles['hero-description']}><br />
                 <ul>
-                  <li><Link to={messages.description01_1.route}><FormattedHTMLMessage {...messages.description01_1} /></Link></li>
-                  <li><Link to={messages.description01_2.route}><FormattedHTMLMessage {...messages.description01_2} /></Link></li>
-                  <li><Link to={messages.description01_3.route}><FormattedHTMLMessage {...messages.description01_3} /></Link></li>
-                  <li><Link to={messages.description01_4.route}><FormattedHTMLMessage {...messages.description01_4} /></Link></li>
+                  {
+                    /*
+                    <li><Link to={messages.description01_1.route}><FormattedHTMLMessage {...messages.description01_1} /></Link></li>
+                    <li><Link to={messages.description01_2.route}><FormattedHTMLMessage {...messages.description01_2} /></Link></li>
+                    <li><Link to={messages.description01_3.route}><FormattedHTMLMessage {...messages.description01_3} /></Link></li>
+                    <li><Link to={messages.description01_4.route}><FormattedHTMLMessage {...messages.description01_4} /></Link></li>
+                    */
+                  }
+                  <li><MenuItem href={messages.description01_1.route}><FormattedHTMLMessage {...messages.description01_1} /></MenuItem></li>
+                  <li><MenuItem href={messages.description01_2.route}><FormattedHTMLMessage {...messages.description01_2} /></MenuItem></li>
+                  <li><MenuItem href={messages.description01_3.route}><FormattedHTMLMessage {...messages.description01_3} /></MenuItem></li>
+                  <li><MenuItem href={messages.description01_4.route}><FormattedHTMLMessage {...messages.description01_4} /></MenuItem></li>
                 </ul>
               </p>
 

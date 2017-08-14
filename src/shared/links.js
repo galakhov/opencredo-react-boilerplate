@@ -11,7 +11,7 @@ export const links = {
   home: {
     to: '/praxis',
     id: 'navigation.home',
-    description: 'Praxis',
+    description: 'Unser Anspruch',
     defaultMessage: config.name,
   },
 

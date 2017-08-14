@@ -3,6 +3,7 @@ $border-color: #b3d3b3;
 $text-size: 15px;
 $background-color-content-block: rgba(#333, 0.9);
 $borders-color-content-block: rgba(#f8f8f8, 0.0);
+$eurostile: "Eurostile LT W01 Medium1391130";
 
 .hero {
   height: 850px;
@@ -85,8 +86,8 @@ $borders-color-content-block: rgba(#f8f8f8, 0.0);
   h1 {
     text-align: left;
     color: $color-text;
-    font-family: "Michroma";
-    font-size: 16px;
+    font-family: $eurostile;
+    font-size: 18px;
     text-transform: none;
     font-weight: bold;
     border-bottom: 5px solid $border-color;
@@ -145,6 +146,7 @@ body #patienten-page .content {
   .content {
     left: 10%;
     width: 80%;
+    top: 15%;
   }
 }
 
@@ -167,12 +169,12 @@ body #patienten-page .content {
   background-size: cover;
   background-position-y: 100%;
   background-position-x: 50%;
-  -webkit-transition: opacity 200ms linear;
-  -moz-transition: opacity 200ms linear;
-  -o-transition: opacity 200ms linear;
-  -ms-transition: opacity 200ms linear;
-  transition: opacity 200ms linear;
-  transition: 0.75s;
+  -webkit-transition: opacity 1000ms linear;
+  -moz-transition: opacity 1000ms linear;
+  -o-transition: opacity 1000ms linear;
+  -ms-transition: opacity 1000ms linear;
+  transition: opacity 1000ms linear;
+  transition: 1s;
 }
 
 @media screen and (max-width: 1075px) {

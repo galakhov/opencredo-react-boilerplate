@@ -53,13 +53,13 @@ const THEMED_IMAGES = [
   },
   {
     id: './images/galerie/atmo1.jpg',
-    caption: 'Impressionen 1',
+    caption: 'Flur und Warteraum',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
     id: './images/galerie/atmo2.jpg',
-    caption: 'Impressionen 2',
+    caption: 'Empfangsraum',
     orientation: 'landscape',
     useForDemo: true,
   },
@@ -89,73 +89,67 @@ const THEMED_IMAGES = [
   },
   {
     id: './images/galerie/roentgen0.jpg',
-    caption: 'Röntgen Gerät',
+    caption: 'Röntgenzimmer',
     orientation: 'square',
     useForDemo: true,
   },
   {
     id: './images/galerie/flur2.jpg',
-    caption: 'Flur 2',
+    caption: 'Flur und Warteraum',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
     id: './images/galerie/warteraum1.jpg',
-    caption: 'Warteraum 1',
+    caption: 'Warteraum',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
     id: './images/galerie/warteraum2.jpg',
-    caption: 'Warteraum 2',
+    caption: 'Warteraum',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
     id: './images/galerie/roentgen2.jpg',
-    caption: 'Röntgen Gerät',
+    caption: 'Röntgengerät',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
     id: './images/galerie/ct.jpg',
-    caption: 'CT Gerät',
+    caption: 'CT-Gerät',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
     id: './images/galerie/mrt2.jpg',
-    caption: 'MRT Gerät 3',
+    caption: 'MRT-Gerät',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
-    id: './images/galerie/mrt0_square.jpg',
-    caption: 'MRT Gerät 1',
+    id: './images/galerie/radiologie_turm.jpg',
+    caption: 'Düsselforfer Turm. Ein Ausblick aus dem Fenster.',
     orientation: 'square',
     useForDemo: true,
   },
   {
     id: './images/galerie/mrt1.jpg',
-    caption: 'MRT Gerät 2',
+    caption: 'MRT-Gerät',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
     id: './images/galerie/mrt3.jpg',
-    caption: 'MRT Gerät 4',
-    orientation: 'landscape',
-    useForDemo: true,
-  },
-  {
-    id: './images/bg_ragiologie_indoor.jpg',
-    caption: 'Theke',
+    caption: 'MRT-Gerät',
     orientation: 'landscape',
     useForDemo: true,
   },
   {
     id: './images/galerie/flur1.jpg',
-    caption: 'Flur 1',
+    caption: 'Flur',
     orientation: 'landscape',
     useForDemo: true,
   },
@@ -165,13 +159,14 @@ const THEMED_IMAGES = [
     orientation: 'landscape',
     useForDemo: true,
   },
+  /*
   {
     id: './images/bg_radiologie_.jpg',
     caption: 'Halle',
     orientation: 'landscape',
     useForDemo: true,
   },
-  /* {
+  {
     id: '/images/bg_radiologie_texture.jpg',
     caption: 'Impressionen',
     orientation: 'landscape',
@@ -204,7 +199,7 @@ const theme = {
     backgroundColor: 'rgba(255, 255, 255, 0.8)',
     fill: '#222',
     opacity: 0.6,
-    transition: 'opacity 200ms',
+    transition: 'opacity 700ms',
 
     ':hover': {
       opacity: 1,
@@ -303,7 +298,7 @@ const LightboxGallery = () =>
     useForDemo,
   }))} theme={theme}
     backdropClosesModal
-    // showThumbnails
+    showThumbnails
   />
 </div>
 );

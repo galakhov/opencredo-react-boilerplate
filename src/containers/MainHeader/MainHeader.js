@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FormattedHTMLMessage, FormattedMessage } from 'react-intl';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, MenuItem } from 'react-bootstrap'; // , NavItem
 // import { LinkContainer } from 'react-router-bootstrap'; // IndexLinkContainer,
 // import UserDropdownMenu from 'components/UserDropdownMenu/UserDropdownMenu';
@@ -25,7 +25,7 @@ class MainHeader extends React.Component {
     dispatch: PropTypes.func,
     isAuthenticated: PropTypes.bool,
     user: PropTypes.object,
-    activeOnlyWhenExact: PropTypes.bool,
+    // activeOnlyWhenExact: PropTypes.bool,
     selectedKey: PropTypes.number,
   };
 
@@ -77,10 +77,10 @@ class MainHeader extends React.Component {
       <Navbar staticTop fluid collapseOnSelect>
         <Navbar.Header>
             <Navbar.Brand>
-              <Link to="/">
+              <MenuItem to="/" href="/">
                   <FormattedMessage {...links.startPage} />
                   <img src="/images/radiologie_logo.png" />
-              </Link>
+              </MenuItem>
             </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
@@ -143,10 +143,10 @@ class MainHeader extends React.Component {
             }
             <NavDropdown eventKey={3} id="nav-dropdown" title="Behandlungsspektrum" className="nav-dropdown">
               <MenuItem eventKey={3.1} href="/leistungen"><FormattedMessage {...links.service} /></MenuItem>
-              <MenuItem eventKey={3.2} href="/leistungen/roentgen"><FormattedMessage {...links.leistungen_roentgen} /></MenuItem>
-              <MenuItem eventKey={3.3} href="/leistungen/ct"><FormattedMessage {...links.leistungen_ct} /></MenuItem>
-              <MenuItem eventKey={3.4} href="/leistungen/prt"><FormattedMessage {...links.leistungen_prt} /></MenuItem>
-              <MenuItem eventKey={3.5} href="/leistungen/mrt"><FormattedMessage {...links.leistungen_mrt} /></MenuItem>
+              <MenuItem eventKey={3.2} href="/leistungen-roentgen"><FormattedMessage {...links.leistungen_roentgen} /></MenuItem>
+              <MenuItem eventKey={3.3} href="/leistungen-ct"><FormattedMessage {...links.leistungen_ct} /></MenuItem>
+              <MenuItem eventKey={3.4} href="/leistungen-prt"><FormattedMessage {...links.leistungen_prt} /></MenuItem>
+              <MenuItem eventKey={3.5} href="/leistungen-mrt"><FormattedMessage {...links.leistungen_mrt} /></MenuItem>
             </NavDropdown>
             {
               /*
@@ -179,9 +179,7 @@ class MainHeader extends React.Component {
                   <FormattedMessage {...links.logIn} />
                 </a>
               </li>
-            */ }
-
-            { /* <LanguageSelectionDropdown /> */ }
+              <LanguageSelectionDropdown /> */ }
           </Nav>
         </Navbar.Collapse>
         <div className={styles['radiologie-contact']}><FormattedHTMLMessage {...links.radiologie_contact} /></div>

@@ -29,7 +29,7 @@ export const messages = {
       },
       doc0: {
         id: 'aboutPage.content.doc0',
-        route: '/team/dabir',
+        route: '/team-dabir',
         defaultMessage: 'Dr. med. K. Dabir',
       },
       job0: {
@@ -38,22 +38,22 @@ export const messages = {
       },
       doc1: {
         id: 'aboutPage.content.doc1',
-        route: '/team/hirning',
+        route: '/team-hirning',
         defaultMessage: 'Dr. med. M. Hirning',
       },
       doc2: {
         id: 'aboutPage.content.doc2',
-        route: '/team/poll',
+        route: '/team-poll',
         defaultMessage: 'Prof. Dr. med. L. W. Poll',
       },
       doc3: {
         id: 'aboutPage.content.doc3',
-        route: '/team/dabir-scherfeld',
+        route: '/team-dabir-scherfeld',
         defaultMessage: 'Dr. med. D. Dabir-Scherfeld',
       },
       doc4: {
         id: 'aboutPage.content.doc4',
-        route: '/team/meyer',
+        route: '/team-meyer',
         defaultMessage: 'Dr. med. D. Meyer',
       },
       doc5: {

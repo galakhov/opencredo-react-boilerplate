@@ -22,7 +22,7 @@ React and Redux boilerplate codebase.
 * [`react-addons-test-utils`](https://facebook.github.io/react/docs/test-utils.html) for unit testing
 * [Flowtype](http://flowtype.org) Static type checker (see [FLOWTYPE.md](./FLOWTYPE.md) for more info)
 * [Babel](https://babeljs.io) for ES2015 and _beyond_
-  - Presets: `es2015`, `react`, `stage-0`, and `react-hmre` (development)
+  - Presets: `es2015`, `react`, `stage-2`, and `react-hmre` (development)
 * [`react-bootstrap`](https://react-bootstrap.github.io) and [`react-router-bootstrap`](https://github.com/react-bootstrap/react-router-bootstrap)
 * [`react-intl`](https://github.com/yahoo/react-intl/) for i18n support with several example translations; using v2 beta: keep an eye on the [RFC](https://github.com/yahoo/react-intl/issues/162)
 * [`redux-form`](https://github.com/erikras/redux-form) and [`redux-form-validation`](https://github.com/CosticaPuntaru/redux-form-validation) for form integration and validation

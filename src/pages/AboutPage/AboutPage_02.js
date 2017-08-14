@@ -18,7 +18,7 @@ const styles_custom = {
     position: 'absolute',
     left: '20%',
     top: '640px',
-    fontFamily: '"Michroma", "regular"',
+    fontFamily: 'Eurostile LT W01 Medium1391130',
     fontWeight: 'bold',
   },
   team_container_caption: {

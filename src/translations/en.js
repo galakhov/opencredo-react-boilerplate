@@ -23,7 +23,7 @@ export default {
   'navigation.account': 'Account',
   'navigation.faq': 'FAQ',
   'navigation.help': 'Help',
-  'navigation.home': 'Praxis',
+  'navigation.home': 'Unser Anspruch',
   'navigation.logIn': 'Einloggen',
   'navigation.logOut': 'Ausloggen',
   'navigation.policies': 'Policies',

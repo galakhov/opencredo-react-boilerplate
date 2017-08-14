@@ -32,15 +32,16 @@
 
 .item {
   display: inline-block;
-  margin: 1rem;
+  margin: 1.3rem;
   margin-bottom: 3px;
 
   a {
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
     color: $footer-links-color;
     text-transform: uppercase;
-    font-family: $eurostile_font;
+    font-family: $eurostile;
   }
 }
 .social {
@@ -52,7 +53,7 @@
     opacity: .3;
     text-decoration: none;
     color: #373737;
-    transition: opacity .3s;
+    transition: opacity 0.75s;
 
     &:hover {
       opacity: 1;

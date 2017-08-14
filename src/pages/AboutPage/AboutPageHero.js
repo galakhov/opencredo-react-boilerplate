@@ -6,7 +6,8 @@ import { Hero, HeroContent, HeroBackground } from 'components/Hero/index';
 import { VAContainer, VAMiddle } from 'components/VAlign/VAlign';
 import styles from './AboutPage.scss';
 import { messages } from './AboutPage.i18n';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { MenuItem } from 'react-bootstrap';
 // import HeaderLineTop from '../../static/images/header_line_top.svg';
 // <HeaderLineTop />
 
@@ -63,11 +64,20 @@ const AboutPageHero = (props) =>
                 <Row>
                   <Col xs={12} className="text-left">
                   <ul className="team-list">
-                    <li><Link to={messages.doctors.content.doc0.route}><FormattedMessage {...messages.doctors.content.doc0} /></Link></li>
-                    <li><Link to={messages.doctors.content.doc1.route}><FormattedMessage {...messages.doctors.content.doc1} /></Link></li>
-                    <li><Link to={messages.doctors.content.doc2.route}><FormattedMessage {...messages.doctors.content.doc2} /></Link></li>
-                    <li><Link to={messages.doctors.content.doc3.route}><FormattedMessage {...messages.doctors.content.doc3} /></Link></li>
-                    <li><Link to={messages.doctors.content.doc4.route}><FormattedMessage {...messages.doctors.content.doc4} /></Link></li>
+                    {
+                      /*
+                      <li><Link to={messages.doctors.content.doc0.route}><FormattedMessage {...messages.doctors.content.doc0} /></Link></li>
+                      <li><Link to={messages.doctors.content.doc1.route}><FormattedMessage {...messages.doctors.content.doc1} /></Link></li>
+                      <li><Link to={messages.doctors.content.doc2.route}><FormattedMessage {...messages.doctors.content.doc2} /></Link></li>
+                      <li><Link to={messages.doctors.content.doc3.route}><FormattedMessage {...messages.doctors.content.doc3} /></Link></li>
+                      <li><Link to={messages.doctors.content.doc4.route}><FormattedMessage {...messages.doctors.content.doc4} /></Link></li>
+                      */
+                    }
+                    <MenuItem href={messages.doctors.content.doc0.route} eventKey={2.1}><FormattedMessage {...messages.doctors.content.doc0} /></MenuItem>
+                    <MenuItem href={messages.doctors.content.doc1.route} eventKey={2.2}><FormattedMessage {...messages.doctors.content.doc1} /></MenuItem>
+                    <MenuItem href={messages.doctors.content.doc2.route} eventKey={2.3}><FormattedMessage {...messages.doctors.content.doc2} /></MenuItem>
+                    <MenuItem href={messages.doctors.content.doc3.route} eventKey={2.4}><FormattedMessage {...messages.doctors.content.doc3} /></MenuItem>
+                    <MenuItem href={messages.doctors.content.doc4.route} eventKey={2.5}><FormattedMessage {...messages.doctors.content.doc4} /></MenuItem>
                   </ul>
                   {
                     /*

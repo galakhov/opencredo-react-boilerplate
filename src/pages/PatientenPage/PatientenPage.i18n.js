@@ -14,23 +14,23 @@ export const messages = {
   description01_1: {
     id: 'patientenPage.desc01_1',
     defaultMessage: 'Volldigitales Röntgen',
-    route: '/leistungen/roentgen',
+    route: '/leistungen-roentgen',
     // defaultMessage: 'In der <a href="downloads/kaiserteich-broschuere.pdf">Patientenbroschüre</a> finden Sie Informationen über die einzelnen Bereiche sowie Behandlungs- und Diagnosemethoden unserer Praxis.',
   },
   description01_2: {
     id: 'patientenPage.desc01_2',
     defaultMessage: 'Computertomographie (CT)',
-    route: '/leistungen/ct',
+    route: '/leistungen-ct',
   },
   description01_3: {
     id: 'patientenPage.desc01_3',
     defaultMessage: 'CT-gesteuerte Schmerztherapie (PRT)',
-    route: '/leistungen/prt',
+    route: '/leistungen-prt',
   },
   description01_4: {
     id: 'patientenPage.desc01_4',
     defaultMessage: 'Magnetresonanztomographie (MRT)',
-    route: '/leistungen/mrt',
+    route: '/leistungen-mrt',
   },
   description02_title: {
     id: 'patientenPage.desc00',

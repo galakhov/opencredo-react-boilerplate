@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './MainFooter.scss';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { MenuItem } from 'react-bootstrap';
 import { FormattedMessage } from 'react-intl';
 import { links } from 'shared/links';
 // import { Image } from 'react-dom';
@@ -27,11 +28,9 @@ export default class MainFooter extends React.Component {
         <nav>
           <ul className="inline-list">
             {footerLinks.map((link) =>
-              <li key={link.id} className={`footer-item ${styles.item}`}>
-                <Link to={link.to}>
+                <MenuItem key={link.id} href={link.to} className={`footer-item ${styles.item}`}>
                   <FormattedMessage {...link} />
-                </Link>
-              </li>
+                </MenuItem>
             )}
           </ul>
         </nav>
