@@ -6,7 +6,7 @@ import { links } from 'shared/links';
 
 const footerLinks = [
   // links.aboutUs,
-  links.terms,
+  // links.terms,
   links.contact,
   links.policies,
 

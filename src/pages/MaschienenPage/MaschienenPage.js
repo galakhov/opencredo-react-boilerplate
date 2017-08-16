@@ -79,11 +79,11 @@ export class MaschienenPage extends React.Component {
                   <p className="img_content"><a href="/images/content/maschinen/schroeder.jpg" target="_blank" title="Schröder Professional"><img alt="Schröder Professional" src="/images/content/maschinen/schroeder.jpg" /></a></p>
                   <p className="img_content"><a href="/images/content/maschinen/KAMI_DKM_500-2CS.jpg" target="_blank" title="KAMI DKM 500 2CS Konventionelle Drehmaschine"><img alt="KAMI DKM 500 2CS Konventionelle Drehmaschine" src="/images/content/maschinen/KAMI_DKM_500-2CS.jpg" /></a></p>
                   <p className="img_content"><a href="/images/content/maschinen/haas_vf_2_ss.jpg" target="_blank" title="HAAS VF 2 SS"><img alt="HAAS VF 2 SS" src="/images/content/maschinen/haas_vf_2_ss.jpg" /></a></p>
-                  <p className="img_content"><a href="/images/content/maschinen/boschert_powerline.jpg" target="_blank" title="Boschert Powerline"><img alt="Boschert Powerline" src="/images/content/maschinen/boschert_powerline.jpg" /></a></p>
-                  <p className="img_content"><a href="/images/content/maschinen/haas_vf_2_ss_hochformatig.jpg" target="_blank" title="HAAS VF 2 SS"><img alt="HAAS VF 2 SS" src="/images/content/maschinen/haas_vf_2_ss_hochformatig.jpg" /></a></p>
                   <p className="img_content"><a href="/images/content/maschinen/exenterpresse.jpg" target="_blank" title="Exzenterpressen"><img alt="Exzenterpressen" src="/images/content/maschinen/exenterpresse.jpg" /></a></p>
                   <p className="img_content"><a href="/images/content/maschinen/konventionelle_fraesmaschine.jpg" target="_blank" title="Konventionelle Fräsmaschine"><img alt="Konventionelle Fräsmaschine" src="/images/content/maschinen/konventionelle_fraesmaschine.jpg" /></a></p>
                   <p className="img_content"><a href="/images/content/maschinen/schweissgeraet.jpg" target="_blank" title="Schweißgerät"><img alt="Schweißgerät" src="/images/content/maschinen/schweissgeraet.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/maschinen/haas_vf_2_ss_hochformatig.jpg" target="_blank" title="HAAS VF 2 SS"><img alt="HAAS VF 2 SS" src="/images/content/maschinen/haas_vf_2_ss_hochformatig.jpg" /></a></p>
+                  <p className="img_content"><a href="/images/content/maschinen/boschert_powerline.jpg" target="_blank" title="Boschert Powerline"><img alt="Boschert Powerline" src="/images/content/maschinen/boschert_powerline.jpg" /></a></p>
                 </div>
               </article>
             </Col>

@@ -13,12 +13,16 @@ class Sidebar extends Component {
     return (
       <ul className="aside">
         <li>
-          <a className="facebook_gura" href="https://www.facebook.com/pages/Gura-Foerdertechnik-GmbH/257175027773612" target="_blank"><img src="images/facebook_gura.png" /></a>&nbsp;&nbsp;&nbsp;
-          <a className="twitter_gura" href="https://www.facebook.com/pages/Gura-Foerdertechnik-GmbH/257175027773612" target="_blank"><img src="images/twitter_gura.png" /></a>
+        {
+            /*
+              <a className="facebook_gura" href="https://www.facebook.com/pages/Gura-Foerdertechnik-GmbH/257175027773612" target="_blank"><img src="images/facebook_gura.png" /></a>&nbsp;&nbsp;&nbsp;
+              <a className="twitter_gura" href="https://www.facebook.com/pages/Gura-Foerdertechnik-GmbH/257175027773612" target="_blank"><img src="images/twitter_gura.png" /></a>
+            */
+        }
         </li>
         <li><br /><br /></li>
         <li>
-          <a className="homepage_gura" href="http://www.gura.de" target="_blank"><img src="images/partners_gura.png" /></a>
+          <a className="homepage_gura" href="http://www.nhse-gmbh.de" target="_blank"><img src="images/partners_gura.png" /></a>
         </li>
         {
           /*

@@ -13,13 +13,13 @@ debug.enable('app:*');
 const log = debug('app:webpack');
 
 // Environment
-const NODE_ENV = process.env.NODE_ENV || 'development'; // production
+const NODE_ENV = process.env.NODE_ENV || 'development'; // development
 const DEVELOPMENT = NODE_ENV === 'development';
 const TESTING = NODE_ENV === 'test';
 const PRODUCTION = NODE_ENV === 'production';
 const __DEBUG__ = DEVELOPMENT;
 
-
+// www.gura.de/_gura_verwaltungs_gmbh/vendor.7d29490f0712e2db91aa.js?9dbe6737a590517bb167
 // Webpack configuration
 log('Creating webpack configuration...');
 const webpackconfig = {

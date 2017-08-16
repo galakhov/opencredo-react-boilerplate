@@ -60,15 +60,11 @@ class MainHeader extends React.Component {
                 <FormattedMessage {...links.unternehmen} />
               </Link>
             </li>
-            {
-              /*
-              <li role="presentation">
-                <Link activeClassName="active" to="/service">
-                  <FormattedMessage {...links.service} />
-                </Link>
-              </li>
-              */
-            }
+            <li role="presentation">
+              <Link activeClassName="active" to="/service">
+                <FormattedMessage {...links.service} />
+              </Link>
+            </li>
             <li role="presentation">
               <Link activeClassName="active" to="/autos">
                 <FormattedMessage {...links.autos} />

@@ -76,7 +76,7 @@ a {
     }
 
     .main_content_top {
-      height: 15%;
+      height: 20%;
       background-color: rgba($blue, 0.8);
       padding-right: 0;
       padding-left: 0;
@@ -95,11 +95,11 @@ a {
     }
 
     .main_content {
-      height: 85%;
+      height: 80%;
       background-color: rgba($blue, 0.8);
       left: 25%;
       overflow-y: scroll;
-      top: 15%;
+      top: 20%;
       padding-right: 0;
       padding-left: 0;
 
@@ -115,7 +115,7 @@ a {
       */
 
       article {
-        margin-top: 5%;
+        margin-top: 3%;
         margin-left: 25px;
         padding-right: 33.33333333%;
         margin-bottom: 5%;
