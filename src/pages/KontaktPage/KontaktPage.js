@@ -45,6 +45,7 @@ const KontaktPageHero = (props) =>
                 {config.description1}
               </p>
 
+
               <p className={styles['hero-description']}>
                 {config.description2}
               </p>
@@ -52,13 +53,6 @@ const KontaktPageHero = (props) =>
               <Grid style={styles_custom.container}>
                 <Row>
                   <Col xs={12} className="text-left">
-                    {
-                      /*
-                      <h1>
-                        <FormattedMessage {...messages.title} />
-                      </h1>
-                      */
-                    }
                     <p><FormattedHTMLMessage {...messages.overview0} /></p>
                     <p><FormattedHTMLMessage {...messages.overview1} /></p>
                     <p><FormattedHTMLMessage {...messages.overview2} /></p>
@@ -101,3 +95,9 @@ class KontaktPage extends Component {
 }
 
 export default connect(() => ({}))(KontaktPage);
+
+/*
+  <h1>
+    <FormattedMessage {...messages.title} />
+  </h1>
+*/

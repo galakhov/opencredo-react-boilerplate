@@ -9,7 +9,7 @@ export const messages = {
   },
   overview1: {
     id: 'page.overview1',
-    defaultMessage: 'Überörtliche Radiologische Gemeinschaftspraxis<br />Radiologie am Kaiserteich<br />Reichsstraße 59<br />40217 Düsseldorf<br />',
+    defaultMessage: 'Reichsstraße 59<br />40217 Düsseldorf<br />',
   },
   overview2: {
     id: 'page.overview2',

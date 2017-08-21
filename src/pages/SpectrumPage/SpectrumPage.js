@@ -58,13 +58,6 @@ const SpectrumPageHero = (props) =>
               <Grid style={styles_custom.container}>
                 <Row>
                   <Col xs={12} className="text-left">
-                    {
-                      /*
-                      <h1>
-                        <FormattedMessage {...messages.title} />
-                      </h1>
-                      */
-                    }
                     <ul style={styles_custom.ul}>
                       <li><FormattedMessage {...messages.overview0} /></li>
                       <li><FormattedMessage {...messages.overview1} /></li>
@@ -117,3 +110,9 @@ class SpectrumPage extends Component {
 }
 
 export default connect(() => ({}))(SpectrumPage);
+
+/*
+  <h1>
+  <FormattedMessage {...messages.title} />
+  </h1>
+*/

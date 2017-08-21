@@ -52,13 +52,6 @@ const ImpressumPageHero = (props) =>
               <Grid style={styles_custom.container}>
                 <Row>
                   <Col xs={12} className="text-left">
-                    {
-                      /*
-                      <h1>
-                        <FormattedMessage {...messages.title} />
-                      </h1>
-                      */
-                    }
                     <p><FormattedHTMLMessage {...messages.overview0} /></p>
                     <p><FormattedHTMLMessage {...messages.overview_doctors} /></p>
                     <p><FormattedHTMLMessage {...messages.overview1} /></p>
@@ -108,3 +101,9 @@ class ImpressumPage extends Component {
 }
 
 export default connect(() => ({}))(ImpressumPage);
+
+/*
+<h1>
+  <FormattedMessage {...messages.title} />
+</h1>
+*/

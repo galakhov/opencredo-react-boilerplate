@@ -3,9 +3,29 @@ export const messages = {
     id: 'landingPage.title',
     defaultMessage: 'Neuste Technik, kompetente Behandlung, individuelle Therapie',
   },
-  landingText: {
-    id: 'landingPage.text',
-    defaultMessage: ' ',
+  landingText0: {
+    id: 'landingPage0.text',
+    defaultMessage: 'Willkommen',
+  },
+  landingText1: {
+    id: 'landingPage1.text',
+    defaultMessage: 'zur',
+  },
+  landingText2: {
+    id: 'landingPage2.text',
+    defaultMessage: 'Radiologie',
+  },
+  landingText2_0: {
+    id: 'landingPage2.text',
+    defaultMessage: 'am',
+  },
+  landingText3: {
+    id: 'landingPage3.text',
+    defaultMessage: 'Kaiserteich',
+  },
+  landingText4: {
+    id: 'landingPage4.text',
+    defaultMessage: 'Düsseldorfs erste radiologische Praxis für Privatpatienten und Selbstzahler',
   },
   button: {
     clickMe: {

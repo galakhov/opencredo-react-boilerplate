@@ -23,7 +23,7 @@ const HeroPageLayout = (props) =>
 
 HeroPageLayout.propTypes = {
   spinner: PropTypes.object,
-  children: PropTypes.object,
+  children: PropTypes.array,
 };
 
 export default connect(mapStateToProps)(HeroPageLayout);

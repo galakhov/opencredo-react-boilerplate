@@ -54,25 +54,6 @@ export class PraxisPage extends React.Component {
     return (
       <div id="praxis-page">
         <PraxisPageHero backgroundImage="/images/theke-skulptur.jpg" />
-        { /* <Grid>
-          <Row>
-            <Col xs={12}>
-              <h1 className={styles.title}>
-                <FormattedMessage {...messages.title} />
-              </h1>
-              <article>
-                <FormattedHTMLMessage {...messages.landingText} />
-              </article>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={6} md={2}>
-              <Button bsStyle="primary" onClick={this.handleButtonClick}>
-                <FormattedMessage {...messages.button.clickMe} />
-              </Button>
-            </Col>
-          </Row>
-        </Grid> */ }
       </div>
     );
   }
@@ -82,3 +63,23 @@ const mapStateToProps = (state) =>
   ({ isAuthenticated: state.isAuthenticated });
 
 export default connect(mapStateToProps)(PraxisPage);
+
+/* <Grid>
+  <Row>
+    <Col xs={12}>
+      <h1 className={styles.title}>
+        <FormattedMessage {...messages.title} />
+      </h1>
+      <article>
+        <FormattedHTMLMessage {...messages.landingText} />
+      </article>
+    </Col>
+  </Row>
+  <Row>
+    <Col xs={6} md={2}>
+      <Button bsStyle="primary" onClick={this.handleButtonClick}>
+        <FormattedMessage {...messages.button.clickMe} />
+      </Button>
+    </Col>
+  </Row>
+</Grid> */

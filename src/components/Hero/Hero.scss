@@ -6,34 +6,29 @@ $borders-color-content-block: rgba(#f8f8f8, 0.0);
 $eurostile: "Eurostile LT W01 Medium1391130";
 
 .hero {
-  height: 850px;
+  height: 800px;
   min-height: 350px;
+  max-height: 850px;
   // position: relative; // fix for safari browser: false height of a block
   color: white;
-  transition: height .75s;
-}
-
-@media screen and (min-height: 720px) {
-  .hero {
-    height: 650px;
-  }
+  // transition: height .75s;
 }
 
 @media screen and (max-height: 720px) {
   .hero {
-    height: 650px;
+    max-height: 650px;
   }
 }
 
 @media screen and (max-height: 600px) {
   .hero {
-    height: 500px;
+    max-height: 640px;
   }
 }
 
 @media screen and (max-height: 480px) {
   .hero {
-    height: 350px;
+    max-height: 470px;
   }
 }
 
@@ -49,14 +44,13 @@ $eurostile: "Eurostile LT W01 Medium1391130";
 
 .content {
   height: auto;
-  top: 25%;
+  top: 17%;
   position: relative;
   padding-bottom: 30px;
   padding-left: 56px;
   padding-right: 56px;
   width: 45%;
-  min-width: 40%;
-  min-height: 30%;
+  min-width: 335px;
   left: 3%;
   background-color: $background-color-content-block;
   // height: 65%;
@@ -150,6 +144,69 @@ body #patienten-page .content {
   }
 }
 
+@media screen and (max-width: 440px) {
+  .content {
+    padding-left: 36px;
+    padding-right: 36px;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-height: 1020px) {
+  .content {
+    top: 10%;
+    max-height: 70%;
+    transition: 0.75s;
+  }
+}
+
+@media screen and (max-height: 825px) {
+  .content {
+    top: 9%;
+    max-height: 70%;
+    transition: 0.75s;
+  }
+}
+
+@media screen and (max-height: 745px) {
+  .content {
+    top: 7%;
+    max-height: 67%;
+    transition: 0.75s;
+  }
+}
+
+@media screen and (max-height: 675px) {
+  .content {
+    top: 5%;
+    max-height: 60%;
+    transition: 0.75s;
+  }
+}
+
+@media screen and (max-height: 625px) {
+  .content {
+    top: 5%;
+    max-height: 50%;
+    transition: 0.75s;
+  }
+}
+
+@media screen and (max-height: 550px) {
+  .content {
+    top: 6%;
+    max-height: 43%;
+    transition: 0.75s;
+  }
+}
+
+@media screen and (max-height: 350px) {
+  .content {
+    max-height: 35%;
+    transition: 0.75s;
+  }
+}
+
 .background {
   position: absolute;
   width: 100%;
@@ -164,17 +221,54 @@ body #patienten-page .content {
   }
 }
 
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.65;
+  }
+  66% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 // set huge bg picture to cover the whole bg area
+// transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
 .hero > div.background:first-of-type {
   background-size: cover;
   background-position-y: 100%;
   background-position-x: 50%;
-  -webkit-transition: opacity 1000ms linear;
-  -moz-transition: opacity 1000ms linear;
-  -o-transition: opacity 1000ms linear;
-  -ms-transition: opacity 1000ms linear;
-  transition: opacity 1000ms linear;
-  transition: 1s;
+
+  -webkit-transition: opacity 1000ms ease-in;
+  -moz-transition: opacity 1000ms ease-in;
+  -o-transition: opacity 1000ms ease-in;
+  -ms-transition: opacity 1000ms ease-in;
+  transition: opacity 1000ms ease-in;
+  // transition: 1s;
+  -webkit-animation:  pulse 8s ease-in-out infinite;
+  -moz-animation:     pulse 8s ease-in-out infinite;
+  -ms-animation:      pulse 8s ease-in-out infinite;
+  animation:          pulse 8s ease-in-out infinite;
+  background-blend-mode: overlay;
 }
 
 @media screen and (max-width: 1075px) {

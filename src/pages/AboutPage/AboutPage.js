@@ -36,19 +36,19 @@ class AboutPage extends Component {
   }
 }
 
-  /*
-  <Grid>
-    <Row>
-      <Col xs={12} className="text-center">
-        <h1>
-          <FormattedMessage {...messages.title} />
-        </h1>
-        <p>
-          <FormattedMessage {...messages.overview} />
-        </p>
-      </Col>
-    </Row>
-  </Grid>
-  */
-
 export default connect(() => ({}))(AboutPage);
+
+/*
+<Grid>
+  <Row>
+    <Col xs={12} className="text-center">
+      <h1>
+        <FormattedMessage {...messages.title} />
+      </h1>
+      <p>
+        <FormattedMessage {...messages.overview} />
+      </p>
+    </Col>
+  </Row>
+</Grid>
+*/

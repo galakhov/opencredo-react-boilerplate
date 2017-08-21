@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import { connect } from 'react-redux';
 // import styles from './LandingPage.scss';
 // import { Grid, Row, Col, Button } from 'react-bootstrap';
-// import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 import debug from 'debug';
 import { autobind } from 'core-decorators';
 import { messages } from './LandingPage.i18n';
@@ -32,6 +32,21 @@ const styles_custom = {
     position: 'absolute',
     left: '13%',
     top: '38%',
+    width: '85%',
+    overflowY: 'visible',
+  },
+  title_bg: {
+    backgroundColor: '#333',
+    padding: '12px 12px 8px 10px',
+    lineHeight: '1.5em',
+    whiteSpace: 'pre-wrap',
+  },
+  title_caption: {
+    marginLeft: '6%',
+    backgroundColor: '#333',
+    padding: '12px 12px 8px 10px',
+    lineHeight: '1.9em',
+    whiteSpace: 'pre-wrap',
   },
 };
 
@@ -69,7 +84,17 @@ export class LandingPage extends React.Component {
   render() {
     return (
       <div id="landing-page" style={styles_custom.container}>
-        <LandingPageHero backgroundImage="/images/bg_radiologie_welcome.jpg" />
+        <LandingPageHero backgroundImage="/images/bg_radiologie_welcome_burned.jpg" />
+        <Grid>
+          <Row>
+            <Col xs={12} style={styles_custom.content_container}>
+              <h1>
+                <span style={styles_custom.title_bg}><FormattedMessage {...messages.landingText0} /> &nbsp;<FormattedMessage {...messages.landingText1} /></span><br /><span style={styles_custom.title_caption}><FormattedMessage {...messages.landingText2} /> &nbsp;<FormattedMessage {...messages.landingText2_0} /> &nbsp;<FormattedMessage {...messages.landingText3} /></span>
+              </h1>
+              <h2><FormattedHTMLMessage {...messages.landingText4} /></h2>
+            </Col>
+          </Row>
+        </Grid>
           {
             /*
             <div className="radiologie_home" style={styles_custom.content_container}>

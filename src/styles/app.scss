@@ -35,6 +35,65 @@ body {
   z-index: 100;
 }
 
+#landing-page {
+  h1 {
+    font-family: "Eurostile LT W01 Medium1391130";
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin-bottom: 0px;
+  }
+
+  h2 {
+    font-family: "Eurostile LT W01 Medium1391130";
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    font-size: 1.4em;
+    margin: 1px 0px 0px 11%;
+
+    span:first-of-type {
+      background-color: #c7dec6;
+      padding: 12px 20px 8px;
+      line-height: 2em;
+      white-space: pre-wrap;
+      text-indent: -20px;
+    }
+  }
+
+  @media screen and (max-width: 780px) {
+    h1 {
+      font-size: 2.0em;
+    }
+    h2 {
+      font-size: 1.2em;
+      margin-top: 4px;
+    }
+
+  }
+
+  @media screen and (max-width: 450px) {
+    h1 {
+      font-size: 1.8em;
+    }
+    h2 {
+      font-size: 1.1em;
+      margin-top: 6px;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    h1 {
+      font-size: 1.8em;
+    }
+    h2 {
+      font-size: 1.0em;
+      margin-top: 6px;
+    }
+  }
+}
+
 @include scrollbars(.75em, slategray, rgba(#e7e7e7, 0));
 
 a {
@@ -43,6 +102,45 @@ a {
 
   &:hover {
     color: $links_color;
+  }
+}
+
+.page-container {
+  min-height: 425px;
+}
+
+#anfahrt-page .container {
+  height: 60%;
+  top: 20%;
+
+  @media screen and (max-height: 925px) {
+    top: 30%;
+    height: 50%;
+  }
+
+  @media screen and (max-height: 625px) {
+    top: 35%;
+    height: 50%;
+  }
+
+  @media screen and (max-height: 525px) {
+    top: 40%;
+    height: 48%;
+  }
+
+  @media screen and (max-height: 445px) {
+    top: 43%;
+    height: 46%;
+  }
+
+  @media screen and (max-height: 400px) {
+    top: 46%;
+    height: 41%;
+  }
+
+  @media screen and (max-height: 350px) {
+    top: 52%;
+    height: 35%;
   }
 }
 
@@ -257,6 +355,14 @@ div.team-photos {
     img {
         margin-left: -15px;
         transition: .55s;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .navbar-default .navbar-brand {
+    img {
+        width: 80px;
     }
   }
 }

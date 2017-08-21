@@ -30,26 +30,27 @@ class PatientenPage extends Component {
     return (
       <section id="patienten-page">
         <PatientenPageHero backgroundImage="/images/bg_radiologie_patients.jpg" />
-        { /*
-          <Hero displayUnderNavbar>
-            <HeroBackground image="/images/bg.jpg" />
-          </Hero>
-          <Grid>
-            <Row>
-              <Col xs={12} className="text-center">
-                <h1>
-                  <FormattedMessage {...messages.title} />
-                </h1>
-                <p>
-                  <FormattedMessage {...messages.overview} />
-                </p>
-              </Col>
-            </Row>
-          </Grid>
-          */ }
       </section>
     );
   }
 }
 
 export default connect(() => ({}))(PatientenPage);
+
+/*
+  <Hero displayUnderNavbar>
+    <HeroBackground image="/images/bg.jpg" />
+  </Hero>
+  <Grid>
+    <Row>
+      <Col xs={12} className="text-center">
+        <h1>
+          <FormattedMessage {...messages.title} />
+        </h1>
+        <p>
+          <FormattedMessage {...messages.overview} />
+        </p>
+      </Col>
+    </Row>
+  </Grid>
+*/
