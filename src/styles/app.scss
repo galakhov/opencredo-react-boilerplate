@@ -73,6 +73,12 @@ a {
       height: 100%;
       background-color: rgba($blue, 0.8);
       left: 25%;
+
+      ul {
+        li {
+          margin-bottom: 20px;
+        }
+      }
     }
 
     .main_content_top {

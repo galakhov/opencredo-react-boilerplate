@@ -22,7 +22,13 @@ class Sidebar extends Component {
         </li>
         <li><br /><br /></li>
         <li>
-          <a className="homepage_gura" href="http://www.nhse-gmbh.de" target="_blank"><img src="images/partners_gura.png" /></a>
+          <a className="homepage_gura" href="http://www.gura.de" target="_blank"><img src="images/partner_gura-foerderungstechnik.png" /></a>
+        </li>
+        <li>
+          <a className="homepage_gura" href="http://www.nhse-gmbh.de" target="_blank"><img src="images/partner_nhse.png" /></a>
+        </li>
+        <li>
+          <a className="homepage_gura" href="http://www.gura.biz" target="_blank"><img src="images/partner_nub.png" /></a>
         </li>
         {
           /*
