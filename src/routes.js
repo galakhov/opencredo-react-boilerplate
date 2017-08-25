@@ -11,6 +11,7 @@ import ServicePage from 'pages/ServicePage/ServicePage';
 import MaschienenPage from 'pages/MaschienenPage/MaschienenPage';
 import HallenPage from 'pages/HallenPage/HallenPage';
 import ProfileEditPage from 'pages/ProfileEditPage/ProfileEditPage';
+import ContactPage from 'pages/ContactPage/ContactPage';
 
 export default(
   // Route components without path will render their children...
@@ -27,6 +28,7 @@ export default(
         <Route path="/service" component={ServicePage} />
         <Route path="/maschinen" component={MaschienenPage} />
         <Route path="/hallen" component={HallenPage} />
+        <Route path="/contact" component={ContactPage} />
       //</Route>
     </Route>
 

@@ -21,7 +21,10 @@ html, body {
 body {
   font-family: $fonts;
   // background-color: rgba($color, 0.8);
-  overflow-y: hidden;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
 }
 
 a {
@@ -44,6 +47,24 @@ a {
   }
 }
 
+@media (max-width: 991px) {
+  .view-container .row .main_content {
+    left: 25%;
+  }
+
+  .view-container .row .main_content article {
+    margin-top: 3%;
+  }
+
+  .nav>li>a {
+    padding: 15px 10px;
+  }
+
+  .view-container .row .aside_content {
+    top: 20%;
+  }
+}
+
 .view-container {
   div.container {
     color: $white;
@@ -55,6 +76,13 @@ a {
     padding: 0;
     height: 37vh;
   }
+
+  @media (max-width: 480px) {
+    div.container {
+      height: 77vh;
+    }
+  }
+
   .row {
     margin-right: 0;
     margin-left: 0;
@@ -67,6 +95,12 @@ a {
       // width: 25%;
       height: 100%;
       position: absolute;
+
+      @media screen and (max-width: 920px) {
+        height: 20%;
+        width: 100%;
+        bottom: 0;
+      }
     }
 
     .aside_content {
@@ -90,6 +124,10 @@ a {
       left: 25%;
       position: absolute;
 
+      @media screen and (max-width: 920px) {
+        display: none;
+      }
+
       article.gura_verwaltungs_gmbh_homepage {
         margin-top: 0;
         margin-left: 0;
@@ -101,13 +139,19 @@ a {
     }
 
     .main_content {
-      height: 80%;
+      height: 87%;
       background-color: rgba($blue, 0.8);
       left: 25%;
       overflow-y: scroll;
       top: 20%;
       padding-right: 0;
       padding-left: 0;
+
+      @media screen and (max-width: 920px) {
+        top: -6.9999999999999%;
+        width: 100%;
+        left: 0;
+      }
 
       /*
       background: none;
@@ -169,33 +213,23 @@ a {
 
     @media (max-width: 1200px) {
       ul.aside {
-        margin-top: 5em;
+        margin-top: 0;
+        top: 10%;
       }
     }
 
     @media (max-width: 991px) {
       ul.aside {
         margin-top: 3em;
+        top: -20%;
       }
     }
-  }
-}
 
-@media (max-width: 991px) {
-  .view-container .row .main_content {
-    left: 25%;
-  }
-
-  .view-container .row .main_content article {
-    margin-top: 3%;
-  }
-
-  .nav>li>a {
-    padding: 15px 10px;
-  }
-
-  .view-container .row .aside_content {
-    top: 15%;
+    @media (max-width: 920px) {
+      ul.aside {
+        top: 0%;
+      }
+    }
   }
 }
 
@@ -258,9 +292,17 @@ a {
   }
 }
 
+@media (max-width: 920px) {
+  .view-container .row .main_content article {
+    @media screen and (max-width: 920px) {
+      padding-right: 10%;
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .navbar-collapse {
-    left: 25%;
+    right: 25%;
   }
   .navbar-default {
     bottom: 29%;
@@ -282,6 +324,18 @@ a {
   }
 
   .navbar-default {
+    bottom: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: none;
+    top: 0;
+
+    .navbar-header {
+      background-color: #fff;
+      height: 110px;
+      float: right;
+    }
+
     ul {
       padding-top: 0px;
     }
@@ -299,14 +353,15 @@ a {
     }
   }
 
-  .navbar-header {
-      float: none;
-  }
   .navbar-left,.navbar-right {
       float: none !important;
   }
   .navbar-toggle {
-      display: block;
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 10%;
+    margin: 0;
   }
   .navbar-collapse {
       border-top: 1px solid transparent;
@@ -338,15 +393,13 @@ a {
   }
 
   .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    margin-left: 5%;
     position: relative;
-    top: 44px;
-    left: 0;
-    margin-left: 0px;
-  }
-
-  .navbar-toggle {
-    margin-bottom: -8px;
+    top: 10px;
+    left: 21%;
+    margin-left: 0;
+    width: 57%;
+    margin: 0;
+    padding: 0;
   }
 
   .main_content {
@@ -354,36 +407,87 @@ a {
   }
 
   .aside_content {
-    display: none;
+    display: block;
   }
 
-  .view-container .row .main_content article {
-    margin-top: 7%;
+  .view-container {
+
+    div.container {
+      height: 56vh;
+    }
+
+    .row {
+
+      .main_content article {
+        margin-top: 0%;
+      }
+      .aside_content {
+        top: -29.8888888888%;
+        left: 0;
+        width: 100%;
+        height: 23%;
+        position: absolute;
+      }
+      ul.aside {
+        margin-top: 1.5em;
+
+        li {
+          float: left;
+          margin-right: 15px;
+          list-style-type: none;
+
+          img {
+            width: 80%;
+          }
+        }
+      }
+
+    }
   }
 }
 
 @media (max-width: 768px) {
 
+  .view-container .row .aside_content {
+    ul.aside {
+      z-index: 1;
+      li {
+        width: 15vw;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+
   .navbar-default {
     bottom: 24%;
+    height: 27%;
   }
 
   .navbar-collapse {
     left: 25%;
+    right: 25%;
   }
 
   .navbar-default .navbar-header {
     width: 25%;
+    /* position: absolute; */
   }
 
   .navbar-header .navbar-toggle {
-    margin-right: 0;
-    top: -54px;
+    right: 33%;
+    top: 63px;
+    position: relative;
+    display: block;
+    margin: 0;
+    margin-right: 5%;
   }
 
   .navbar-default .navbar-collapse,
   .navbar-default .collapse.in {
-    top: -26px;
+    top: 0;
     background-color: $white;
   }
 
@@ -400,12 +504,32 @@ a {
   }
 
    .navbar>.container-fluid .navbar-brand, .navbar>.container .navbar-brand {
-      top: -10px;
-      left: 10px;
+      top: 18px;
+      left: 65%;
+      margin-left: -40%;
+      height: 0;
+      padding: 0;
+      width: 70%;
     }
 
   .navbar-default .navbar-brand img {
     width: 67%;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar>.container-fluid .navbar-brand, .navbar>.container .navbar-brand {
+    margin-left: -52%;
+
+    img {
+      width: 85%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-default {
+    bottom: 61%;
   }
 }
 

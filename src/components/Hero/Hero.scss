@@ -29,6 +29,10 @@ $border-color: #b3d3b3;
   padding-right: 0;
   width: 75%;
 
+  @media (max-width: 920px) {
+    top: 10vh;
+  }
+
   p {
     text-align: left;
   }

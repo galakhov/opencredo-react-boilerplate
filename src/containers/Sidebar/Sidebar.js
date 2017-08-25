@@ -12,14 +12,14 @@ class Sidebar extends Component {
   render() {
     return (
       <ul className="aside">
-        <li>
-        {
-            /*
+      {
+          /* <li>
+
               <a className="facebook_gura" href="https://www.facebook.com/pages/Gura-Foerdertechnik-GmbH/257175027773612" target="_blank"><img src="images/facebook_gura.png" /></a>&nbsp;&nbsp;&nbsp;
               <a className="twitter_gura" href="https://www.facebook.com/pages/Gura-Foerdertechnik-GmbH/257175027773612" target="_blank"><img src="images/twitter_gura.png" /></a>
-            */
-        }
-        </li>
+
+          </li> */
+      }
         <li><br /><br /></li>
         <li>
           <a className="homepage_gura" href="http://www.gura.de" target="_blank"><img src="images/partner_gura-foerderungstechnik.png" /></a>

@@ -25,9 +25,9 @@ export default class MainFooter extends React.Component {
 An der Gasse 29 - 33<br />
 D-51789 Lindlar<br />
 Tel: +49 (0) 2266 4 77 87 - 0<br />
-Fax: +49 (0) 2266 4 77 87 - 10<br />
-E-Mail: info@gura-verwaltung.de<br />
-Internet: www.gura-verwaltung.de</p>
+Fax: +49 (0) 2266 4 77 87 - 10</p>
+<aside>E-Mail: info@gura-verwaltung.de<br />
+Internet: www.gura-verwaltung.de</aside>
         </div>
         <nav>
           <ul className="inline-list">

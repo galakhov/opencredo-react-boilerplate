@@ -1,0 +1,14 @@
+@import "base";
+
+.title {
+  font-weight: bold;
+}
+
+.hero-title {
+  font-weight: bold;
+  color: $white;
+  text-transform: uppercase;
+  img {
+    width: 75%;
+  }
+}
