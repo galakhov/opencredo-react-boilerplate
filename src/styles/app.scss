@@ -37,13 +37,13 @@ body {
 
 #landing-page {
   h1 {
-    font-family: "Eurostile LT W01 Medium1391130";
+    font-family: "EurostileLTW01-BoldEx2";
     color: #fff;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 2.5em;
-    margin-bottom: 0px;
+    font-size: 2.0em;
+    margin-bottom: 5px;
   }
 
   h2 {
@@ -65,6 +65,7 @@ body {
   @media screen and (max-width: 780px) {
     h1 {
       font-size: 2.0em;
+      margin-bottom: 6px;
     }
     h2 {
       font-size: 1.2em;
@@ -76,6 +77,7 @@ body {
   @media screen and (max-width: 450px) {
     h1 {
       font-size: 1.8em;
+      margin-bottom: 8px;
     }
     h2 {
       font-size: 1.1em;

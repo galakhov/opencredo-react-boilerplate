@@ -9,7 +9,7 @@ export const messages = {
   },
   overview01: {
     id: 'parmoeglichkeiten',
-    defaultMessage: 'Einfahrt über die Elisabethstrasse 43, 40217 Düsseldorf (im Navigationssystem eingeben)',
+    defaultMessage: '(Adresse für NAVI: Elisabethstraße 43, 40217 Düsseldorf)',
   },
   overview02: {
     id: 'Anfahrt',
@@ -17,7 +17,7 @@ export const messages = {
   },
   overview1: {
     id: 'page.overview1',
-    defaultMessage: 'Reichsstraße 59, 40217 Düsseldorf<br />',
+    defaultMessage: 'Reichsstraße 59, 40217 Düsseldorf<br /><br />',
   },
   overview2: {
     id: 'page.overview2',
@@ -25,11 +25,11 @@ export const messages = {
   },
   overview3: {
     id: 'page.overview3',
-    defaultMessage: '<h3>Anreise</h3><p><h4>Mit dem Auto</h4><strong>Aus dem Norden:</strong></p><ul><li>Von der A44 kommend Ausfahrt 30 Düsseldorf Stockum Rtg. Düsseldorf Zentrum abfahren</li><li>Der Hauptstraße für 7km folgen und rechts in die Herzogstraße abbiegen</li><li>Nach 500m links abbiegen in Elisabethstraße</li></ul><br /><p><strong>Aus dem Süden:</strong></p><ul><li>Von der A57 kommend Ausfahrt 22 Neuss Hafen/ Düsseldorf abfahren</li><li>Nach 6,5km einen der beiden linken Abbiegstreifen halb links auf Völklinger Str. abbiegen</li><li>1,5km der Straße folgen und rechten Fahrstreifen benutzen, um die Auffahrt Richtung Kavalleriestraße zu nehmen</li><li>Nach 700m rechts abbiegen auf Elisabethstraße</li></ul><br /><p>Die Adresse für das Navigationssystem (Parkhaus):<br />Elisabethstraße 43<br />40217 Düsseldorf</p>',
+    defaultMessage: '<h3>Anreise</h3><p><h4>Mit dem Auto</h4><strong>Aus dem Norden:</strong></p><ul><li>Von der A44 kommend Ausfahrt 30 Düsseldorf Stockum Richtung Düsseldorf Zentrum abfahren.</li><li>Der Hauptstraße für 7 km folgen und rechts in die Herzogstraße abbiegen.</li><li>Nach 500 m links abbiegen in Elisabethstraße.</li></ul><br /><p><strong>Aus dem Süden:</strong></p><ul><li>Von der A57 kommend an der Ausfahrt 22 Neuss Hafen/Düsseldorf abfahren.</li><li>Nach 6,5 km eine der beiden linken Abbiegespuren nehmen und halb links auf die Völklinger Straße abbiegen.</li><li>1,5 km der Straße folgen und den rechten Fahrstreifen benutzen, um die Auffahrt Richtung Kavalleriestraße zu nehmen.</li><li>Nach 700 m rechts abbiegen auf die Elisabethstraße.</li></ul><br />',
   },
   overview4: {
     id: 'page.overview4',
-    defaultMessage: '<h4>Mit öffentlichen Verkehrsmitteln</h4><p><strong>Vom Hauptbahnhof:</strong></p><p>Nehmen Sie am HBF Düsseldorf von den Bushaltestellen gegenüber der Straßenbahnen liegend den Bus Linie 732 in Richtung Franziusstraße bis Haltestelle Kirchplatz. Von dort sind es 4 Minuten zu Fuß.</p><br /><p><strong>Aus Oberkassel:</strong></p><p>Nehmen Sie am Belsenplatz einen Bus der Linie 835/836 in Richtung Holthausen/ Universität Süd bis Haltestelle Kirchplatz. Von dort sind es 4 Minuten zu Fuß.</p>',
+    defaultMessage: '<h4>Mit öffentlichen Verkehrsmitteln</h4><p><strong>Vom Hauptbahnhof:</strong></p><p>Nehmen Sie am HBF Düsseldorf (Ausgang Konrad-Adenauer-Platz) den Bus Linie 732 in Richtung Franziusstraße bis zur Haltestelle Kirchplatz. Von dort sind es ca. 4 Minuten zu Fuß.</p><br /><p><strong>Aus Oberkassel:</strong></p><p>Nehmen Sie am Belsenplatz einen Bus der Linie 835/836 in Richtung Holthausen/Universität Süd bis Haltestelle Kirchplatz. Von dort sind es ca. 4 Minuten zu Fuß.</p>',
   },
 
 };

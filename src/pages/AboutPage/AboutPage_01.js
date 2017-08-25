@@ -18,8 +18,13 @@ const styles_custom = {
     position: 'absolute',
     left: '20%',
     top: '640px',
-    fontFamily: 'Eurostile LT W01 Medium1391130',
+    fontFamily: 'EurostileLTW01-BoldEx2',
     fontWeight: 'bold',
+  },
+  team_container_span: {
+    fontFamily: 'Eurostile LT W01 Medium1391130',
+    fontWeight: 'normal',
+    fontSize: '1.2em',
   },
   team_container_caption: {
     borderLeft: 'solid #b3d3b3 4px',
@@ -56,7 +61,7 @@ class AboutPage_01 extends Component {
                   <FormattedMessage {...messages.doctors.content.doc0} />
                 </h1>
 
-                <p>
+                <p style={styles_custom.team_container_span}>
                   <FormattedMessage {...messages.doctors.content.job0} />
                 </p>
               </div>

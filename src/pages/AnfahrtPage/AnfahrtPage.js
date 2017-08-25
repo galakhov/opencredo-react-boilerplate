@@ -23,12 +23,18 @@ const styles_custom = {
   team_container: {
     position: 'absolute',
     left: '2%',
-    fontFamily: 'Eurostile LT W01 Medium1391130',
+    fontFamily: 'EurostileLTW01-BoldEx2',
     fontWeight: 'bold',
     overflowY: 'scroll',
     paddingRight: 0,
     marginRight: '20px',
     overflowX: 'hidden',
+  },
+  team_container_span: {
+    fontFamily: 'Eurostile LT W01 Medium1391130',
+    fontWeight: 'normal',
+    fontSize: '1.2em',
+    width: '90%',
   },
   team_container_caption: {
     borderLeft: 'solid #b3d3b3 4px',
@@ -62,10 +68,10 @@ const AnfahrtPageHero = (props) =>
           <h1>
             <FormattedMessage {...messages.title} />
           </h1>
-          <p>
+          <p style={styles_custom.team_container_span}>
             <FormattedHTMLMessage {...messages.overview0} /><br />
-            <FormattedHTMLMessage {...messages.overview1} /><br />
-            <span style={styles_custom.span_color}><FormattedHTMLMessage {...messages.overview01} /></span><br />
+            <FormattedHTMLMessage {...messages.overview1} />
+            <span style={styles_custom.span_color}><FormattedHTMLMessage {...messages.overview01} /></span><br /><br />
             <span style={styles_custom.span_color}><FormattedHTMLMessage {...messages.overview02} /></span><br />
             <FormattedHTMLMessage {...messages.overview2} /><br />
             <br /><FormattedHTMLMessage {...messages.overview3} />

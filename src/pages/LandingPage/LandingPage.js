@@ -84,12 +84,12 @@ export class LandingPage extends React.Component {
   render() {
     return (
       <div id="landing-page" style={styles_custom.container}>
-        <LandingPageHero backgroundImage="/images/bg_radiologie_welcome_burned.jpg" />
+        <LandingPageHero backgroundImage="images/bg_radiologie_welcome_burned.jpg" />
         <Grid>
           <Row>
             <Col xs={12} style={styles_custom.content_container}>
               <h1>
-                <span style={styles_custom.title_bg}><FormattedMessage {...messages.landingText0} /> &nbsp;<FormattedMessage {...messages.landingText1} /></span><br /><span style={styles_custom.title_caption}><FormattedMessage {...messages.landingText2} /> &nbsp;<FormattedMessage {...messages.landingText2_0} /> &nbsp;<FormattedMessage {...messages.landingText3} /></span>
+                <span style={styles_custom.title_bg}><FormattedMessage {...messages.landingText0} /> <FormattedMessage {...messages.landingText1} /></span><br /><span style={styles_custom.title_caption}><FormattedMessage {...messages.landingText2} /> <FormattedMessage {...messages.landingText2_0} /> <FormattedMessage {...messages.landingText3} /></span>
               </h1>
               <h2><FormattedHTMLMessage {...messages.landingText4} /></h2>
             </Col>

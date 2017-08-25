@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // import config from 'app-config';
-import { Hero, HeroBackground } from 'components/Hero/index';
+import { Hero, HeroStartpageBackground } from 'components/Hero/index';
 // import { VAContainer, VAMiddle } from 'components/VAlign/VAlign';
 // import styles from './LandingPage.scss';
 
@@ -65,7 +65,7 @@ const LandingPageHero = (props) =>
       transitionLeaveTimeout={transitionDuration}
     >
       <Hero displayUnderNavbar style={styles_custom.site_container}>
-        <HeroBackground image={props.backgroundImage} className={styles_custom.background_style} />
+        <HeroStartpageBackground image={props.backgroundImage} />
             {
               /*
               <VAContainer horizontal vertical>
