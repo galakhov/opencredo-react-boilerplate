@@ -15,11 +15,57 @@
 }
 
 .content_landingpage {
-  left: '52%';
-  background-color: 'rgba(0,0,0,0)';
-  position: 'relative';
-  width: '45%';
-  max-height: '80%';
+  left: 52%;
+  background-color: rgba(0,0,0,0);
+  position: relative;
+  width: 45%;
+  max-height: 80%;
+}
+
+#content_container {
+  position: absolute;
+  left: 10%;
+  top: 38%;
+  width: 85%;
+  overflow-y: visible;
+
+  @media screen and (max-width: 450px) {
+    left: 7.5%;
+    top: 43%;
+    width: 90%;
+
+    span {
+      padding: 8px 12px 5px 10px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    top: 37%;
+  }
+
+  @media screen and (min-width: 848px) {
+    #figure_caption {
+      margin-left: 6%;
+    }
+  }
+
+  @media screen and (max-height: 525px) {
+    left: 2%;
+    top: 53%;
+    width: 100%;
+  }
+
+  @media screen and (max-height: 450px) {
+    top: 46%;
+
+    h1 {
+      font-size: 1.3em;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    top: 44%;
+  }
 }
 
 /* STYLES FOR ANIMATIONS */

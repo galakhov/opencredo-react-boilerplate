@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import { connect } from 'react-redux';
-// import styles from './LandingPage.scss';
+import styles from './LandingPage.scss';
 // import { Grid, Row, Col, Button } from 'react-bootstrap';
 import { Grid, Row, Col } from 'react-bootstrap';
 import debug from 'debug';
@@ -28,25 +28,14 @@ const styles_custom = {
   content_img: {
     position: 'relative',
   },
-  content_container: {
-    position: 'absolute',
-    left: '13%',
-    top: '38%',
-    width: '85%',
-    overflowY: 'visible',
-  },
   title_bg: {
-    backgroundColor: '#333',
-    padding: '12px 12px 8px 10px',
-    lineHeight: '1.5em',
     whiteSpace: 'pre-wrap',
+    float: 'left',
+    marginBottom: '5px',
   },
   title_caption: {
-    marginLeft: '6%',
-    backgroundColor: '#333',
-    padding: '12px 12px 8px 10px',
-    lineHeight: '1.9em',
     whiteSpace: 'pre-wrap',
+    clear: 'left',
   },
 };
 
@@ -87,9 +76,9 @@ export class LandingPage extends React.Component {
         <LandingPageHero backgroundImage="images/bg_radiologie_welcome_burned.jpg" />
         <Grid>
           <Row>
-            <Col xs={12} style={styles_custom.content_container}>
+            <Col xs={12} id={`${styles.content_container}`}>
               <h1>
-                <span style={styles_custom.title_bg}><FormattedMessage {...messages.landingText0} /> <FormattedMessage {...messages.landingText1} /></span><br /><span style={styles_custom.title_caption}><FormattedMessage {...messages.landingText2} /> <FormattedMessage {...messages.landingText2_0} /> <FormattedMessage {...messages.landingText3} /></span>
+                <figure style={styles_custom.title_bg}><FormattedMessage {...messages.landingText0} /><small> </small><FormattedMessage {...messages.landingText1} /></figure><br /><figure style={styles_custom.title_caption} id={`${styles.figure_caption}`}><FormattedMessage {...messages.landingText2} /><small> </small><FormattedMessage {...messages.landingText2_0} /><small> </small><FormattedMessage {...messages.landingText3} /></figure>
               </h1>
               <h2><FormattedHTMLMessage {...messages.landingText4} /></h2>
             </Col>

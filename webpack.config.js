@@ -13,7 +13,8 @@ debug.enable('app:*');
 const log = debug('app:webpack');
 
 // Environment
-const NODE_ENV = process.env.NODE_ENV || 'development'; // production
+process.env.NODE_ENV = 'production';
+const NODE_ENV = process.env.NODE_ENV || 'development'; // development
 const DEVELOPMENT = NODE_ENV === 'development';
 const TESTING = NODE_ENV === 'test';
 const PRODUCTION = NODE_ENV === 'production';
@@ -47,9 +48,9 @@ const webpackconfig = {
         'NODE_ENV': JSON.stringify('production')
       }
     }), */
-    /* new webpack.DefinePlugin({
+    new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
-    }), */
+    }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(config.paths.app, 'index.html'),

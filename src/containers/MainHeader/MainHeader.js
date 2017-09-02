@@ -181,6 +181,9 @@ class MainHeader extends React.Component {
               </li>
               <LanguageSelectionDropdown /> */ }
           </Nav>
+          <div className={styles['radiologie-contact-nav']}>
+            <FormattedHTMLMessage {...links.radiologie_contact} />
+          </div>
         </Navbar.Collapse>
         <div className={styles['radiologie-contact']}><FormattedHTMLMessage {...links.radiologie_contact} /></div>
         <div className={styles['header-line']}></div>

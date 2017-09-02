@@ -144,11 +144,25 @@ body #patienten-page .content {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .content {
+    border-top: 2px solid $borders-color-content-block;
+    top: 10%;
+    max-height: 47%;
+    transition: 0.75s;
+  }
+}
+
 @media screen and (max-width: 440px) {
   .content {
     padding-left: 36px;
     padding-right: 36px;
     overflow-x: hidden;
+
+    h1 {
+      font-size: 15px;
+      word-break: break-word;
+    }
   }
 }
 
@@ -184,7 +198,7 @@ body #patienten-page .content {
   }
 }
 
-@media screen and (max-height: 625px) {
+@media handheld, (max-height: 625px), (orientation: landscape) {
   .content {
     top: 5%;
     max-height: 50%;
@@ -192,17 +206,32 @@ body #patienten-page .content {
   }
 }
 
-@media screen and (max-height: 550px) {
+@media handheld, (max-height: 625px), (orientation: portrait) {
   .content {
-    top: 6%;
-    max-height: 43%;
-    transition: 0.75s;
+    top: 10%;
+    max-height: 48%;
   }
 }
 
 @media screen and (max-height: 350px) {
   .content {
     max-height: 35%;
+    transition: 0.75s;
+  }
+}
+
+@media screen and (max-width: 340px) and (max-height: 500px) {
+  .content {
+    left: 6%;
+    width: 80%;
+    top: 14%;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .content {
+    top: 6%;
+    max-height: 43%;
     transition: 0.75s;
   }
 }

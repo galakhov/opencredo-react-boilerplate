@@ -13,6 +13,7 @@ import { MenuItem } from 'react-bootstrap';
 
 // import { FormattedMessage } from 'react-intl';
 import { Grid, Row, Col } from 'react-bootstrap';
+import LightboxGalleryTeam from '../GalleryPage/GalleryTeam';
 // import { Hero } from 'components/Hero'; // HeroBackground
 // import { messages } from './PatientenPage.i18n';
 
@@ -117,6 +118,8 @@ const AboutPageHero = (props) =>
                       </Row>
                       */
                     }
+
+                  <LightboxGalleryTeam />
                   </Col>
                 </Row>
               </Grid>

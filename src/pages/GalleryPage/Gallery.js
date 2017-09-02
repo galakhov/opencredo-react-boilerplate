@@ -225,7 +225,11 @@ const theme = {
       opacity: 1,
     },
   },
-
+  header: {
+    top: '45px',
+    right: '15px',
+    position: 'relative',
+  },
   // footer
   footer: {
     color: 'black',

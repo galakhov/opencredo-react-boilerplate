@@ -17,7 +17,7 @@ export const messages = {
   },
   overview1: {
     id: 'page.overview1',
-    defaultMessage: 'Reichsstraße 59, 40217 Düsseldorf<br /><br />',
+    defaultMessage: 'Reichsstraße 59, 40217 Düsseldorf<br />',
   },
   overview2: {
     id: 'page.overview2',

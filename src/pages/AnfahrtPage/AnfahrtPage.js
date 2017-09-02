@@ -69,9 +69,9 @@ const AnfahrtPageHero = (props) =>
             <FormattedMessage {...messages.title} />
           </h1>
           <p style={styles_custom.team_container_span}>
-            <FormattedHTMLMessage {...messages.overview0} /><br />
+            <span style={styles_custom.span_color}><FormattedHTMLMessage {...messages.overview0} /></span><br />
             <FormattedHTMLMessage {...messages.overview1} />
-            <span style={styles_custom.span_color}><FormattedHTMLMessage {...messages.overview01} /></span><br /><br />
+            <FormattedHTMLMessage {...messages.overview01} /><br /><br />
             <span style={styles_custom.span_color}><FormattedHTMLMessage {...messages.overview02} /></span><br />
             <FormattedHTMLMessage {...messages.overview2} /><br />
             <br /><FormattedHTMLMessage {...messages.overview3} />
