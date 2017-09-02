@@ -37,6 +37,16 @@ a {
   margin-top: 20px;
 }
 
+.view-container .row .main_content article {
+  z-index:0;
+  -webkit-transform: translateY( 0 );
+  transform: translateY( 0 );
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
 @media (min-width: 768px) {
   .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
     width: 87%;

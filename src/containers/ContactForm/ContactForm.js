@@ -1,19 +1,30 @@
 /* @flow */
 import React, { PropTypes, Element } from 'react';
 import { Button, Input } from 'react-bootstrap'; // Row, Col
-import { FormattedMessage, intlShape, injectIntl } from 'react-intl';
+import { FormattedMessage, FormattedHTMLMessage, intlShape, injectIntl } from 'react-intl';
 import { generateValidation } from 'redux-form-validation';
 import TextInput from 'components/FormFields/TextInput';
 // import HorizontalRadioGroup from 'components/FormFields/HorizontalRadioGroup';
 // import DropDown from 'components/FormFields/DropDown';
+import ReactDOM from 'react-dom';
 import FormErrorMessages from 'components/FormFields/FormErrorMessages';
 import validations from './ContactForm.validations';
 import { reduxForm } from 'redux-form';
 import { messages } from './ContactForm.i18n';
 import styles from './ContactForm.scss';
 import { autobind } from 'core-decorators';
+import axios from 'axios';
+import qs from 'qs';
+import debug from 'debug';
+
+if (__DEBUG__) {
+  debug.enable('contact-form:*');
+}
+
+const log = debug('contact-form:info');
 
 class ContactForm extends React.Component {
+
   static propTypes = {
     fields: PropTypes.object.isRequired,
     intl: intlShape.isRequired,
@@ -25,14 +36,91 @@ class ContactForm extends React.Component {
     // handleUpdate: PropTypes.func.isRequired,
   };
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      disabled: true,
+      data: {},
+    };
+    // ES5:
+    // this.toggleState = this.toggleState.bind(this);
+  }
+
+  componentDidUpdate() {
+    /* const hash = this.state.location.hash.replace('#', '');
+    if (hash) {
+      const node = ReactDOM.findDOMNode(this.refs[hash]);
+      if (node) {
+        node.scrollIntoView();
+      }
+    }*/
+  }
+
   @autobind
-  onUpdateClick() {
+  onUpdateClick(e) {
+    e.preventDefault();
     // this.props.handleUpdate(Object.assign({}, this.props.user, this.props.values));
+    if (this.props.fields.notes.value.length < 2) {
+      log('Ihre Nachricht enthält viel zu wenige Zeichen.');
+      // return false;
+    } else {
+      log('Fields collected on onUpdateClick:', this.props.fields);
+
+      // save
+      this.setState({
+        data: this.props.fields,
+      });
+
+      const resultElement = document.getElementById('resultElement');
+      resultElement.innerHTML = '';
+
+      const instance = axios.create({
+        baseURL: 'http://gura.4dd-communication.com',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      });
+      // JSON.stringify(var)
+      // instance.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+      instance.defaults.timeout = 1500;
+
+      instance.post('/contact.php', qs.stringify({
+        userName: this.props.fields.givenName.value,
+        userSurname: this.props.fields.familyName.value,
+        userMail: this.props.fields.email.value,
+        userMsg: this.props.fields.notes.value,
+      }))
+      .then((response) => {
+        resultElement.innerHTML = this.generateSuccessHTMLOutput(response);
+      })
+      .catch((error) => {
+        resultElement.innerHTML = this.generateErrorHTMLOutput(error);
+        // this.generateErrorHTMLOutput(error);
+      });
+
+      this.props.resetForm();
+
+      // add hash:
+      // this.state.location.hash.add('home');
+      const node = ReactDOM.findDOMNode(this.refs.result);
+      if (node) {
+        node.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      }
+    }
   }
 
   @autobind
   onResetClick() {
     this.props.resetForm();
+  }
+
+  generateSuccessHTMLOutput(response) {
+    /*
+    <h5>Status:</h5><pre>${response.status} ${response.statusText}</pre><h5>Headers:</h5><pre>${JSON.stringify(response.headers, null, '\t')}</pre><h5>Data:</h5>
+    */
+    return (`<h4>Ergebnis:</h4><pre>${response.data}</pre>`);
+    // JSON.stringify(response.data, null, '\t')
+  }
+  generateErrorHTMLOutput(error) {
+    return (`<h4>Result</h4><h5>Message:</h5><pre>${error.message}</pre><h5>Status:</h5><pre>${error.response.status} ${error.response.statusText}</pre><h5>Headers:</h5><pre>${JSON.stringify(error.response.headers, null, '\t')}</pre><h5>Data:</h5><pre>${JSON.stringify(error.response.data, null, '\t')}</pre>`);
   }
 
   isUpdateButtonDisabled(): boolean {
@@ -43,20 +131,39 @@ class ContactForm extends React.Component {
     return this.props.pristine;
   }
 
+  // ES5
+  @autobind
+  toggleState() {
+    this.setState({
+      disabled: !this.state.disabled,
+    });
+  }
+  // need to use this.bind in constructor additionally if no 'autobind' was set
+
+  // ES6+
+  /* toggleState = () => {
+    this.setState({
+      disabled: !this.state.disabled,
+    });
+  } */
+
+  /*
+  nickname,
+  age,
+  gender,
+  locale,
+  */
+
   render(): Element {
     const {
       fields: {
         givenName,
         familyName,
-        // nickname,
         email,
         emailVerified,
-        // age,
-        // gender,
-        // locale,
         notes,
-        },
-      } = this.props;
+      },
+    } = this.props;
     const { formatMessage } = this.props.intl;
 
     // const MALE: string = 'männlich';
@@ -100,7 +207,7 @@ class ContactForm extends React.Component {
           <TextInput field={email} type="email" placeholder={formatMessage(messages.email.placeholder)}>
             <FormErrorMessages field={email} />
           </TextInput>
-          <Input type="checkbox" label={formatMessage(messages.emailVerified.label)} {...emailVerified} />
+          <Input type="checkbox" onClick={this.toggleState} label={formatMessage(messages.emailVerified.label)} {...emailVerified} />
           {
             /*
             <Row>
@@ -117,12 +224,14 @@ class ContactForm extends React.Component {
             <DropDown label={formatMessage(messages.locale.label)} field={locale} values={locales} />
             */
           }
-          <Input type="textarea" label={formatMessage(messages.notes.label)} {...notes} />
+          <Input type="textarea" minLength={validations.notes.minLength} placeholder={formatMessage(messages.notes.placeholder)} label={formatMessage(messages.notes.label)} {...notes} />
+
+          <FormErrorMessages field={notes} minLength={validations.notes.minLength} />
 
           <Button
             bsStyle="primary"
             onClick={this.onUpdateClick}
-            disabled={this.isUpdateButtonDisabled()}
+            disabled={ this.state.disabled ? true : this.isUpdateButtonDisabled() }
           >
             <FormattedMessage {...messages.save.label} />
           </Button>&nbsp;
@@ -139,6 +248,12 @@ class ContactForm extends React.Component {
             <FormattedMessage {...messages.reset.label} />
           </Button>
         </form>
+        <div ref="result"><br /></div>
+        <div id="resultElement"></div>
+        <br />
+        <div className="sliding_box">
+          <FormattedHTMLMessage {...messages.disclaimer} />
+				</div>
       </div>
     );
   }

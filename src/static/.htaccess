@@ -1,9 +1,7 @@
 # Map all non-existing URLs to be processed by index.html,
 # so any URL that doesn't point to a JS file, CSS file, etc etc...
 # goes through the React app.
-
-Options -Indexes
-DirectoryIndex index.html
+# Header set Access-Control-Allow-Origin "*"
 
 <IfModule mod_rewrite.c>
   RewriteEngine on
@@ -11,7 +9,8 @@ DirectoryIndex index.html
   # RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
-  RewriteRule ^ - [L]
+  # RewriteCond %{REQUEST_URI} !^/contact\.php$
   RewriteCond %{REQUEST_URI} !=/favicon.ico
+  RewriteRule ^ - [L]
   RewriteRule ^ index.html [L]
 </IfModule>

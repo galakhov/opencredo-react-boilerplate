@@ -1,30 +1,34 @@
 export default {
-  age: {
+  /* age: {
     required: true,
     min: 18,
     max: 99,
-  },
+  },*/
   email: {
     required: true,
     email: true,
     validateOnBlur: true,
   },
-  emailVerified: true,
+  emailVerified: {
+    required: true,
+    emailVerified: true,
+    validateOnBlur: true,
+  },
   familyName: {
     required: true,
     validateOnBlur: true,
     minLength: 2,
   },
-  gender: {
+  /* gender: {
     required: true,
     validateOnBlur: true,
-  },
+  },*/
   givenName: {
     required: true,
     validateOnBlur: true,
     minLength: 1,
   },
-  locale: {
+  /* locale: {
     required: true,
     validateOnBlur: true,
   },
@@ -32,9 +36,10 @@ export default {
     required: false,
     validateOnBlur: true,
     maxLength: 10,
-  },
+  },*/
   notes: {
-    required: false,
+    required: true,
     validateOnBlur: true,
+    minLength: 2,
   },
 };

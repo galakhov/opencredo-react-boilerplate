@@ -12,6 +12,7 @@ import MaschienenPage from 'pages/MaschienenPage/MaschienenPage';
 import HallenPage from 'pages/HallenPage/HallenPage';
 import ProfileEditPage from 'pages/ProfileEditPage/ProfileEditPage';
 import ContactPage from 'pages/ContactPage/ContactPage';
+import ImpressumPage from 'pages/ImpressumPage/ImpressumPage';
 
 export default(
   // Route components without path will render their children...
@@ -29,6 +30,7 @@ export default(
         <Route path="/maschinen" component={MaschienenPage} />
         <Route path="/hallen" component={HallenPage} />
         <Route path="/contact" component={ContactPage} />
+        <Route path="/impressum" component={ImpressumPage} />
       //</Route>
     </Route>
 

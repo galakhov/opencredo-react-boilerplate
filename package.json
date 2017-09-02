@@ -1,6 +1,6 @@
 {
   "name": "opencredo-react-boilerplate",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "engines": {
@@ -40,10 +40,11 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.9.0",
+    "axios": "^0.9.1",
     "classnames": "^2.2.3",
     "empty": "^0.10.1",
     "lodash": "^4.5.1",
+    "qs": "^6.5.0",
     "react": "^0.14.6",
     "react-bootstrap": "^0.28.2",
     "react-dom": "^0.14.6",

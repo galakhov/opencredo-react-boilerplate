@@ -4,13 +4,13 @@ export default {
   'aboutPage.title': 'Ihre Ansprechpartner in allen Belangen – für Ihr Wohlbefinden',
   'aboutPage.overview': 'Unser Ärzteteam besteht aus Spezialisten im Bereich der Radiologie und betreut und behandelt Ihre Schmerzen individuell und zielgerichtet. Unser wichtigstes Anliegen in unsere Praxis ist Ihre Zufriedenheit und Ihr Wohlbefinden. Das Team der Radiologischen Gemeinschaftspraxis legt größten Wert darauf, dass Sie Ihr Leben schmerzfrei und aktiv genießen können.',
   'common.form.error.required': 'Bitte nicht leer lassen.',
-  'common.form.error.email': 'E-Mail-Adresse enthält Sonderzeichen.',
-  'common.form.error.max': 'May not be greater than {max}',
-  'common.form.error.maxLength': `May not be more than
-    {maxLength, plural, one {1 character} other {{maxLength} characters}} long`,
-  'common.form.error.min': 'Must be at least {min}',
-  'common.form.error.minLength': `Must be at least
-    {minLength, plural, one {1 character} other {{minLength} characters}} long`,
+  'common.form.error.email': 'E-Mail-Adresse enthält Sonderzeichen (wie z.B. Großbuchstaben) oder wurde falsch eingegeben.',
+  'common.form.error.max': 'Die Zahl kann nicht größer als {max} sein.',
+  'common.form.error.maxLength': `Das Textfeld kann maximal bis zu
+    {maxLength, plural, one {1 Zeichen} other {{maxLength} Zeichen}} enthalten.`,
+  'common.form.error.min': 'Die Zahl kann nicht kleiner als {min} sein.',
+  'common.form.error.minLength': `Das Textfeld muss mindestens
+    {minLength, plural, one {1 Zeichen} other {{minLength} Zeichen}} enthalten.`,
   'landingPage.title': 'Über das Unternehmen',
   'landingPage.button.clickMe': 'mehr lesen',
   'landingPage.para.pressCtrlH': 'Press <code>ctrl-h</code> to toggle Redux Dev Tools (development build only).',
@@ -35,7 +35,7 @@ export default {
   'navigation.terms': 'Terms & Conditions',
   'profile.edit.title': 'Edit Profile',
   'profile.form.age.placeholder': 'Age',
-  'profile.form.emailVerified.label': 'E-Mail erfolgreich validiert.',
+  'profile.form.emailVerified.label': 'Ich habe die Datenschutzerklärung auf der Seite unten gelesen und akzeptiere die in ihr enthaltenen Bedingungen.',
   'profile.form.email.placeholder': 'E-Mail',
   'profile.form.familyName.placeholder': 'Nachname',
   'profile.form.gender.male.label': 'Male',

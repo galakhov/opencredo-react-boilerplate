@@ -4,7 +4,7 @@ import { Hero, HeroContent, HeroBackground } from 'components/Hero/index';
 import { VAContainer, VAMiddle } from 'components/VAlign/VAlign';
 import styles from './ContactPage.scss';
 
-const ServicePageHero = (props) =>
+const ContactPageHero = (props) =>
   (
     <Hero displayUnderNavbar>
       <HeroBackground image={props.backgroundImage} />
@@ -22,8 +22,8 @@ const ServicePageHero = (props) =>
     </Hero>
   );
 
-ServicePageHero.propTypes = {
+ContactPageHero.propTypes = {
   backgroundImage: PropTypes.string.isRequired,
 };
 
-export default ServicePageHero;
+export default ContactPageHero;
