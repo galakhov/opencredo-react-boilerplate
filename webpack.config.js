@@ -13,7 +13,7 @@ debug.enable('app:*');
 const log = debug('app:webpack');
 
 // Environment
-process.env.NODE_ENV = 'production';
+// process.env.NODE_ENV = 'production';
 const NODE_ENV = process.env.NODE_ENV || 'development'; // development
 const DEVELOPMENT = NODE_ENV === 'development';
 const TESTING = NODE_ENV === 'test';
