@@ -25,8 +25,8 @@ export const links = {
   leistungen: {
     to: '/leistungen/',
     id: 'navigation.leistungen',
-    description: 'Übersicht Link',
-    defaultMessage: 'Unsere Leistungen',
+    description: 'Leistungsspektrum Link',
+    defaultMessage: 'Leistungsspektrum',
   },
 
   leistungen_radiologie: {
@@ -116,7 +116,7 @@ export const links = {
   radiologie_contact: {
     id: 'navigation.info',
     description: 'Info',
-    defaultMessage: '<span style="width:auto;">Telefon:</span><h1>0211 / 959 83 40</h1><strong>Öffnungszeiten:</strong><h1>Mo — Fr: 08.30 — 16.00</h1><p>und nach Vereinbarung</p>',
+    defaultMessage: '<span style="width:auto;">Telefon:</span><h1>0211 / 959 83 40</h1><strong>Öffnungszeiten:</strong><h1>Mo — Fr:</h1><p>08.30 bis 16.00 Uhr<br />und nach Vereinbarung</p>',
   },
 
   help: {

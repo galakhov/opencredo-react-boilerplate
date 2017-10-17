@@ -36,7 +36,11 @@ body {
 }
 
 .navbar-nav {
-  margin-left: 15%;
+  margin-left: 7%;
+}
+
+.navbar-default .navbar-nav>li>a {
+  font-family: $eurostile_ext;
 }
 
 #landing-page {
@@ -68,7 +72,7 @@ body {
   }
 
   h2 {
-    font-family: "Eurostile LT W01 Medium1391130";
+    font-family: "EurostileLTW01-Ex2";
     font-weight: normal;
     letter-spacing: 0.5px;
     font-size: 1.4em;
@@ -235,8 +239,9 @@ a {
 
   span,
   a.dropdown-toggle {
-    font-size: 1.6rem;
-    font-family: $eurostile;
+    font-size: 1.5rem;
+    font-family: $eurostile_ext;
+    color: #777;
   }
 
   a.dropdown-toggle {
@@ -257,7 +262,7 @@ ul {
   padding-top: 0px;
 
   li {
-    padding-bottom: 5px;
+    padding-bottom: 0px;
   }
 }
 
@@ -286,7 +291,7 @@ div.team-photos {
     width: auto;
     position: absolute;
     top: 0px;
-    margin-left: 20%;
+    margin-left: 18%;
   }
   .navbar {
     //margin-bottom: 0px;
@@ -306,6 +311,10 @@ div.team-photos {
   }
 }
 
+.mobile_gallery {
+  display: none;
+}
+
 @media screen and (max-width: 960px) {
   .navbar-brand
   {
@@ -316,7 +325,52 @@ div.team-photos {
     }
   }
   .navbar-nav {
-    margin-left: 21%;
+    margin-left: 18%;
+  }
+  .mobile_gallery {
+    display: block;
+  }
+  .team-list,
+  .text-team {
+    display: none;
+  }
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    color: #333;
+    background-color: #f1f1f1;
+    @include border-radius(8px 8px 0 0);
+}
+
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    @include border-radius(0 0 8px 8px);
+    border: 0;
+}
+
+@media screen and (min-width: 931px) {
+
+  ul li.nav-dropdown {
+    padding-bottom: 0px;
+  }
+
+  .open>.dropdown-menu {
+    display: block;
+    width: 438px;
+    padding-bottom: 3px;
+  }
+
+  ul.dropdown-menu li {
+    float: left;
+  }
+
+  .dropdown-menu>li>a {
+    padding: 9px 20px 6px;
+  }
+  .dropdown-menu>li:first-of-type {
+    margin-left: 2px;
   }
 }
 

@@ -1,12 +1,14 @@
 /* @flow */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { Grid, Row, Col } from 'react-bootstrap';
 import { HeroBackground, Hero, HeroContent } from 'components/Hero';
 import { messages } from './SchmerztherapiePage.i18n';
 import { VAContainer, VAMiddle } from 'components/VAlign/VAlign';
+import { messages as messages_0 } from '../PatientenPage/PatientenPage.i18n';
+import { MenuItem } from 'react-bootstrap';
 // import styles from './SpectrumPage.scss';
 import {
   updateDocumentTitle,
@@ -42,6 +44,13 @@ const SchmerztherapiePageHero = (props) =>
 
                       <p><FormattedMessage {...messages.overview0} /></p>
                       <p><FormattedMessage {...messages.overview1} /></p>
+
+                      <ul>
+                        <li><MenuItem href={messages_0.description01_1.route}><FormattedHTMLMessage {...messages_0.description01_1} /></MenuItem></li>
+                        <li><MenuItem href={messages_0.description01_2.route}><FormattedHTMLMessage {...messages_0.description01_2} /></MenuItem></li>
+                        <li><MenuItem href={messages_0.description01_3.route}><FormattedHTMLMessage {...messages_0.description01_3} /></MenuItem></li>
+                        <li><MenuItem href={messages_0.description01_4.route}><FormattedHTMLMessage {...messages_0.description01_4} /></MenuItem></li>
+                      </ul>
                   </Col>
                 </Row>
               </Grid>

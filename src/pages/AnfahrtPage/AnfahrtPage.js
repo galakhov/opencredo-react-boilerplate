@@ -31,9 +31,9 @@ const styles_custom = {
     overflowX: 'hidden',
   },
   team_container_span: {
-    fontFamily: 'Eurostile LT W01 Medium1391130',
+    fontFamily: 'EurostileLTW01-Ex2',
     fontWeight: 'normal',
-    fontSize: '1.2em',
+    fontSize: '1.0em',
     width: '90%',
   },
   team_container_caption: {

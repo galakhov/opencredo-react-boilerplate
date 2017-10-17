@@ -6,6 +6,8 @@ $color-footer: rgba(#333333, 0.9);
 $fonts: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $eurostile_font: "Michroma", "regular";
 $eurostile: "Eurostile LT W01 Medium1391130";
+$eurostile_demi: "Eurostile LT W01 Demi1391154";
+$eurostile_ext: "EurostileLTW01-Ex2";
 
 // colors
 $white: #f5f5f5;
@@ -13,7 +15,6 @@ $light-grey: #f5f5f5;
 $medium-grey: #82888a;
 //$dark-grey: #565a5c;
 $footer-links-color: #fff;
-
 
 // admin
 $admin-nav-background-color: #363c4a;
@@ -45,6 +46,13 @@ $admin-nav-dropdown-menu-color: #777888;
     background-image: $after;
                right: -$side-width;
   }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
 }
 
 /// Mixin to customize scrollbars

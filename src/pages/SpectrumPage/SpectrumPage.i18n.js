@@ -1,7 +1,7 @@
 export const messages = {
   title: {
     id: 'spectrumPage.title',
-    defaultMessage: 'Behandlungsspektrum',
+    defaultMessage: 'Leisungsspektrum',
   },
   overview0: {
     id: 'spectrumPage.overview0',
@@ -71,7 +71,7 @@ export const messages = {
 };
 
 export default {
-  name: 'Breites Behandlungsspektrum für individuelle Therapieformen',
+  name: 'Breites Leistungsspektrum für individuelle Therapieformen',
   description0: 'Wir legen den Fokus auf schonende, den höchsten medizinischen Ansprüchen genügende, Operationsverfahren.',
   description1: 'In unserem radiologischen Zentrum erwartet Sie ein motiviertes und äußerst kompetentes Team, das Sie persönlich betreut. Ein zentraler Aspekt unserer diagnostischen Möglichkeiten im Bereich der Radiologie ist die hochauﬂösende und völlig strahlungsfreie Magnetresonanztomographie (MRT). Hier steht uns unter anderem ein offener Kernspintomograph speziell für Gelenke zur Verfügung, der insbesondere für Patienten mit Beklemmungsgefühlen eine große Erleichterung darstellt.',
   description2: 'Im Hinblick auf die Zunahme der Herz-Kreislauf-Erkrankungen ist es uns mittels MRT möglich, eine Diagnostik am schlagenden Herzen durchzuführen. Das geschieht ohne Anwendung von Röntgenstrahlen. Häufig stellt sich auch im Bereich der Neurochirurgie die Frage nach Durchblutungsstörungen und somit die Notwendigkeit der Gefäßdarstellung. Hier besteht die Möglichkeit der Abklärung mittels farbkodierter Duplexsonographie und kontrastmittelgestützter Angiographie im MRT (MR-Angiographie). Weitere Verfahren komplettieren das gesamte Spektrum der radiologischen Diagnostik in unserer Praxis:',

@@ -11,6 +11,7 @@ import {
   resetDocumentTitle,
 } from 'redux/modules/document-title/document-title';
 import AboutPageHeroTeam from './AboutPageHeroTeam';
+import MediaQuery from 'react-responsive';
 
 /* eslint camelcase: 0 */
 const styles_custom = {
@@ -22,7 +23,7 @@ const styles_custom = {
     fontWeight: 'bold',
   },
   team_container_span: {
-    fontFamily: 'Eurostile LT W01 Medium1391130',
+    fontFamily: 'EurostileLTW01-Ex2',
     fontWeight: 'normal',
     fontSize: '1.2em',
   },
@@ -51,7 +52,12 @@ class AboutPage_01 extends Component {
   render() {
     return (
       <section id="about-page">
-        <AboutPageHeroTeam backgroundImage="/images/team/dabir.jpg" />
+        <MediaQuery query="(min-device-width: 961px)">
+          <AboutPageHeroTeam backgroundImage="/images/team/dabir.jpg" />
+        </MediaQuery>
+        <MediaQuery query="(max-device-width: 961px)">
+          <AboutPageHeroTeam backgroundImage="/images/bg_radiologie.jpg" />
+        </MediaQuery>
 
           <Grid style={styles_custom.team_container}>
             <Row>

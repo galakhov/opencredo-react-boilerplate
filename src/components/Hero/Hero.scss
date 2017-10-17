@@ -1,9 +1,10 @@
 $color-text: #fff;
 $border-color: #b3d3b3;
-$text-size: 15px;
+$text-size: 1.4rem;
 $background-color-content-block: rgba(#333, 0.9);
 $borders-color-content-block: rgba(#f8f8f8, 0.0);
 $eurostile: "EurostileLTW01-BoldEx2";
+$eurostile_ext: "EurostileLTW01-Ex2";
 
 .hero {
   height: 800px;
@@ -63,13 +64,20 @@ $eurostile: "EurostileLTW01-BoldEx2";
     margin-top: 18px;
   }
 
-  a {
+  p, a {
     color: $border-color;
+    font-family: $eurostile_ext;
+    font-size: $text-size;
   }
 
   p, ul li, h5 {
     text-align: left;
     color: $color-text;
+    font-size: $text-size;
+  }
+
+  ul li span {
+    font-family: $eurostile_ext;
     font-size: $text-size;
   }
 
@@ -94,7 +102,7 @@ $eurostile: "EurostileLTW01-BoldEx2";
 
   // h1:before-after-background("18px", "18px", '/images/cross.png');
 
-  &:before {
+  /* &:before {
     height: 18px;
     width: 18px;
     position: relative;
@@ -104,7 +112,7 @@ $eurostile: "EurostileLTW01-BoldEx2";
     content: '';
     display: block;
     top: 26px;
-  }
+  } */
 }
 
 body #patienten-page .content {

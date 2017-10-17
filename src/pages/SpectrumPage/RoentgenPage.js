@@ -6,8 +6,10 @@ import { connect } from 'react-redux';
 import { Grid, Row, Col } from 'react-bootstrap';
 import { HeroBackground, Hero, HeroContent } from 'components/Hero';
 import { messages } from './RoentgenPage.i18n';
+import { messages as messages_0 } from '../PatientenPage/PatientenPage.i18n';
 import { VAContainer, VAMiddle } from 'components/VAlign/VAlign';
 // import styles from './SpectrumPage.scss';
+import { MenuItem } from 'react-bootstrap';
 import {
   updateDocumentTitle,
   resetDocumentTitle,
@@ -45,6 +47,13 @@ const RoentgenPageHero = (props) =>
                         /* <p><FormattedHTMLMessage {...messages.overview1} /></p> */
                       }
                       <p><FormattedHTMLMessage {...messages.overview2} /></p>
+
+                      <ul>
+                        <li><MenuItem href={messages_0.description01_1.route}><FormattedHTMLMessage {...messages_0.description01_1} /></MenuItem></li>
+                        <li><MenuItem href={messages_0.description01_2.route}><FormattedHTMLMessage {...messages_0.description01_2} /></MenuItem></li>
+                        <li><MenuItem href={messages_0.description01_3.route}><FormattedHTMLMessage {...messages_0.description01_3} /></MenuItem></li>
+                        <li><MenuItem href={messages_0.description01_4.route}><FormattedHTMLMessage {...messages_0.description01_4} /></MenuItem></li>
+                      </ul>
                   </Col>
                 </Row>
               </Grid>

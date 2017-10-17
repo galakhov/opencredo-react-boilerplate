@@ -119,7 +119,7 @@ class MainHeader extends React.Component {
               <MenuItem eventKey={1.3} href="/anfahrt"><FormattedMessage {...links.anfahrt} /></MenuItem>
             </NavDropdown>
 
-            <MenuItem eventKey={2} href="/team" role="presentation">
+            <MenuItem eventKey={2} href="/team-dabir" role="presentation">
                 <FormattedMessage {...links.aboutUs} />
             </MenuItem>
             { /*
@@ -140,14 +140,18 @@ class MainHeader extends React.Component {
               <MenuItem eventKey="/spectrum/schmerztherapie" href="/spectrum/schmerztherapie"><FormattedMessage {...links.spectrum_schmerztherapie} /></MenuItem>
               { // <MenuItem divider /> }
             </NavDropdown> */
+
+            /*
+              <NavDropdown eventKey={3} id="nav-dropdown" title="Behandlungsspektrum" className="nav-dropdown">
+                <MenuItem eventKey={3.1} href="/leistungen"><FormattedMessage {...links.service} /></MenuItem>
+                <MenuItem eventKey={3.2} href="/leistungen-roentgen"><FormattedMessage {...links.leistungen_roentgen} /></MenuItem>
+                <MenuItem eventKey={3.3} href="/leistungen-ct"><FormattedMessage {...links.leistungen_ct} /></MenuItem>
+                <MenuItem eventKey={3.4} href="/leistungen-prt"><FormattedMessage {...links.leistungen_prt} /></MenuItem>
+                <MenuItem eventKey={3.5} href="/leistungen-mrt"><FormattedMessage {...links.leistungen_mrt} /></MenuItem>
+              </NavDropdown>
+              */
             }
-            <NavDropdown eventKey={3} id="nav-dropdown" title="Behandlungsspektrum" className="nav-dropdown">
-              <MenuItem eventKey={3.1} href="/leistungen"><FormattedMessage {...links.service} /></MenuItem>
-              <MenuItem eventKey={3.2} href="/leistungen-roentgen"><FormattedMessage {...links.leistungen_roentgen} /></MenuItem>
-              <MenuItem eventKey={3.3} href="/leistungen-ct"><FormattedMessage {...links.leistungen_ct} /></MenuItem>
-              <MenuItem eventKey={3.4} href="/leistungen-prt"><FormattedMessage {...links.leistungen_prt} /></MenuItem>
-              <MenuItem eventKey={3.5} href="/leistungen-mrt"><FormattedMessage {...links.leistungen_mrt} /></MenuItem>
-            </NavDropdown>
+            <MenuItem eventKey={3} href="/leistungen"><FormattedMessage {...links.leistungen} /></MenuItem>
             {
               /*
               <li role="presentation">

@@ -16,7 +16,7 @@ import { MenuItem } from 'react-bootstrap';
 // import { Hero } from 'components/Hero'; // HeroBackground
 // import { messages } from './PatientenPage.i18n';
 // import StyleSheet from 'react-style-prototype';
-
+import LightboxGalleryTeam from '../GalleryPage/GalleryTeam';
 // https://facebook.github.io/react/docs/dom-elements.html#all-supported-html-attributeshero
 
 // TODO: Links to doctors' pages
@@ -74,6 +74,8 @@ const AboutPageHeroTeam = (props) =>
                     <MenuItem href={messages.doctors.content.doc3.route} eventKey={2.4}><FormattedMessage {...messages.doctors.content.doc3} /></MenuItem>
                     <MenuItem href={messages.doctors.content.doc4.route} eventKey={2.5}><FormattedMessage {...messages.doctors.content.doc4} /></MenuItem>
                   </ul>
+
+                  <div className="mobile_gallery"><LightboxGalleryTeam /></div>
                   </Col>
                 </Row>
               </Grid>
