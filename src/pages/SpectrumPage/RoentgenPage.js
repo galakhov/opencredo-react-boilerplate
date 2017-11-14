@@ -39,7 +39,7 @@ const RoentgenPageHero = (props) =>
                 <Row>
                   <Col xs={12} className="text-left">
                       <h1>
-                        <FormattedMessage {...messages.title} />
+                        <FormattedMessage {...messages.title_simple} />
                       </h1>
 
                       <p><FormattedHTMLMessage {...messages.overview0} /></p>
@@ -49,10 +49,10 @@ const RoentgenPageHero = (props) =>
                       <p><FormattedHTMLMessage {...messages.overview2} /></p>
 
                       <ul>
-                        <li><MenuItem href={messages_0.description01_1.route}><FormattedHTMLMessage {...messages_0.description01_1} /></MenuItem></li>
-                        <li><MenuItem href={messages_0.description01_2.route}><FormattedHTMLMessage {...messages_0.description01_2} /></MenuItem></li>
-                        <li><MenuItem href={messages_0.description01_3.route}><FormattedHTMLMessage {...messages_0.description01_3} /></MenuItem></li>
-                        <li><MenuItem href={messages_0.description01_4.route}><FormattedHTMLMessage {...messages_0.description01_4} /></MenuItem></li>
+                        <MenuItem href={messages_0.description01_1.route}><FormattedHTMLMessage {...messages_0.description01_1} /></MenuItem>
+                        <MenuItem href={messages_0.description01_2.route}><FormattedHTMLMessage {...messages_0.description01_2} /></MenuItem>
+                        <MenuItem href={messages_0.description01_3.route}><FormattedHTMLMessage {...messages_0.description01_3} /></MenuItem>
+                        <MenuItem href={messages_0.description01_4.route}><FormattedHTMLMessage {...messages_0.description01_4} /></MenuItem>
                       </ul>
                   </Col>
                 </Row>

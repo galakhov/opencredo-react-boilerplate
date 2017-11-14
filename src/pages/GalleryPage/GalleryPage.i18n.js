@@ -1,7 +1,7 @@
 export const messages = {
   title: {
     id: 'galleryPage.title',
-    defaultMessage: 'Galerie',
+    defaultMessage: 'Radiologie am Kaiserteich: Galerie',
   },
   overview0: {
     id: 'galleryPage.overview0',

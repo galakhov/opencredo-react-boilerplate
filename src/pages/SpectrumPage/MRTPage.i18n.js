@@ -1,6 +1,10 @@
 export const messages = {
   title: { /* MRT */
     id: 'page.title',
+    defaultMessage: 'Radiologie am Kaiserteich: Magnetresonanztomographie',
+  },
+  title_simple: {
+    id: 'page.title_simple',
     defaultMessage: 'Magnetresonanztomographie',
   },
   overview0: {

@@ -1,6 +1,10 @@
 export const messages = {
   title: { /* Schmerztherapie */
     id: 'page.title',
+    defaultMessage: 'Radiologie am Kaiserteich: CT-gesteuerte Schmerztherapie',
+  },
+  title_simple: {
+    id: 'page.title_simple',
     defaultMessage: 'CT-gesteuerte Schmerztherapie',
   },
   overview0: {

@@ -1,6 +1,10 @@
 export const messages = {
   title: { /* CT */
     id: 'page.title',
+    defaultMessage: 'Radiologie am Kaiserteich: Computertomographie (CT)',
+  },
+  title_simple: { /* CT */
+    id: 'page.title_simple',
     defaultMessage: 'Computertomographie (CT)',
   },
   overview0: {

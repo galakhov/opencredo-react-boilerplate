@@ -105,7 +105,7 @@ class AnfahrtPage extends Component {
   render() {
     return (
       <section id="radiologie-anfahrt-page">
-        <AnfahrtPageHero backgroundImage="/images/galerie/aussen1.jpg" />
+        <AnfahrtPageHero backgroundImage="/images/galerie/aussen_1.jpg" />
       </section>
     );
   }

@@ -42,8 +42,21 @@ class AboutPage_02 extends Component {
     dispatch: PropTypes.func.isRequired,
   };
 
+  static contextTypes = {
+    router: PropTypes.object,
+  };
+
+  constructor(props, context) {
+    super(props, context);
+    // this.toggleClass = this.toggleClass.bind(this);
+    this.state = {
+      activeIndex: 4,
+    };
+  }
+
   componentDidMount() {
     this.props.dispatch(updateDocumentTitle(messages.title));
+    // this.state.activeIndex = 4;
   }
 
   componentWillUnmount() {

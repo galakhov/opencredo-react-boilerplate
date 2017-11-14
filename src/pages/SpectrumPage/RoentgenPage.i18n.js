@@ -1,6 +1,10 @@
 export const messages = {
   title: { /* Röntgen */
     id: 'page.title',
+    defaultMessage: 'Radiologie am Kaiserteich: Volldigitales Röntgen',
+  },
+  title_simple: {
+    id: 'page.title_simple',
     defaultMessage: 'Volldigitales Röntgen',
   },
   overview0: {

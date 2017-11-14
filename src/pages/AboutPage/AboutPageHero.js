@@ -10,7 +10,6 @@ import { messages } from './AboutPage.i18n';
 import { MenuItem } from 'react-bootstrap';
 // import HeaderLineTop from '../../static/images/header_line_top.svg';
 // <HeaderLineTop />
-
 // import { FormattedMessage } from 'react-intl';
 import { Grid, Row, Col } from 'react-bootstrap';
 import LightboxGalleryTeam from '../GalleryPage/GalleryTeam';
@@ -59,7 +58,8 @@ const AboutPageHero = (props) =>
                 { config.team }
               </h1>
 
-              <p className={styles['hero-description']}><FormattedMessage {...messages.doctors.content} /></p>
+              <p className={styles['hero-description']}><FormattedMessage {...messages.doctors.content} />
+              </p>
 
               <Grid style={styles_custom.container}>
                 <Row>
@@ -74,11 +74,11 @@ const AboutPageHero = (props) =>
                       <li><Link to={messages.doctors.content.doc4.route}><FormattedMessage {...messages.doctors.content.doc4} /></Link></li>
                       */
                     }
-                    <MenuItem href={messages.doctors.content.doc0.route} eventKey={2.1}><FormattedMessage {...messages.doctors.content.doc0} /></MenuItem>
-                    <MenuItem href={messages.doctors.content.doc1.route} eventKey={2.2}><FormattedMessage {...messages.doctors.content.doc1} /></MenuItem>
-                    <MenuItem href={messages.doctors.content.doc2.route} eventKey={2.3}><FormattedMessage {...messages.doctors.content.doc2} /></MenuItem>
-                    <MenuItem href={messages.doctors.content.doc3.route} eventKey={2.4}><FormattedMessage {...messages.doctors.content.doc3} /></MenuItem>
-                    <MenuItem href={messages.doctors.content.doc4.route} eventKey={2.5}><FormattedMessage {...messages.doctors.content.doc4} /></MenuItem>
+                    <MenuItem to={messages.doctors.content.doc0.route} eventKey={2.1}><FormattedMessage {...messages.doctors.content.doc0} /></MenuItem>
+                    <MenuItem to={messages.doctors.content.doc1.route} eventKey={2.2}><FormattedMessage {...messages.doctors.content.doc1} /></MenuItem>
+                    <MenuItem to={messages.doctors.content.doc2.route} eventKey={2.3}><FormattedMessage {...messages.doctors.content.doc2} /></MenuItem>
+                    <MenuItem to={messages.doctors.content.doc3.route} eventKey={2.4}><FormattedMessage {...messages.doctors.content.doc3} /></MenuItem>
+                    <MenuItem to={messages.doctors.content.doc4.route} eventKey={2.5}><FormattedMessage {...messages.doctors.content.doc4} /></MenuItem>
                   </ul>
                   {
                     /*

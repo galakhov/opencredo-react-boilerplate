@@ -2,8 +2,8 @@ import React from 'react';
 import { render } from 'react-dom';
 // import { browserHistory } from 'react-router';
 // importing 'history' since it must be the same instance as that passed to redux middleware.
-import configureStore, { history } from './redux/configure-store';
-import routes from './routes';
+// import configureStore, { history } from './redux/configure-store';
+// import routes from './routes';
 import Root from './containers/Root';
 import debug from 'debug';
 import { addLocaleData } from 'react-intl';
@@ -17,13 +17,15 @@ if (__DEBUG__) {
   debug.enable('app:*');
 }
 
-const store = configureStore(); // , browserHistory
+// const store = configureStore(); // , browserHistory
 
 // Render the React application to the DOM
 // ReactDOM.render(
 // <Root history={browserHistory}
 // <Root ... routes={routes}
+// <Root store={store} history={history} routes={routes} />
+
 render(
-  <Root store={store} history={history} routes={routes} />,
+  <Root />,
   document.getElementById('root'),
 );

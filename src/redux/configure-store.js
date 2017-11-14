@@ -1,6 +1,6 @@
 import thunk from 'redux-thunk';
 import rootReducer from './root-reducer';
-import createHistory from 'history/createBrowserHistory';
+import createHistory from 'history/createBrowserHistory'; // v4 complient
 import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
 // 'routerMiddleware': the new way of storing route changes with redux middlware since react-router-V4.
 import { routerMiddleware } from 'react-router-redux';

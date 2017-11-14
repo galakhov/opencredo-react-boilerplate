@@ -66,10 +66,10 @@ const PatientenPageHero = (props) =>
                     <li><Link to={messages.description01_4.route}><FormattedHTMLMessage {...messages.description01_4} /></Link></li>
                     */
                   }
-                  <li><MenuItem href={messages.description01_1.route}><FormattedHTMLMessage {...messages.description01_1} /></MenuItem></li>
-                  <li><MenuItem href={messages.description01_2.route}><FormattedHTMLMessage {...messages.description01_2} /></MenuItem></li>
-                  <li><MenuItem href={messages.description01_3.route}><FormattedHTMLMessage {...messages.description01_3} /></MenuItem></li>
-                  <li><MenuItem href={messages.description01_4.route}><FormattedHTMLMessage {...messages.description01_4} /></MenuItem></li>
+                  <MenuItem href={messages.description01_1.route}><FormattedHTMLMessage {...messages.description01_1} /></MenuItem>
+                  <MenuItem href={messages.description01_2.route}><FormattedHTMLMessage {...messages.description01_2} /></MenuItem>
+                  <MenuItem href={messages.description01_3.route}><FormattedHTMLMessage {...messages.description01_3} /></MenuItem>
+                  <MenuItem href={messages.description01_4.route}><FormattedHTMLMessage {...messages.description01_4} /></MenuItem>
                 </ul>
               </p>
 

@@ -1,7 +1,7 @@
 export const messages = {
   title: {
     id: 'page.title',
-    defaultMessage: 'Anfahrt & Parkmöglichkeit',
+    defaultMessage: 'Radiologie am Kaiserteich: Anfahrt & Parkmöglichkeit',
   },
   overview0: {
     id: 'anfahrt',

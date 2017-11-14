@@ -61,7 +61,8 @@ const AboutPageHeroTeam = (props) =>
               { config.team }
             </h1>
 
-            <p className={styles['hero-description']}><FormattedMessage {...messages.doctors.content} /></p>
+            <p className={styles['hero-description']}><FormattedMessage {...messages.doctors.content} />
+            </p>
 
               <Grid style={styles_custom.container}>
                 <Row>

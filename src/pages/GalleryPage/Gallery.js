@@ -64,7 +64,7 @@ const THEMED_IMAGES = [
     useForDemo: true,
   },
   {
-    id: './images/galerie/aussen1.jpg',
+    id: './images/galerie/aussen_1.jpg',
     caption: 'Außenansicht',
     orientation: 'landscape',
     useForDemo: true,
@@ -82,7 +82,7 @@ const THEMED_IMAGES = [
     useForDemo: true,
   },
   {
-    id: './images/galerie/aussen4.jpg',
+    id: './images/galerie/aussen_4.jpg',
     caption: 'Außenansicht',
     orientation: 'landscape',
     useForDemo: true,
@@ -124,7 +124,7 @@ const THEMED_IMAGES = [
     useForDemo: true,
   },
   {
-    id: './images/galerie/mrt2.jpg',
+    id: './images/galerie/mrt_2.jpg',
     caption: 'Magnetresonanztomographie',
     orientation: 'landscape',
     useForDemo: true,
@@ -142,7 +142,7 @@ const THEMED_IMAGES = [
     useForDemo: true,
   },
   {
-    id: './images/galerie/mrt3.jpg',
+    id: './images/galerie/mrt_3.jpg',
     caption: 'Magnetresonanztomographie',
     orientation: 'landscape',
     useForDemo: true,

@@ -32,7 +32,7 @@ const config = {
     vendor: [
       'react',
       'react-redux',
-      'react-router',
+      'react-router-dom',
       'react-intl',
       'redux',
       'redux-form',

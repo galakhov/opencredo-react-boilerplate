@@ -1,7 +1,7 @@
 // English translations
 //  'aboutPage.overview': `Currently implemented as a stateless component, so will not auto-update if changed`,
 export default {
-  'aboutPage.title': 'Ihre Ansprechpartner in allen Belangen – für Ihr Wohlbefinden',
+  'aboutPage.title': 'Radiologie am Kaiserteich: Team',
   'aboutPage.overview': 'Unser Ärzteteam besteht aus Spezialisten im Bereich der Radiologie und betreut und behandelt Ihre Schmerzen individuell und zielgerichtet. Unser wichtigstes Anliegen in unsere Praxis ist Ihre Zufriedenheit und Ihr Wohlbefinden. Das Team der Radiologischen Gemeinschaftspraxis legt größten Wert darauf, dass Sie Ihr Leben schmerzfrei und aktiv genießen können.',
   'common.form.error.required': 'This field is required',
   'common.form.error.email': 'Email address is invalid',
@@ -11,7 +11,7 @@ export default {
   'common.form.error.min': 'Must be at least {min}',
   'common.form.error.minLength': `Must be at least
     {minLength, plural, one {1 character} other {{minLength} characters}} long`,
-  'landingPage.title': 'Praxis',
+  'landingPage.title': 'Radiologie am Kaiserteich',
   'landingPage.button.clickMe': 'mehr lesen',
   'landingPage.para.pressCtrlH': 'Press <code>ctrl-h</code> to toggle Redux Dev Tools (development build only).',
   'landingPage.para.autoUpdate': 'This pages auto-updates when you make changes and save.',

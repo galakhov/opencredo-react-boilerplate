@@ -15,6 +15,7 @@ const footerLinks = [
   // links.help,
   links.policies,
 ];
+
 // <Image source={require('../../static/images/footer_line_bottom.png')} className={styles['footer-line']} />
 export default class MainFooter extends React.Component {
   static propTypes = {

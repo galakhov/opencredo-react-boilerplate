@@ -96,6 +96,10 @@ class SpectrumPage extends Component {
     this.props.dispatch(updateDocumentTitle(messages.title));
   }
 
+  componentWillReceiveProps(props) {
+    log('spectrum-page: props: ', props);
+  }
+
   componentWillUnmount() {
     this.props.dispatch(resetDocumentTitle());
   }
