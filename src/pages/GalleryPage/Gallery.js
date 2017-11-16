@@ -17,7 +17,7 @@ function makeUnsplashSrcSet(id, size) {
 function makeUnsplashThumbnail(id, orientation = 'landscape') {
   const dimensions = orientation === 'square'
 		? '?w=300&h=300'
-		: '?w=240&h=159';
+		: '?w=150&h=100';
 
   // return `https://images.unsplash.com/photo-${id}?dpr=2&auto=format&crop=faces&fit=crop&${dimensions}`;
   return id + dimensions;
@@ -48,7 +48,7 @@ const THEMED_IMAGES = [
   {
     id: './images/galerie/besprechungsraum0.jpg',
     caption: 'Besprechungsraum',
-    orientation: 'square',
+    orientation: 'landscape', // square
     useForDemo: true,
   },
   {
@@ -88,12 +88,6 @@ const THEMED_IMAGES = [
     useForDemo: true,
   },
   {
-    id: './images/galerie/roentgen0.jpg',
-    caption: 'Digitales Röntgen',
-    orientation: 'square',
-    useForDemo: true,
-  },
-  {
     id: './images/galerie/flur2.jpg',
     caption: 'Flur und Warteraum',
     orientation: 'landscape',
@@ -130,12 +124,6 @@ const THEMED_IMAGES = [
     useForDemo: true,
   },
   {
-    id: './images/galerie/radiologie_turm.jpg',
-    caption: 'Empfangsbereich mit Blick auf den Rheinturm.',
-    orientation: 'square',
-    useForDemo: true,
-  },
-  {
     id: './images/galerie/mrt1.jpg',
     caption: 'Magnetresonanztomographie',
     orientation: 'landscape',
@@ -157,6 +145,18 @@ const THEMED_IMAGES = [
     id: './images/bg_radiologie_waiting_area.jpg',
     caption: 'Empfangsbereich',
     orientation: 'landscape',
+    useForDemo: true,
+  },
+  {
+    id: './images/galerie/roentgen0.jpg',
+    caption: 'Digitales Röntgen',
+    orientation: 'landscape', // square
+    useForDemo: true,
+  },
+  {
+    id: './images/galerie/radiologie_turm.jpg',
+    caption: 'Empfangsbereich mit Blick auf den Rheinturm.',
+    orientation: 'landscape', // square
     useForDemo: true,
   },
   /*

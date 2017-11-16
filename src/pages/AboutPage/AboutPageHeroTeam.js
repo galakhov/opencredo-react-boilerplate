@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import config from './AboutPage.i18n';
 import { FormattedMessage } from 'react-intl'; // FormattedHTMLMessage
-import { Hero, HeroContent, HeroBackground } from 'components/Hero/index';
+import { Hero, HeroContent, HeroBackground, HeroBackgroundTeam } from 'components/Hero/index';
 import { VAContainer, VAMiddle } from 'components/VAlign/VAlign';
 import styles from './AboutPage.scss';
 import { messages } from './AboutPage.i18n';
@@ -50,7 +50,7 @@ const styles_custom = {
 const AboutPageHeroTeam = (props) =>
   (
     <Hero displayUnderNavbar>
-      <HeroBackground image={props.backgroundImage} />
+      <HeroBackgroundTeam image={props.backgroundImage} />
       <HeroBackground image={"../images/header_line_top.png"} />
       <HeroContent>
         <VAContainer horizontal vertical>

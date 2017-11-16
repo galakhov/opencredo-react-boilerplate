@@ -13,6 +13,7 @@ import {
   updateDocumentTitle,
   resetDocumentTitle,
 } from 'redux/modules/document-title/document-title';
+import BGTimedSwapper from '../BackgroundImagesSwapper';
 
 if (__DEBUG__) {
   debug.enable('landing-page:*');
@@ -36,6 +37,9 @@ const styles_custom = {
   title_caption: {
     whiteSpace: 'pre-wrap',
     clear: 'left',
+  },
+  backroundImages: {
+    backroundImage: 'url()',
   },
 };
 
@@ -70,10 +74,49 @@ export class LandingPage extends React.Component {
   </p>
 */
 
+// <LandingPageHero style={styels_custom.backroundImages} />
+// <LandingPageHero backgroundImage="images/bg_radiologie_welcome_burned.jpg" />
+// `url(images/bg_radiologie_patients.jpg), url(images/bg_radiologie_welcome_burned.jpg)`
+// <LandingPageHero style={ { backgroundImage: bg1 } } />
   render() {
+    // const bgImageArray = ["images/bg_radiologie_patients.jpg","images/bg_radiologie_welcome_burned.jpg"];
+    // const secs = 3;
+
+    /* bgImageArray.forEach(function(img){
+        new Image().src = img;
+        // caches images, avoiding white flash between background replacements
+    });
+
+    function backgroundSequence() {
+    	window.clearTimeout();
+    	var k = 0;
+    	for (i = 0; i < bgImageArray.length; i++) {
+    		setTimeout(function(){
+    			document.documentElement.style.backgroundImage = "url(" + base + bgImageArray[k] + ") no-repeat center center fixed";
+    			document.documentElement.style.backgroundSize ="cover";
+    		if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }
+    		}, (secs * 1000) * i)
+    	}
+    } */
+
+    const bg1 = 'images/bg_radiologie_patients.jpg';
+    const bg2 = 'images/bg_radiologie_welcome_burned.jpg';
+    const bg3 = 'images/bg_radiologie_waiting_room.jpg';
+
+    /*
+      <div className={styles.background_with_animation} style={{ backgroundImage: `url(${bg1})` }}>
+      </div>
+      <div className={styles.background_with_animation} style={{ backgroundImage: `url(${bg2})` }}>
+      </div>
+    */
+
     return (
       <div id="landing-page" style={styles_custom.container}>
-        <LandingPageHero backgroundImage="images/bg_radiologie_welcome_burned.jpg" />
+      <BGTimedSwapper transitionName="fade-wait-delay" transitionEnterTimeout={5000} transitionLeaveTimeout={1500} overflowHidden={false} height={'100%'}>
+        <LandingPageHero backgroundImage={bg1} />
+        <LandingPageHero backgroundImage={bg2} />
+        <LandingPageHero backgroundImage={bg3} />
+      </BGTimedSwapper>
         <Grid>
           <Row>
             <Col xs={12} id={`${styles.content_container}`}>

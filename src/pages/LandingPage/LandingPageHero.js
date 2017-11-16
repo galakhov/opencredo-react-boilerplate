@@ -7,12 +7,12 @@ import { Hero, HeroStartpageBackground } from 'components/Hero/index';
 
 // http://stackoverflow.com/questions/36403930/complex-animation-possible-with-reactcsstransitiongroup-and-react-router
 // const ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+/* import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 const pageTransitionName = 'page';
 // const repoTransitionName = "repo";
 const transitionClassName = 'transition-group';
 const transitionDuration = 300;
-const transitionEnterTimeout = 2 * transitionDuration;
+const transitionEnterTimeout = 2 * transitionDuration; */
 // const transitionLeaveTimeout = 2 * transitionDuration;
 
 /* eslint camelcase: 0 */
@@ -36,7 +36,7 @@ const styles_custom = {
   site_container: {
     width: '100%',
     // minWidth: '1920px',
-    height: '800px',
+    // height: '800px',
     position: 'relative',
   },
   background_style: {
@@ -57,28 +57,20 @@ const styles_custom = {
 
 const LandingPageHero = (props) =>
   (
-    <ReactCSSTransitionGroup
-      component="div"
-      className={transitionClassName}
-      transitionName={pageTransitionName}
-      transitionEnterTimeout={transitionEnterTimeout}
-      transitionLeaveTimeout={transitionDuration}
-    >
-      <Hero displayUnderNavbar style={styles_custom.site_container}>
-        <HeroStartpageBackground image={props.backgroundImage} />
-            {
-              /*
-              <VAContainer horizontal vertical>
-                <VAMiddle>
-                  <div className="text-left">
-                      <img src="/images/welcome.png" width="800" style={styles_custom.content_img} />
-                  </div>
-                </VAMiddle>
-              </VAContainer>
-              */
-            }
-      </Hero>
-    </ReactCSSTransitionGroup>
+    <Hero displayUnderNavbar style={styles_custom.site_container}>
+      <HeroStartpageBackground image={props.backgroundImage} />
+          {
+            /*
+            <VAContainer horizontal vertical>
+              <VAMiddle>
+                <div className="text-left">
+                    <img src="/images/welcome.png" width="800" style={styles_custom.content_img} />
+                </div>
+              </VAMiddle>
+            </VAContainer>
+            */
+          }
+    </Hero>
   );
 
 LandingPageHero.propTypes = {
@@ -86,6 +78,20 @@ LandingPageHero.propTypes = {
 };
 
 export default LandingPageHero;
+
+/*
+  <ReactCSSTransitionGroup
+    component="div"
+    className={transitionClassName}
+    transitionName={pageTransitionName}
+    transitionEnterTimeout={transitionEnterTimeout}
+    transitionLeaveTimeout={transitionDuration}
+  >
+    <Hero displayUnderNavbar style={styles_custom.site_container}>
+      <HeroStartpageBackground image={props.backgroundImage} />
+    </Hero>
+  </ReactCSSTransitionGroup>
+*/
 
 /* <HeroContent style={styles_custom.container}>
 

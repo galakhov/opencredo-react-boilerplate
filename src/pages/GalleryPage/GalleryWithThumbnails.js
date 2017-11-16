@@ -109,8 +109,8 @@ class Gallery extends Component {
         border: 0,
         display: 'block',
         height: 'auto',
-        maxWidth: '100%',
-        width: 'auto',
+        width: '100%',
+        maxWidth: '150px',
       },
     });
 

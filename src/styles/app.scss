@@ -152,6 +152,14 @@ body {
   }
   }
 
+  @media screen and (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
+    .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus,
+    .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
+        background-color: transparent;
+    }
+  }
+
   @media screen and (max-width: 780px) {
     h1 {
       font-size: 1.9em;
@@ -276,8 +284,11 @@ a {
 
   .navbar-brand {
     img {
-      margin-left: 15px;
+      margin-left: 35px;
       transition: 0.55s;
+      width: 120px;
+      top: 30px;
+      margin-top: 10px;
     }
     color: rgba(#777, 0.0);
     span {
@@ -355,9 +366,9 @@ div.team-photos {
   {
     img {
       width: 140px;
-      position: absolute;
-      top: 20px;
+      top: 30px;
       transition: 0.55s;
+      margin-top: 10px;
     }
   }
 
@@ -381,12 +392,13 @@ div.team-photos {
 }
 
 @media screen and (max-width: 1024px) {
-  .navbar-brand
+  .navbar-default .navbar-brand
   {
     img {
       position: absolute;
       width: 110px;
-      top: 30px;
+      top: 20px;
+      margin-top: 10px;
     }
   }
 }
@@ -542,6 +554,8 @@ div.team-photos {
       position: absolute;
       width: 110px;
       transition: 0.55s;
+      top: 30px;
+      margin-top: 10px;
     }
   }
 }
@@ -565,6 +579,8 @@ div.team-photos {
     img {
       width: 110px;
       transition: 0.55s;
+      top: 30px;
+      margin-top: 10px;
     }
   }
 
@@ -648,3 +664,35 @@ div.team-photos {
       margin-left: 138px;
   }
 }
+
+
+/* Fade out, then fade in transition */
+
+.fade-wait-leave,
+.fade-wait-delay-leave {
+  opacity: 1;
+}
+.fade-wait-leave.fade-wait-leave-active,
+.fade-wait-delay-leave.fade-wait-delay-leave-active {
+  opacity: 0;
+  transition: opacity .4s ease-in-out;
+}
+
+.fade-wait-enter,
+.fade-wait-delay-enter {
+  opacity: 0;
+}
+.fade-wait-enter.fade-wait-enter-active,
+.fade-wait-delay-enter.fade-wait-delay-enter-active {
+  opacity: 1;
+  /* Delay the enter animation until the leave completes */
+  transition: opacity .4s ease-in-out .4s;
+}
+
+/* .fade-wait-height {
+  transition: height .8s ease-in-out;
+}
+.fade-wait-delay-height {
+  // Delay the height animation until the leave completes
+  transition: height .4s ease-in-out .4s;
+} */

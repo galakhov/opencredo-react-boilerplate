@@ -89,7 +89,7 @@ class AboutPage_01 extends Component {
           <AboutPageHeroTeam backgroundImage="/images/bg_radiologie.jpg" />
         </MediaQuery>
         <MediaQuery query="(min-device-width: 961px)">
-          <AboutPageHeroTeam backgroundImage="/images/team/dabir.jpg" />
+          <AboutPageHeroTeam backgroundImage="/images/team/dabir.jpg" style={{ backgroundPositionX: '50%' }} />
         </MediaQuery>
 
           <Grid style={styles_custom.team_container}>

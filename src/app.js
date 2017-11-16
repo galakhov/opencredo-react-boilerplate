@@ -4,6 +4,9 @@ import { render } from 'react-dom';
 // importing 'history' since it must be the same instance as that passed to redux middleware.
 // import configureStore, { history } from './redux/configure-store';
 // import routes from './routes';
+import 'core-js/fn/object/assign';
+import 'core-js/fn/promise';
+
 import Root from './containers/Root';
 import debug from 'debug';
 import { addLocaleData } from 'react-intl';
