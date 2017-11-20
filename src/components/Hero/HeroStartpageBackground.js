@@ -9,7 +9,7 @@ export default class HeroStartpageBackground extends React.Component {
   // this component differs from standard 'HeroBackground' one.
   render() {
     return (
-      <div className={styles.background_with_animation} style={{ backgroundImage: `url(${this.props.image})` }}>
+      <div className={styles.background_start_page} style={{ backgroundImage: `url(${this.props.image})` }}>
       </div>
     );
   }

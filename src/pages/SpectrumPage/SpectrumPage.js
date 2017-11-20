@@ -114,9 +114,3 @@ class SpectrumPage extends Component {
 }
 
 export default connect(() => ({}))(SpectrumPage);
-
-/*
-  <h1>
-  <FormattedMessage {...messages.title} />
-  </h1>
-*/

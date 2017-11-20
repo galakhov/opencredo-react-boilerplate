@@ -29,7 +29,7 @@ class PatientenPage extends Component {
   render() {
     return (
       <section id="patienten-page">
-        <PatientenPageHero backgroundImage="/images/bg_radiologie_patients.jpg" />
+        <PatientenPageHero backgroundImage="/images/galerie/mrt_2.jpg" />
       </section>
     );
   }

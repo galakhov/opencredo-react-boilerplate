@@ -60,9 +60,6 @@ const styles_custom = {
     whiteSpace: 'pre-wrap',
     clear: 'left',
   },
-  backroundImages: {
-    backroundImage: 'url()',
-  },
 };
 
 export class LandingPage extends React.Component {
@@ -86,15 +83,6 @@ export class LandingPage extends React.Component {
   handleButtonClick() {
     log('button click handler context:', this);
   }
-
-/*
-  <p>
-    <FormattedHTMLMessage {...messages.para.autoUpdate} />
-  </p>
-  <p>
-    <FormattedHTMLMessage {...messages.para.es7Decorator} />
-  </p>
-*/
 
 // <LandingPageHero style={styels_custom.backroundImages} />
 // <LandingPageHero backgroundImage="images/bg_radiologie_welcome_burned.jpg" />
@@ -124,13 +112,6 @@ export class LandingPage extends React.Component {
     const bg1 = 'images/bg_radiologie_patients.jpg';
     const bg2 = 'images/bg_radiologie_welcome_burned.jpg';
     const bg3 = 'images/bg_radiologie_waiting_room.jpg';
-
-    /*
-      <div className={styles.background_with_animation} style={{ backgroundImage: `url(${bg1})` }}>
-      </div>
-      <div className={styles.background_with_animation} style={{ backgroundImage: `url(${bg2})` }}>
-      </div>
-    */
 
     return (
       <div id="landing-page" style={styles_custom.container}>
