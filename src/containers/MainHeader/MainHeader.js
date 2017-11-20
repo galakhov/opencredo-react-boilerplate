@@ -90,12 +90,12 @@ class MainHeader extends React.Component {
     this.setState({activeKey: selectedKey});
   } */
 
-  handleSelect = (activeKey) => {
+  /* handleSelect = (activeKey) => {
     if (activeKey === null) {
       this.setState({ selectedKey: 1 });
     }
     this.setState({ selectedKey: activeKey });
-  }
+  } */
 
   render() {
     // let selectedKey = 1;
@@ -149,19 +149,21 @@ class MainHeader extends React.Component {
               */
             }
 
-            <NavDropdown eventKey={1} id="nav-dropdown-0" title="Praxis" className="nav-dropdown" activeClassName="active">
-              <MenuItem eventKey={1.1} to="/praxis" className={this.state.activeIndex === 1 ? 'active' : null} onClick={this.toggleClass.bind(this, 1, '/praxis')}><FormattedMessage {...links.home} /></MenuItem>
-              <MenuItem eventKey={1.2} to="/kontakt" className={this.state.activeIndex === 2 ? 'active' : null} onClick={this.toggleClass.bind(this, 2, '/kontakt')}><FormattedMessage {...links.kontakt} /></MenuItem>
-              <MenuItem eventKey={1.3} to="/anfahrt" className={this.state.activeIndex === 3 ? 'active' : null} onClick={this.toggleClass.bind(this, 3, '/anfahrt')}><FormattedMessage {...links.anfahrt} /></MenuItem>
+            <NavDropdown eventKey={1} id="nav-dropdown-0" title="Praxis" className="nav-dropdown" className={`nav-dropdown ${(this.path === '/praxis' || this.path === '/kontakt' || this.path === '/anfahrt') ? 'active' : null}`}>
+              <MenuItem eventKey={1.1} to="/praxis" className={(this.state.activeIndex === 1 || this.path === '/praxis') ? 'active' : null} onClick={this.toggleClass.bind(this, 1, '/praxis')}><FormattedMessage {...links.home} /></MenuItem>
+              <MenuItem eventKey={1.2} to="/kontakt" className={(this.state.activeIndex === 2 || this.path === '/kontakt') ? 'active' : null} onClick={this.toggleClass.bind(this, 2, '/kontakt')}><FormattedMessage {...links.kontakt} /></MenuItem>
+              <MenuItem eventKey={1.3} to="/anfahrt" className={(this.state.activeIndex === 3 || this.path === '/anfahrt') ? 'active' : null} onClick={this.toggleClass.bind(this, 3, '/anfahrt')}><FormattedMessage {...links.anfahrt} /></MenuItem>
             </NavDropdown>
 
             <MenuItem eventKey={2} to="/team-dabir" role="presentation" id="team-navigation" className={(this.state.activeIndex === 4 || this.path === '/team-dabir' || this.path === '/team-hirning' || this.path === '/team-poll' || this.path === '/team-dabir-scherfeld' || this.path === '/team-meyer') ? 'active' : null} onClick={this.toggleClass.bind(this, 4, '/team-dabir')}>
-                <FormattedMessage {...links.aboutUs} />
+              <FormattedMessage {...links.aboutUs} />
             </MenuItem>
 
-            <MenuItem eventKey={3} to="/leistungen" className={(this.state.activeIndex === 5 || this.path === '/leistungen-roentgen' || this.path === '/leistungen-ct' || this.path === '/leistungen-prt' || this.path === '/leistungen-mrt') ? 'active' : null} onClick={this.toggleClass.bind(this, 5, '/leistungen')}><FormattedMessage {...links.leistungen} /></MenuItem>
+            <MenuItem eventKey={3} to="/leistungen" className={(this.state.activeIndex === 5 || this.path === '/leistungen' || this.path === '/leistungen-roentgen' || this.path === '/leistungen-ct' || this.path === '/leistungen-prt' || this.path === '/leistungen-mrt') ? 'active' : null} onClick={this.toggleClass.bind(this, 5, '/leistungen')}>
+              <FormattedMessage {...links.leistungen} />
+            </MenuItem>
 
-            <MenuItem eventKey={4} to="/galerie" className={this.state.activeIndex === 6 ? 'active' : null} onClick={this.toggleClass.bind(this, 6, '/galerie')}>
+            <MenuItem eventKey={4} to="/galerie" className={(this.state.activeIndex === 6 || this.path === '/galerie') ? 'active' : null} onClick={this.toggleClass.bind(this, 6, '/galerie')}>
               <FormattedMessage {...links.gallery} />
             </MenuItem>
             {

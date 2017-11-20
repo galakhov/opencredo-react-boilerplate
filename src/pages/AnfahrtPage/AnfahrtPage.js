@@ -14,13 +14,41 @@ import {
   resetDocumentTitle,
 } from 'redux/modules/document-title/document-title';
 
+import styled, { keyframes } from 'styled-components';
+import { fadeInUp } from 'react-animations';
+
+const fadeAnimation = keyframes`${fadeInUp}`;
+
+const fadingContainer = ({ className, children }) => (
+	<Grid className={className}>
+		{children}
+	</Grid>
+);
+
+fadingContainer.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.object,
+};
+
+const Fcontainer = styled(fadingContainer)`
+  animation: 3s ${fadeAnimation};
+  position: absolute;
+  left: 2%;
+  font-family: EurostileLTW01-BoldEx2;
+  font-weight: bold;
+  overflow-y: scroll;
+  padding-right: 0;
+  margin-right: 20px;
+  overflow-x: hidden;
+`;
+
 /* eslint camelcase: 0 */
 const styles_custom = {
   container: {
     width: '100%',
     paddingLeft: 0,
   },
-  team_container: {
+  /* team_container: {
     position: 'absolute',
     left: '2%',
     fontFamily: 'EurostileLTW01-BoldEx2',
@@ -29,7 +57,7 @@ const styles_custom = {
     paddingRight: 0,
     marginRight: '20px',
     overflowX: 'hidden',
-  },
+  }, */
   team_container_span: {
     fontFamily: 'EurostileLTW01-Ex2',
     fontWeight: 'normal',
@@ -53,7 +81,7 @@ const styles_custom = {
   },
 };
 
-
+// <Fcontainer style={styles_custom.team_container}> = <Grid style={styles_custom.team_container}>
 const AnfahrtPageHero = (props) =>
 (
   <div id="anfahrt-page">
@@ -61,12 +89,12 @@ const AnfahrtPageHero = (props) =>
         <HeroBackground image={props.backgroundImage} />
     </Hero>
 
-    <Grid style={styles_custom.team_container}>
+    <Fcontainer>
       <Row>
         <Col xs={12} className="text-left">
         <div className="text-team" style={styles_custom.team_container_caption}>
           <h1>
-            <FormattedMessage {...messages.title} />
+            <FormattedMessage {...messages.title_html} />
           </h1>
           <p style={styles_custom.team_container_span}>
             <span style={styles_custom.span_color}><FormattedHTMLMessage {...messages.overview0} /></span><br />
@@ -81,7 +109,7 @@ const AnfahrtPageHero = (props) =>
         </div>
         </Col>
       </Row>
-    </Grid>
+    </Fcontainer>
   </div>
 );
 

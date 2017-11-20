@@ -29,6 +29,10 @@ body {
   // max-width: 1920px;
 }
 
+.text-left {
+  word-break: break-word;
+}
+
 .navbar-header {
   height: 150px;
   position: relative;
@@ -52,7 +56,8 @@ body {
 .page-container .navbar-default .navbar-nav>li.active>a span,
 .page-container .navbar-default .navbar-nav>li.active>a:focus span,
 .page-container .navbar-default .navbar-nav>li.active>a:hover span,
-.page-container .navbar-default .navbar-nav li ul li.active a span {
+.page-container .navbar-default .navbar-nav li ul li.active a span,
+.page-container .navbar-default ul.navbar-nav li.active a.dropdown-toggle {
   color: $links_color;
   font-weight: bold;
   background-color: transparent;
@@ -223,9 +228,10 @@ a {
 #anfahrt-page .container {
   height: 60%;
   top: 20%;
+  width: 60%;
 
   @media screen and (max-height: 925px) {
-    top: 30%;
+    top: 20%;
     height: 50%;
   }
 
@@ -285,7 +291,7 @@ a {
   .navbar-brand {
     img {
       margin-left: 35px;
-      transition: 0.55s;
+      transition: 2.55s;
       width: 120px;
       top: 30px;
       margin-top: 10px;

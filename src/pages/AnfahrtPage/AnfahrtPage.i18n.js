@@ -3,6 +3,10 @@ export const messages = {
     id: 'page.title',
     defaultMessage: 'Radiologie am Kaiserteich: Anfahrt & Parkmöglichkeit',
   },
+  title_html: {
+    id: 'page.title_content',
+    defaultMessage: 'Anfahrt & Parkmöglichkeit',
+  },
   overview0: {
     id: 'anfahrt',
     defaultMessage: 'Im Pradus Mediacal Center, 3.0G.',

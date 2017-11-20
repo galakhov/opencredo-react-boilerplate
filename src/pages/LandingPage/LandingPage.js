@@ -15,6 +15,28 @@ import {
 } from 'redux/modules/document-title/document-title';
 import BGTimedSwapper from '../BackgroundImagesSwapper';
 
+// https://github.com/styled-components/styled-components
+import styled, { keyframes } from 'styled-components';
+// http://react-animations.herokuapp.com // https://github.com/FormidableLabs/react-animations
+import { fadeInUp } from 'react-animations';
+
+const fadeAnimation = keyframes`${fadeInUp}`;
+
+const fadingContainer = ({ className, children }) => (
+	<div className={className}>
+		{children}
+	</div>
+);
+
+fadingContainer.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.object,
+};
+
+const Fcontainer = styled(fadingContainer)`
+  animation: 3s ${fadeAnimation};
+`;
+
 if (__DEBUG__) {
   debug.enable('landing-page:*');
 }
@@ -120,10 +142,12 @@ export class LandingPage extends React.Component {
         <Grid>
           <Row>
             <Col xs={12} id={`${styles.content_container}`}>
-              <h1>
-                <figure style={styles_custom.title_bg}><FormattedMessage {...messages.landingText0} /><small> </small><FormattedMessage {...messages.landingText1} /></figure><br /><figure style={styles_custom.title_caption} id={`${styles.figure_caption}`}><FormattedMessage {...messages.landingText2} /><small> </small><FormattedMessage {...messages.landingText2_0} /><small> </small><FormattedMessage {...messages.landingText3} /></figure>
-              </h1>
-              <h2><FormattedHTMLMessage {...messages.landingText4} /></h2>
+              <Fcontainer className="f-container-startpage">
+                <h1>
+                  <figure style={styles_custom.title_bg}><FormattedMessage {...messages.landingText0} /><small> </small><FormattedMessage {...messages.landingText1} /></figure><br /><figure style={styles_custom.title_caption} id={`${styles.figure_caption}`}><FormattedMessage {...messages.landingText2} /><small> </small><FormattedMessage {...messages.landingText2_0} /><small> </small><FormattedMessage {...messages.landingText3} /></figure>
+                </h1>
+                <h2><FormattedHTMLMessage {...messages.landingText4} /></h2>
+              </Fcontainer>
             </Col>
           </Row>
         </Grid>
