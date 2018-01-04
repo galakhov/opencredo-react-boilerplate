@@ -144,40 +144,6 @@ $mail->setLanguage('de', './_phpmailer/language/');
     }
     $mail_status .= '<br /><p>Name: ' . $name . '<br />Nachname: ' . $surname . '<br />E-Mail: ' . $email . '<br />Text:<br />' . $msg . '</p><br />Errors: ' . $err;
     echo '<p style="color:#f00;">' . $mail_status . '</p>';
-    /* // RBU-EINLADUNG-2017
-       $mysqli = new mysqli("db687902619.db.1and1.com", "dbo687902619", "\zxXCq&fpU", "db687902619");
-    // check connection
-    if (mysqli_connect_errno()) {
-        printf("Verbindung zur Datenbank fehlgeschlagen: %s\n", mysqli_connect_error());
-        exit();
-    }
-      $err = 0;
-
-      //mysqli_set_charset($mysqli, "utf8");
-      $mysqli->set_charset("utf8");
-
-      $sql_query = "INSERT INTO rbu_einladung_2017 (id, datum, name, firma, email, companionship) VALUES (NULL, CURRENT_TIMESTAMP, ?, ?, ?, ?)";
-
-      if (!($stmt = $mysqli->prepare($sql_query))) {
-          echo "<p>Ein Fehler beim Vorbereiten von Daten: (" . $mysqli->errno . ") " . $mysqli->error."</p>";
-      }
-      $stmt->bind_param("ssss", $name, $unternehmen, $kundemail, $companionship);
-
-      if (!$stmt->execute()) {
-          echo "<p>Ein Fehler beim Einfügen der Daten in die Datenbank:<br />(" . $stmt->errno . ") " . $stmt->error . "</p><br /><br />";
-      }
-      else {
-        echo '<span id="danke">Vielen Dank für Ihre Bestätigung.<br /><p style="color:#fff;">'.$mail_status.'</p>';
-        echo '<p style="color:#fff;">Ihre Daten wurden erfolgreich gespeichert.</p>';
-        //$jsonha = "200";
-        //echo $jsonha;
-      }
-      //exit();
-
-
-    //$sql_alu = "INSERT INTO `usr_c2web27_1`.`intec2015` (`id`, `datum`, `formular`, `name`, `firma`, //`ansprechpartner`, `email`, `wann`, `begleitung`) VALUES (NULL, CURRENT_TIMESTAMP, //'euroblech2014', '" .$_POST['name']. "', '" .$_POST['unternehmen']. "', '" //.$_POST['ansprechpartner']. "', '" .$_POST['mail']. "', '" .$datum. "', '');";
-    //  $result44 = mysql_query($sql_alu);
-    */
   } else {
     echo '<p style="color:#f00;">Das Formular war unvollständig ausgefüllt und es wurden leider keine E-Mails gesendet.<br />Bitte versuchen Sie es später <a href="../contact/">erneut</a>.</p>';
     echo '<p>Name: ' . $name . '<br />Nachname: ' . $surname . '<br />E-Mail: ' . $email . '<br />Text:<br />' . $msg . '</p><br />Errors: ' . $err;
